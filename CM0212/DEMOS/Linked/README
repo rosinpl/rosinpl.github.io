@@ -1,0 +1,73 @@
+Demo for linked list implementation in memory
+=============================================
+
+From goldwamh@slu.edu Mon Nov  3 09:27:19 2003
+Date: Fri, 31 Oct 2003 11:40:29 -0600
+From: Michael H. Goldwasser <goldwamh@slu.edu>
+To: Paul Rosin <Paul.Rosin@cs.cardiff.ac.uk>
+Subject: Re: applet
+
+
+Paul,
+
+  I've just thrown the Gnu GPL at the top of the file.  I'm attaching
+  the source below.    Please keep in mind that I had not taken time
+  to explicitly prepare for distributing the source (i.e. the program
+  is not well documented, and not necessarily exemplary in style).
+
+  Let me know if you have any further questions.
+
+Michael
+
+
+On Friday October 31, 2003, Paul Rosin wrote: 
+
+>    Michael
+>     
+>    > I'm glad to hear of your interest in using this with your students.
+>    > Is there a reason why you forsee needing the source code, as opposed
+>    > to just localing housing the compiled code?
+>    > 
+>    > If so, let me know and I'll try to quickly throw together some simple
+>    > licensing langauge regarding its distribution (as of now, I have not
+>    > distributed the actual source code).
+>    
+>    I prefer source code only in that I've copied various other applets for
+>    my module, and have had to occasionally fiddle with them in the past.
+>    Either to modify them for presentation reasons (e.g. change font size/
+>    canvas size) or to get them to work on different platforms. I've just moved
+>    from Sun to Linux and have found that many applets no longer work.
+>    
+>    But if providing source code is problematic then if you can send me the
+>    class files that would certainly be useful.
+>    
+>    Paul
+>    +-------------------------------------------------------------------+
+>    |Dr. Paul Rosin                                                     |
+>    |School of Computer Science        email:   Paul.Rosin@cs.cf.ac.uk  |
+>    |Cardiff University                tel/fax: +44 (0)29 2087 5585/4598|
+>    |Queen's Buildings, Newport Road, PO Box 916, Cardiff CF24 3XF, UK  |
+>    |WWW: http://www.cs.cf.ac.uk/User/Paul.Rosin/                       |
+>    +-------------------------------------------------------------------+
+>    
+
+-- 
+       +-----------------------------------------------+
+       | Michael Goldwasser                            |
+       | Assistant Professor                           |
+       | Mathematics and Mathematical Computer Science |
+       | Saint Louis University                        |
+       | 221 North Grand Blvd.                         |
+       | St. Louis, MO 63105-2007                      |
+       |                                               |
+       | Office: Ritter Hall 6                         |
+       | Email:  goldwamh@slu.edu                      |
+       | URL:    euler.slu.edu/~goldwasser             |
+       | Phone:  (314) 977-7039                        |
+       | Fax:    (314) 977-1452                        |
+       +-----------------------------------------------+
+
+
+    [ Part 2, "Linked.java"  Application/OCTET-STREAM  23KB. ]
+    [ Unable to print this part. ]
+
