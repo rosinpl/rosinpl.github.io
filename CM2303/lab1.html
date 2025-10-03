@@ -1,0 +1,67 @@
+<HTML>
+<HEAD><TITLE>CM0212</TITLE></HEAD>
+<BODY>
+
+<H1>CM0212 - Algorithms II and Data Structures</H1>
+
+<H2>Lab Sheet #1 - Week 3</H2>
+
+<P>
+Recall the definition of a bag that we covered in the lecture,
+and the Java code for some of the implementation:
+
+<PRE>
+public class IntArrayBag
+{
+    private int[] data;
+    private int numberItems; 
+    
+    public IntArrayBag()
+    {
+        numberItems = 0;
+        data = new int[10];
+    }
+      
+    public IntArrayBag(int initialSize)
+    {
+        if (initialSize < 0)
+           throw new IllegalArgumentException
+           ("The initialSize is negative: " + initialSize);
+        data = new int[initialSize];
+        numberItems = 0;
+    }
+         
+    public void ensureSize(int minimumSize)
+    {
+        int biggerArray[];
+       
+        if (data.length < minimumSize) {
+           biggerArray = new int[minimumSize];
+           System.arraycopy(data, 0, biggerArray, 0, numberItems);
+           data = biggerArray;
+        }
+    }
+}
+</PRE>
+
+Finish off the implementation of the following methods:
+<UL>
+<LI>
+public void add(int element)
+<BR> <I>add an element to the bag</I>
+<LI>
+public void addAll(IntArrayBag addend)
+<BR> <I>add all elements in another bag to the bag</I>
+<LI>
+public int countOccurrences(int target)
+<BR> <I>count the number of occurrences of an element with the specified value in the bag</I>
+<LI>
+public boolean remove(int target)
+<BR> <I>remove an element with the specified value from the bag</I>
+<LI>
+public int size()
+<BR> <I>return the number of elements in the bag</I>
+</UL>
+
+</BODY>
+</HTML>
