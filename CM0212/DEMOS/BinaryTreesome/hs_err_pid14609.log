@@ -1,0 +1,67 @@
+
+An unexpected exception has been detected in native code outside the VM.
+Unexpected Signal : 10 occurred at PC=0xFF2B4780
+Function=_XSetClipRectangles+0x1CC
+Library=/usr/openwin/lib/libX11.so.4
+
+Current Java thread:
+	at sun.awt.font.X11TextRenderer.doDrawGlyphList(Native Method)
+	at sun.awt.font.X11TextRenderer.drawGlyphList(X11TextRenderer.java:43)
+	- locked <f61ae110> (a java.lang.Class)
+	at sun.java2d.pipe.GlyphListPipe.drawString(GlyphListPipe.java:47)
+	at sun.java2d.pipe.ValidatePipe.drawString(ValidatePipe.java:123)
+	at sun.java2d.SunGraphics2D.drawString(SunGraphics2D.java:2588)
+	at SectionLabel.paint(SectionLabel.java:80)
+	at sun.awt.RepaintArea.paint(RepaintArea.java:177)
+	at sun.awt.motif.MComponentPeer.handleEvent(MComponentPeer.java:374)
+	at java.awt.Component.dispatchEventImpl(Component.java:3658)
+	at java.awt.Component.dispatchEvent(Component.java:3439)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:450)
+	at java.awt.EventDispatchThread.pumpOneEventForHierarchy(EventDispatchThread.java:197)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:144)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:136)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:99)
+
+Dynamic libraries:
+0x10000 	appletviewer
+0xff350000 	/usr/lib/libthread.so.1
+0xff280000 	/usr/openwin/lib/libX11.so.4
+0xff390000 	/usr/lib/libdl.so.1
+0xff180000 	/usr/lib/libc.so.1
+0xff250000 	/usr/openwin/lib/libXext.so.0
+0xff160000 	/usr/lib/libsocket.so.1
+0xff080000 	/usr/lib/libnsl.so.1
+0xff050000 	/usr/openwin/lib/libdga.so.1
+0xff140000 	/usr/lib/libmp.so.2
+0xff040000 	/usr/platform/SUNW,Ultra-1/lib/libc_psr.so.1
+0xfe000000 	/nfs/mnt5000/j2sdk1.4.1/jre/lib/sparc/client/libjvm.so
+0xfe7c0000 	/usr/lib/libCrun.so.1
+0xfe790000 	/usr/lib/libm.so.1
+0xfe7f0000 	/usr/lib/libw.so.1
+0xfe740000 	/nfs/mnt5000/j2sdk1.4.1/jre/lib/sparc/native_threads/libhpi.so
+0xfe710000 	/nfs/mnt5000/j2sdk1.4.1/jre/lib/sparc/libverify.so
+0xfe6d0000 	/nfs/mnt5000/j2sdk1.4.1/jre/lib/sparc/libjava.so
+0xfe6a0000 	/nfs/mnt5000/j2sdk1.4.1/jre/lib/sparc/libzip.so
+0xf1b00000 	/nfs/mnt5000/j2sdk1.4.1/jre/lib/sparc/libawt.so
+0xfc480000 	/nfs/mnt5000/j2sdk1.4.1/jre/lib/sparc/libmlib_image.so
+0xfc410000 	/nfs/mnt5000/j2sdk1.4.1/jre/lib/sparc/motif21/libmawt.so
+0xf1180000 	/usr/dt/lib/libXm.so.4
+0xfa390000 	/usr/openwin/lib/libXt.so.4
+0xfdfc0000 	/usr/openwin/lib/libXtst.so.1
+0xfa2a0000 	/usr/openwin/lib/libdps.so.5
+0xfdfa0000 	/usr/openwin/lib/libSM.so.6
+0xfc7d0000 	/usr/openwin/lib/libICE.so.6
+0xf1a00000 	/nfs/mnt5000/j2sdk1.4.1/jre/lib/sparc/libfontmanager.so
+0xfa1e0000 	/nfs/mnt5000/j2sdk1.4.1/jre/lib/sparc/libsunwjdga.so
+0xfa0e0000 	/nfs/mnt5000/j2sdk1.4.1/jre/lib/sparc/libjdgaSUNWcg6.so
+0xfa1b0000 	/nfs/mnt5000/j2sdk1.4.1/jre/lib/sparc/libnet.so
+0xfa190000 	/usr/lib//liblayout.so
+
+Local Time = Thu Mar 13 09:56:48 2003
+Elapsed Time = 2297
+#
+# The exception above was detected in native code outside the VM
+#
+# Java VM: Java HotSpot(TM) Client VM (1.4.1-b21 mixed mode)
+#
