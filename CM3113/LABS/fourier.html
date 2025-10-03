@@ -1,0 +1,73 @@
+<HTML>
+<HEAD><TITLE>CM3113</TITLE></HEAD>
+<BODY>
+
+<H1>CM3113 - Computer Vision</H1>
+
+<H2>Lab Sheet - Week 9</H2>
+<H2>Fourier Transform</H2>
+
+<HR>
+
+<P>
+Use <B>MATLAB</B> to play with the Fourier Transform.
+
+<P>
+Also here are some images of cells for you to experiment with:
+<BR>
+<IMG SRC="cells1.gif" HEIGHT=200 ALT="cells">
+the basic image
+which contains illumination variations
+<BR>
+<IMG SRC="cells2.gif" HEIGHT=200 ALT="cells">
+added vertical stripes
+<BR>
+<IMG SRC="cells3.gif" HEIGHT=200 ALT="cells">
+added diagonal stripes
+
+<P>
+Here are a couple of <B>m-files</B> that you'll need in the directory that you run MATLAB from:
+<A HREF="show.m">show.m</A> and <A HREF="edit.m">edit.m</A>.
+
+<P>
+Now start up MATLAB and read in an image,
+e.g. <B>i = imread('cells1.tif');</B>
+
+<P>
+You can display an image using <B>imshow(i);</B>
+
+<P>
+The following command will "edit" the power spectrum
+<B>j = edit(i,10 ) ;</B>
+<BR>
+Use it to try to remove the image artifacts.
+
+<HR>
+
+<P>
+Now revisit the first task in the Image Acquisition and Early Processing
+<A HREF="https://users.cs.cf.ac.uk/Paul.Rosin/CM3113/LABS/early.html">Image Acquisition and Early Processing</A>
+lab from week 2.
+Subsample this 512x512 image of <A HREF="circles3.pgm">circles</A>
+and also this 1024x1024 image of <A HREF="lines.pgm">lines</A> 
+by a factor of eight.
+To avoid aliasing blur the image using a simple low pass filter (e.g. to start you can even use a basic box car filter).
+Use the Nyquist Criterion to determine an appropriate amount of filtering which you should apply using the Fourier Transform.
+
+<!--
+<HR>
+
+<P>
+Try out this
+<A HREF="http://www.dai.ed.ac.uk/HIPR2/fftdemo.htm">applet</A>
+which allows you to experiment with the Fourier Transform
+and apply various image filtering operations in the frequency domain.
+-->
+
+<HR>
+<I>
+go to <A HREF="../index.html">CM3113 home page</A>
+</I>
+
+</BODY>
+</HTML>
