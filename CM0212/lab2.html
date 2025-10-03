@@ -1,0 +1,53 @@
+<html><head><title>CM0212</title></head><body>
+
+<h1>CM0212 - Algorithms II and Data Structures</h1>
+
+<h2>Lab Sheet #2 - Week 7</h2>
+
+<p>
+Implement in Java a flood fill algorithm (similar to the facilities available in standard graphics packages
+such as Photoshop)
+using a stack (rather than recursion).
+
+</p><p>
+Take as input a binary PGM image in which values are either 0 or 255;
+this can be stored as a two-dimensional array containing integer pixel
+values.
+Select a position in the image (either hardcoding it or taking input from the user) and fill it and all
+neighbouring white (255) pixels, recolouring those pixels gray (e.g. 128).
+Continue this process until none of the pixels in the gray region
+have white neighbouring pixels.
+Remember to check for image boundaries to avoid "falling off"
+the image array.
+
+</p><p>
+So you will have to check a pixel's neighbours, its white neighbours' neighbours, their neighbours, and so on.
+To keep track of all these neighbours the stack is used to store them temporarily. Neighbours waiting to
+be processed are pushed on the stack and then popped off later when your algorithm is ready to processed them.
+
+</p><p>
+To make your life easier I've provided the following Java
+<a href="http://users.cs.cf.ac.uk/Paul.Rosin/CM0212/Image.java">class</a>
+to read and write a PGM image,
+and here's a fragment of 
+<a href="http://users.cs.cf.ac.uk/Paul.Rosin/CM0212/Fill.java">code</a>
+to start you off.
+So that you can see exactly how it all works, use the
+<a href="http://users.cs.cf.ac.uk/Paul.Rosin/CM0212/#stacks">stack code</a> (4 files) available from 
+my webpage rather than Java's built-in stack.
+Try out your implementation on the following thresholded image of
+<a href="http://users.cs.cf.ac.uk/Paul.Rosin/CM0212/lena-pre.pgm">Lena</a>.
+
+</p><p>
+Starting with the lena image
+<br>
+<img src="lena-pre.gif">
+<br>
+and filling from (60,30) your program should produce the following output image
+<br>
+<img src="lena-post.gif">
+<br>
+
+
+
+</p></body></html>
