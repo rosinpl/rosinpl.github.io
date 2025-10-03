@@ -1,0 +1,37 @@
+<HTML>
+<TITLE>DTmatch</TITLE>
+<BODY>
+
+<FONT SIZE=+2>
+A simple 2D object matcher.
+</FONT>
+
+<P>
+The image on the left has been edge detected, and the right image shows the
+distance transform
+(i.e. each pixel in the distance transform image contains the shortest distance
+to the nearest feature in the binary edge map)
+of the thresholded edges.
+
+<P>
+Click on the left hand image to bring up a model of Turing's ear.
+Click again for it to imatch.
+The model is translated such that the average distance transform values under
+the boundary is minimised.
+
+<P>
+Notice that
+(1) the distance transform values get saturated towards the image boundaries,
+so that an ear initialised there won't move;
+(2) the model is easily distracted by spurious features - try initialising it
+off to the right of the true ear. You should also be able to get a match with
+a low mean error to the left eye.
+
+<P>
+<APPLET code=DTmatch.class 
+		name=DTmatch
+		height=512
+		width=1024>
+	</APPLET>
+</BODY>
+</HTML>
