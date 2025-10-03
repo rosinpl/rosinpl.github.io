@@ -1,0 +1,26 @@
+<HTML>
+<TITLE>Snake</TITLE>
+<BODY>
+
+<FONT SIZE=+2>
+A "snake" aka "active contour".
+</FONT>
+
+<P>
+Press the <B>Initialise</B> button and draw a contour in the image with the mouse.
+
+<P>
+On pressing <B>Refine</B> the contour is closed and resampled
+(to be even and dense) and
+the snake will move the contour points towards edges in the image
+(actually using the distance tranform of the thresholded edge map)
+while trying to maintain even sampling and low curvature.
+
+<P>
+<APPLET code=Snake.class 
+		name=Snake
+		height=600
+		width=600>
+	</APPLET>
+</BODY>
+</HTML>
