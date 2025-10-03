@@ -1,0 +1,593 @@
+<html>
+<head>
+<title>Hashing Animation Tool Help</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" link="#000099" vlink="#000099">
+<div align="center">
+  <table width="100%" border="0" cellspacing="0" cellpadding="5" vspace="0" hspace="0">
+    <tr align="center"> 
+      <td bordercolor="#FFFFFF" colspan="4" bgcolor="326ebe"> 
+        <h1>Help for the Hashing Animation Tool</h1>
+      </td>
+    </tr>
+    <tr align="center" bgcolor="#FFFF00"> 
+      <td bordercolor="#FFFFFF" colspan="4" height="34"><font size="3" color="#FFFFFF"><a href="#intro"><font color="#0000FF">Introduction</font></a><font color="#0000FF"> 
+        |<a href="#instruct"> Sample Instructions</a> | <a href="#display">Additional 
+        Display Information</a> | <a href="#algorithms">Algorithms</a> | <a href="#operating">Operating 
+        Requirements</a> | <a href="#suggestions">Suggestions</a></font></font></td>
+    </tr>
+    <tr align="center"> 
+      <td bordercolor="#FFFFFF" colspan="4" height="29" bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td bordercolor="#FFFFFF" height="30" bgcolor="326ebe" width="2%">&nbsp;</td>
+      <td bordercolor="#FFFFFF" valign="middle" height="30" bgcolor="326ebe" colspan="2"> 
+        <font face="Arial, Helvetica, sans-serif" size="4"><b><a name="intro"></a>Introduction:</b></font></td>
+      <td bordercolor="#FFFFFF" height="30" bgcolor="326ebe" width="4%">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="2%" bgcolor="#FFFFFF" bordercolor="#FFFFFF">&nbsp;</td>
+      <td bgcolor="#FFFFFF" bordercolor="#FFFFFF" colspan="2"> 
+        <p><font size="3"><b>The purpose of this applet is to demonstrate, and 
+          allow comparisons between, five hashing algorithms: </b></font></p>
+        <ul>
+          <li><b><font size="3"><a href="#linear">Linear Probing</a></font></b></li>
+          <li><b><font size="3"><a href="#quadratic">Quadratic Probing</a></font></b></li>
+          <li><b><font size="3"><a href="#bucket">Bucket Chaining</a></font></b></li>
+          <li><b><font size="3"><a href="#linkedlist">Linked List Chaining</a></font></b></li>
+          <li><b><font size="3"><a href="#overflow">Chaining with Separate Overflow</a></font></b></li>
+        </ul>
+        <p><b><font size="3">After the user enters specifications for the hash 
+          table and numerical input, the applet will animate the storage or retrieval 
+          of the data. As the demo runs, the user may display the pseudocode for 
+          the algorithm. In this mode, lines of code are highlighted in synchronization 
+          with the animation to demonstrate the algorithm logic. The user may 
+          alternatively elect to display statistics that are continuously updated 
+          as the algorithm executes. </font></b></p>
+        <p><b><font size="3">Tabular setup and statistics summaries are provided 
+          for up to five runs. These allow the user to compare the performance 
+          of different algorithms or the same algorithm with different settings. 
+          In addition, the applet will also display plots of average time and 
+          average probes as a function of table load. </font></b></p>
+        <p>&nbsp;</p>
+      </td>
+      <td width="4%" bordercolor="#FFFFFF" bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="2%" bgcolor="326ebe">&nbsp;</td>
+      <td bgcolor="326ebe" colspan="2"> <font face="Arial, Helvetica, sans-serif" size="4"><b><a name="instruct"></a>Sample 
+        Instructions:</b></font></td>
+      <td width="4%" bgcolor="326ebe">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="2%" bgcolor="#FFFFFF">&nbsp;</td>
+      <td bgcolor="#FFFFFF" colspan="2"> 
+        <ol>
+          <li> 
+            <p><font size="3"><b>When the applet loads in the browser it displays 
+              an animated title screen and a toolbar along the bottom. To display 
+              the Setup page for the demo, select an algorithm from the drop-down 
+              menu or click the Setup button if you wish to use Linear Probing.</b></font></p>
+          </li>
+          <li> 
+            <p><b><font size="3"> The <a href="#setup">Setup page</a> shows the 
+              current settings for the selected algorithm. If you wish to change 
+              a setting, click the Change button for the appropriate section, 
+              enter the new setting(s) and click the OK button. Instructions for 
+              each input are provided in the Notes display. When you are finished, 
+              click the Execute button on the toolbar.</font></b></p>
+          </li>
+          <li> 
+            <p><b><font size="3">The <a href="#execution">Execution page</a> displays 
+              the hash table, hash function, execution progress and the statistics 
+              table. To view the algorithm pseudocode instead of the statistics, 
+              click the Source Code button. Click the Statistics button if you 
+              wish to toggle back.</font></b></p>
+          </li>
+          <li> 
+            <p><b><font size="3"> To begin the demo click either the Step or Run 
+              button. If the Statistics table is showing, the Step button will 
+              execute one table search or insertion. If the pseudocode is displayed, 
+              it will execute the action corresponding to the highlighted line 
+              of code. Click Step again for the next action or click the Run button 
+              to animate the demo to completion. To adjust the speed of the animation 
+              or disable the sound, click the Options button and set the controls 
+              in the pop-up dialog box. Clicking the Pause button while a demo 
+              is running halts the execution and allows you to switch back to 
+              Step mode if desired. Clicking Abort resets the execution display 
+              back to its start state. After executing one or more demos, click 
+              the Results button.</font></b></p>
+          </li>
+          <li> 
+            <p><b><font size="3">The <a href="#results">Results page</a> displays 
+              tabular summaries of up to five completed runs. Here you can compare 
+              the performance of different algorithms or settings. To delete a 
+              run, click on any of its summary fields to select it and click the 
+              Delete button. Clicking the Undelete button restores any deleted 
+              summaries one at a time if there is room to display them. Next, 
+              click the Plot button.</font></b></p>
+          </li>
+          <li><b><font size="3"> The <a href="#plot">Plot page</a> allows you 
+            to plot Average Time and Average Probes as functions of Average Table 
+            Load Factor for storage and as functions of numbers searched/total 
+            numbers for retrieval. To plot a run, click on its summary row with 
+            the mouse. The summary text will change color and will match its corresponding 
+            data on the graph. This page allows three possible views of the two 
+            plots: two small plots, one large time plot or one large probes plot. 
+            Click either the Time, Probes or Both button on the toolbar to display 
+            the desired view.</font></b></li>
+        </ol>
+        <p><b><font size="3">You are not restricted to performing the steps in 
+          the order outlined above. Any button or control that is enabled may 
+          be used at any time.</font></b></p>
+        <p>&nbsp;</p>
+      </td>
+      <td width="4%" bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="2%" bgcolor="326ebe" bordercolor="#6eaaff">&nbsp;</td>
+      <td bordercolor="#6eaaff" bgcolor="326ebe" colspan="2"> <font face="Arial, Helvetica, sans-serif" size="4"><b><a name="display"></a>Additional 
+        Display Information:</b></font></td>
+      <td width="4%" bgcolor="326ebe" bordercolor="#6eaaff">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="2%" rowspan="22" bgcolor="#FFFFFF">&nbsp;</td>
+      <td height="34" bgcolor="#FFFFFF" colspan="2"> 
+        <p><b><font size="3">This section provides additional information about 
+          each of the applet displays.</font></b></p>
+      </td>
+      <td width="4%" rowspan="22" bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#6eaaff" colspan="2"><b><font size="4"><a name="setup"></a>Setup 
+        Page</font></b></td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td colspan="2"> 
+        <p><font size="3"><b>Each algorithm is setup individually. When the Setup 
+          page is selected it will display the default settings for the current 
+          algorithm or the settings entered the last time the Setup page for that 
+          algorithm was modified.</b></font></p>
+        <p><b><font size="3"> The range limits on the individual settings are 
+          interrelated and some of them are strictly for display purposes. For 
+          example, more one-slot buckets will fit on the screen than three-slot 
+          buckets. Therefore, if you increase the slots per bucket from one to 
+          three the applet may automatically reduce the number of buckets to ensure 
+          the table will fit on the screen. When this happens, the Notes area 
+          will display a message indicating that an adjustment was made and a 
+          notification sound will play (if sound is enabled). A similar adjustment 
+          will also occur if you make changes that reduce the capacity of the 
+          table to below that of the current data size setting.</font></b></p>
+        <p><b><font size="3"> There are two options that are only available for 
+          Retrieve demos. Both are found in the Execution mode section of the 
+          page. The first allows you to specify the percentage of searches for 
+          data that will be successful. The second is a quick load option. For 
+          Retrieve demos, you may watch or step through the loading of the table 
+          prior to running the actual data retrieval. To skip this portion of 
+          the demo, select the quick load checkbox. The table will then be loaded 
+          with data prior to being displayed. </font></b></p>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#6eaaff" colspan="2"><b><font size="4"><a name="execution"></a>Execution 
+        Page</font></b></td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#CCCCCC" rowspan="3" colspan="2"> 
+        <p><font size="3"><b><font face="Arial, Helvetica, sans-serif">Table Display</font></b></font></p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> </tr>
+    <tr bgcolor="#FFFFFF"> </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#FFFFFF" colspan="2"> 
+        <blockquote> 
+          <p><font size="3"><b>The hash table uses different colors to indicate 
+            various states and actions. An empty bucket slot is gray. A slot that 
+            contains a value is purple. Links to other buckets are cyan. A link 
+            displaying a diagonal line indicates that the value of that pointer 
+            is null. Nodes of linked-list chains are show in orange.</b></font></p>
+          <p><font size="3"><b> When a bucket or node is searched, either to find 
+            an empty slot or to find a certain value, the border of the bucket 
+            or node is highlighted in yellow. A successful search for a value 
+            is indicated by displaying the slot or node containing the value in 
+            green.</b></font></p>
+          <p><font size="3"><b> Due to display limitations, nodes of linked-list 
+            chains over a certain length will not be visible. In these cases, 
+            the last visible node will have a dashed link arrow to indicate there 
+            are additional nodes in the chain. This arrow will be shown in yellow 
+            to indicate when these additional nodes are being searched and it 
+            will be shown in green when a search is successful. </b></font></p>
+          <p><font size="3"><b>The text above of table indicates whether a store 
+            or retrieve demo is selected. It also indicates the current search 
+            status of the algorithm or whether the demo has finished executing. 
+            </b></font></p>
+        </blockquote>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#CCCCCC" colspan="2"> 
+        <p><b><font face="Arial, Helvetica, sans-serif" size="3">Hash Function 
+          Display</font></b></p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#FFFFFF" colspan="2"> 
+        <blockquote> 
+          <p><font size="3"><b>The upper right portion of the Execution page indicates 
+            the current hash function. In all cases division hashing is used and 
+            the equation will be:</b></font></p>
+          <p><font size="3"><b> &nbsp;&nbsp;&#09;home address = value mod (number 
+            of buckets)</b></font></p>
+          <p><font size="3"><b> This display is updated as each value is stored 
+            or retrieved. </b></font></p>
+        </blockquote>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#CCCCCC" colspan="2"> 
+        <p><b><font face="Arial, Helvetica, sans-serif" size="3">Progress Display</font></b></p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#FFFFFF" colspan="2"> 
+        <blockquote> 
+          <p><font size="3"><b>The progress display is immediately below the hash 
+            function. This display indicates how many values out of the data size 
+            specified during setup remain to be processed. The progress display 
+            is the only portion of the Execution page updated during a quick load.</b></font></p>
+        </blockquote>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#CCCCCC" colspan="2"> 
+        <p><b><font face="Arial, Helvetica, sans-serif" size="3">Statistics Display</font></b></p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#FFFFFF" colspan="2"> 
+        <blockquote> 
+          <p><b><font size="3">The following statistics are continuously updated 
+            as the demo executes:</font></b></p>
+          <ul>
+            <li><b><font size="3"> Time - the minutes, seconds, and centiseconds 
+              that have elapsed since the demo began. This data is obtained from 
+              your computer system's clock and is not adjusted to account for 
+              animation speed or delays introduced by using the Step and Pause 
+              buttons.</font><br>
+              </b></li>
+            <li><b><font size="3">Average Probes - the average number of bucket 
+              and node searches per value that the algorithm attempted to store 
+              or retrieve.</font></b></li>
+            <li><b><font size="3"> Load Factor - the number of values in the table 
+              divided by the table capacity. The table capacity equals: buckets 
+              x slots + size of separate overflow.</font></b></li>
+            <li><b><font size="3"> Searches - if a value was successfully stored 
+              or retrieved from the table it counts as a successful search. When 
+              the algorithm finishes the sum of the successful and unsuccessful 
+              searches will equal the data size.</font></b></li>
+          </ul>
+        </blockquote>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#CCCCCC" colspan="2"> 
+        <p><b><font face="Arial, Helvetica, sans-serif" size="3">Pseudocode Display</font></b></p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#FFFFFF" colspan="2"> 
+        <blockquote> 
+          <p><font size="3"><b>This portion of the page shows the pseudocode for 
+            the current algorithm. As the demo runs the lines of code are highlighted 
+            in synchronization with the animation to demonstrate the algorithm 
+            logic. See the <a href="#algorithms">Algorithms</a> section for more 
+            information about the individual collision resolution algorithms.</b></font></p>
+        </blockquote>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#6eaaff" colspan="2"><b><font size="4"><a name="results"></a>Results 
+        Page</font></b></td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td colspan="2"> 
+        <p><font size="3"><b>Any demo that is allowed to run to completion creates 
+          a summary listing that will be displayed on the Results page. Please 
+          note that the results displayed for a retrieve demo do not include any 
+          of the probes, searches, etc. that occurred while the table was being 
+          loaded.</b></font></p>
+        <p><font size="3"><b> The Results Page displays summaries for up to five 
+          runs. If additional demos are run, the summary displayed in column one 
+          will be lost, the remaining summaries shifted down and the new summary 
+          added to column five.</b></font></p>
+        <p><font size="3"><b> You may delete any of the displayed summaries to 
+          make room on the page for new runs. To do this click any of the summary 
+          data for the runs you wish to remove and click the Delete button. Clicking 
+          the Undelete button restores deleted summaries one at a time if there 
+          is room to display them. Up to five deleted summaries may be restored. 
+          </b></font></p>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#6eaaff" colspan="2"><b><font size="4"><a name="plot"></a>Plot 
+        Page</font></b></td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td colspan="2"> 
+        <p><font size="3"><b>The Plot page allows you to plot Average Time and 
+          Average Probes for up to five demos. Average Time refers to the average 
+          number of seconds that elapsed for each value the algorithm attempted 
+          to store or retrieve. Similarly, Average Probes is the average number 
+          of bucket and node searches per value that the algorithm attempted to 
+          store or retrieve. The interpretation of the x-axis depends on if the 
+          algorithm was storing or retrieving data. For storage runs, the plots 
+          are functions of Average Table Load Factor. Retrieve demos, however, 
+          plot data as functions of the current number of values searched over 
+          the total number to search (the data size).</b></font></p>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#6eaaff" colspan="2"><b><font size="4">Options Dialog</font></b></td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td colspan="2"> 
+        <p><font size="3"><b>The Options dialog is a pop-up window that is displayed 
+          when the Options button is clicked on the toolbar. This dialog allows 
+          you to enable or disable sound and to adjust the algorithm execution 
+          speed.</b></font></p>
+        <p><font size="3"><b> Sounds are played under the following circumstances: 
+          to indicate an input error on the Setup page, to indicate the number 
+          of buckets or data size was automatically reduced, and to indicate successful 
+          and unsuccessful searches. </b></font></p>
+        <p><font size="3"><b>The animation delay is controlled with a slider and 
+          sets the number of milliseconds the algorithm pauses after each action. 
+          Setting the delay to zero results in maximum execution speed. The execution 
+          will not appear instantaneous however, since the applet still requires 
+          a certain amount of time to refresh the elements displayed on the screen. 
+          </b></font></p>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr> 
+      <td width="2%" bgcolor="326ebe" bordercolor="#FFFFFF">&nbsp;</td>
+      <td bordercolor="#6eaaff" bgcolor="326ebe" colspan="2"> <font face="Arial, Helvetica, sans-serif" size="4"><b><a name="algorithms"></a>Algorithms:</b></font></td>
+      <td width="4%" bordercolor="#6eaaff" bgcolor="326ebe">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="2%" rowspan="11" bgcolor="#FFFFFF">&nbsp;</td>
+      <td height="99" bgcolor="#FFFFFF" colspan="2"> 
+        <p><font size="3"><b>This section provides additional information about 
+          the five collision resolution algorithms the applet demonstrates. Recall 
+          that all of the algorithms use the same division hash function to determine 
+          the home address. The collision resolution algorithms dictate the actions 
+          taken when a value cannot be stored in its home address because it is 
+          already full. Similarly, the approach taken when searching for data 
+          depends on the algorithm used to store the data initially. </b></font></p>
+        <p>&nbsp;</p>
+      </td>
+      <td width="4%" rowspan="11" bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#CCCCCC" colspan="2"> 
+        <p><b><font face="Arial, Helvetica, sans-serif" size="3"><a name="linear"></a>Linear 
+          Probing</font></b></p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td colspan="2"> 
+        <blockquote> 
+          <p><font size="3"><b>If a collision occurs while trying to store a value 
+            at its home address, this algorithm moves forward through the table 
+            searching each bucket one by one until an empty slot is found. If 
+            the bottom of the table is reached, the search wraps around back to 
+            the beginning of the table and continues until either an empty slot 
+            is found or the search reaches its starting point, in which case the 
+            table is full. For the applet demo, the data size cannot exceed the 
+            table capacity; so all storage attempts will be successful.</b></font></p>
+          <p><font size="3"><b> The retrieve algorithm also performs a wrap-around 
+            search starting at the home address. The search is considered unsuccessful 
+            if the algorithm encounters an empty slot or wraps around to the home 
+            address before finding the desired value.</b></font></p>
+        </blockquote>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#CCCCCC" colspan="2"> 
+        <p><font size="3"><b><font face="Arial, Helvetica, sans-serif"><a name="quadratic"></a>Quadratic 
+          Probing</font></b></font></p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td colspan="2"> 
+        <blockquote> 
+          <p><b><font size="3">This algorithm is similar to linear probing except 
+            a different formula is used to calculate which address is searched 
+            next. This formula is:</font></b></p>
+          <p><b><font size="3"> address = home address + i*i &nbsp;&nbsp;&nbsp;where 
+            "i" is a zero-based search counter.</font></b></p>
+          <p><b><font size="3"> If the value of an address exceeds the address 
+            of the bottom of the table, the search wraps around from address 0.</font></b></p>
+          <p><b><font size="3"> There are variations of this algorithm that, with 
+            certain restrictions on the table and input, guarantee each bucket 
+            will be searched. The applet's implementation does not impose these 
+            restrictions. Instead, the maximum number of searches it will perform 
+            for an empty bucket is equal to the number of buckets in the table. 
+            When this condition is reached the storage is considered unsuccessful. 
+            Retrieval is similar except that a search is also considered unsuccessful 
+            if an empty slot is encountered prior to finding the value searched 
+            for. </font></b></p>
+        </blockquote>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#CCCCCC" colspan="2"> 
+        <p><font size="3" face="Arial, Helvetica, sans-serif"><b><a name="bucket"></a>Bucket 
+          Chaining</b></font></p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td colspan="2"> 
+        <blockquote> 
+          <p><b><font size="3">Storage using the bucket chaining algorithm requires 
+            two passes through the input data set. On the first pass, the home 
+            address for a value is determined and the data is inserted in the 
+            table if there is an available slot at this address. If there is a 
+            collision however, the data is stored in a temporary data structure 
+            until the second pass. </font></b></p>
+          <p><b><font size="3">The second pass works as follows:<br>
+            For each value that wasn't stored on the first pass, the algorithm 
+            checks the link of the value's home address. If the link is null, 
+            a wrap around linear probing search is done for a completely empty 
+            bucket. If an empty bucket is found, the value is inserted and the 
+            link of the home address is set to the address where the value was 
+            inserted. If the link at the home address is not null, the algorithm 
+            searches for an empty slot in the bucket pointed to by the link. If 
+            there is an empty slot the value is inserted. If this bucket is also 
+            full and has a link that is not null, the next bucket in the chain 
+            is searched. If the chain ends with a full bucket, the algorithm performs 
+            a wrap around linear probing search for a completely empty bucket. 
+            If an empty bucket is found, the value is inserted and the link of 
+            the last bucket in the chain is set to the address where the value 
+            was inserted. Any wrap around search that returns to its origin is 
+            considered unsuccessful. </font></b></p>
+          <p><b><font size="3">The retrieve algorithm starts at the home address 
+            and searches each bucket in the chain. The search is unsuccessful 
+            if an empty slot or a full bucket with a null link is encountered 
+            prior to finding the value searched for. </font></b></p>
+        </blockquote>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#CCCCCC" colspan="2"> 
+        <p><font size="3"><b><font face="Arial, Helvetica, sans-serif"><a name="linkedlist"></a>Linked 
+          List Chaining</font></b></font></p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td colspan="2"> 
+        <blockquote> 
+          <p><b><font size="3">This algorithm always stores a data value at its 
+            home address. Data is inserted in the bucket slots until the bucket 
+            is full. Subsequent values hashed to this address are added as new 
+            nodes in the link list pointed to by the bucket. For the algorithm 
+            demonstrated by the applet, new nodes are added to the front of the 
+            list.</font></b></p>
+          <p><b><font size="3"> The retrieve algorithm first searches the slots 
+            of the bucket at the home address. If the value is not present, the 
+            algorithm searches each node of the linked list one by one. The search 
+            is unsuccessful if the end of the chain is reached prior to finding 
+            the value searched for. </font></b></p>
+        </blockquote>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td width="94%" bgcolor="#CCCCCC" height="28" colspan="2"> 
+        <p><font face="Arial, Helvetica, sans-serif" size="3"><b><a name="overflow"></a>Chaining 
+          with Separate Overflow</b></font> </p>
+        </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td bgcolor="#FFFFFF" colspan="2"> 
+        <blockquote> 
+          <p><b><font size="3">This algorithm requires two hash tables. The hash 
+            function is based on the number of buckets in the primary hash table. 
+            All home addresses calculated by the hash function refer to the primary 
+            table. Data is inserted in the overflow table only if the home address 
+            in the primary table is full. The overflow table used in the applet 
+            demo is limited to one slot per bucket.</font></b></p>
+          <p><b><font size="3"> If a collision occurs while trying to store a 
+            value at its home address, the algorithm checks the link at this bucket. 
+            If the link is null, the algorithm performs a linear probing search 
+            of the overflow table for an empty bucket starting at the first bucket 
+            in the table. If an empty bucket is found, the value is inserted and 
+            the link of the home address is set to the address in the overflow 
+            table where the value was inserted.</font></b></p>
+          <p><b><font size="3"> If the link at the home address is not null, the 
+            algorithm searches the associated chain in the overflow table until 
+            the end of the chain is reached. At this point the algorithm performs 
+            a wrap around linear probing search for an empty bucket. If an empty 
+            bucket is found, the value is inserted and the link of the last bucket 
+            in the chain pointed to this bucket's address. Any wrap around search 
+            that returns to its origin is considered unsuccessful.</font></b></p>
+          <p><b><font size="3"> The retrieve algorithm starts at the home address 
+            and searches each bucket in the chain. The search is unsuccessful 
+            if a full bucket with a null link is encountered prior to finding 
+            the value searched for. </font></b></p>
+        </blockquote>
+      </td>
+    </tr>
+    <tr> 
+      <td width="2%" bgcolor="326ebe">&nbsp;</td>
+      <td bgcolor="326ebe" colspan="2"><b><font face="Arial, Helvetica, sans-serif" size="4"><a name="operating"></a>Operating 
+        Requirements: </font></b></td>
+      <td width="4%" bgcolor="326ebe">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="2%" height="101" bgcolor="#FFFFFF">&nbsp;</td>
+      <td height="101" colspan="2" bgcolor="#FFFFFF"> 
+        <p><font size="3"><b>The Hashing Animation Tool is implemented as a Java 
+          applet. In order to view the applet a Java enabled web browser that 
+          supports Java 1.1, such as Internet Explorer 4+ or Netscape Navigator 
+          4+, is required. In addition, due to the dimensions of the applet a 
+          monitor resolution of at least 1027 x 768 is recommended. Finally, the 
+          file size for the applet is fairly large. Users with dial-up connections 
+          may need to wait a minute or so for the applet to finish loading.</b></font></p>
+        <p>&nbsp;</p>
+      </td>
+      <td width="4%" height="101" bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="2%" bgcolor="326ebe">&nbsp;</td>
+      <td bgcolor="326ebe" colspan="2"><b><font face="Arial, Helvetica, sans-serif" size="4"><a name="suggestions"></a>Suggestions 
+        for running the applet:</font></b></td>
+      <td width="4%" bgcolor="326ebe">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="2%" bgcolor="#FFFFFF">&nbsp;</td>
+      <td colspan="2" bgcolor="#FFFFFF"> 
+        <p><font size="3"><b>When running Storage demos, the first insertions 
+          into the table are not very interesting since there will probably be 
+          few collisions. Adjust the animation delay to its minimum value, click 
+          Run and let the demo execute until you begin to see collisions. After 
+          that, either click Pause and switch to Step mode or increase the animation 
+          delay so that you can observe how the algorithm works.</b></font></p>
+        <p><font size="3"><b> As stated in the Execution Page section, the time 
+          statistic is obtained from your computer system's clock and is not adjusted 
+          to account for animation speed or delays introduced by using the Step 
+          and Pause buttons. If you wish to compare the execution times for different 
+          algorithms only use the Run button and use the same animation delay 
+          setting for each demo.</b></font></p>
+        <p><font size="3"><b> Finally, when you are ready to browse away to a 
+          new web page abort the demo if it is running. If you don't and are running 
+          Netscape, you may have to wait a few extra seconds before the browser 
+          will let you leave the page.</b></font></p>
+        <p>&nbsp;</p>
+      </td>
+      <td width="4%" bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td width="2%" bgcolor="#FFFF00">&nbsp;</td>
+      <td align="center" bgcolor="#FFFF00" colspan="2"><font size="3" color="#FFFFFF"><a href="#intro"><font color="#0000FF">Introduction</font></a><font color="#0000FF"> 
+        | <a href="#instruct">Sample Instructions</a> | <a href="#display">Additional 
+        Display Information</a> | <a href="#algorithms">Algorithms</a> | <a href="#operating">Operating 
+        Requirements</a> | <a href="#suggestion">Suggestions</a></font></font></td>
+      <td width="4%" bgcolor="#FFFF00">&nbsp;</td>
+    </tr>
+  </table>
+  <b></b> </div>
+</body>
+</html>
