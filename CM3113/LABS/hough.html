@@ -1,0 +1,68 @@
+<HTML>
+<HEAD><TITLE>CM3113</TITLE></HEAD>
+<BODY>
+
+<H1>CM3113 - Computer Vision</H1>
+
+<H2>Lab Sheet - Week 9</H2>
+<H2>Hough Transform</H2>
+
+<HR>
+
+<P>
+Start off by playing with this
+<A HREF="../duality-demo/index.html">demo</A>
+(taken from
+https://github.com/tdeck/duality).
+You can enter points (unfortunately not lines) in either space, and move them.
+
+<P>
+Another
+<A HREF="https://people.eng.unimelb.edu.au/henli/programs/duality-demo/">demo</A>
+allows you to enter (but not move) points and lines (but only in the primary space).
+
+<HR>
+
+<P>
+Here is an image of a
+<A HREF="breast.pgm">chicken breast</A>.
+The shape can be described fairly well by a <B>cardioid</B>, whose
+parametric equation is given by
+<BR>
+<IMG SRC="x.png" ALT="x" HEIGHT=25>
+<BR>
+<IMG SRC="y.png" ALT="y" HEIGHT=25>
+
+<P>
+Write a program to implement the Hough Transform which finds the cardioid in the above image.
+You can assume that the scale (a=69) is known, leaving only the centre coordinates to be found.
+You can further assume that the centre lies within the image.  The result should look something like the following:
+<BR>
+<IMG SRC="breast-result.gif" HEIGHT=200 ALT="chicken breast">
+
+<P>
+I used the Sobel edge detector followed by thresholding to extract features:
+<BR>
+<IMG SRC="breast-sobel.gif" HEIGHT=200 ALT="chicken breast">
+<IMG SRC="breast-sobel-thresh.gif" HEIGHT=200 ALT="chicken breast">
+<BR>
+and the accumulator before and after log mapping is:
+<BR>
+<IMG SRC="breast-hough.gif" HEIGHT=200 ALT="chicken breast">
+<IMG SRC="breast-hough-log.gif" HEIGHT=200 ALT="chicken breast">
+
+
+<P>
+If you got that working, now try a
+<A HREF="breast2.pgm">trickier image</A>.
+You should be able to get a result like this:
+<BR>
+<IMG SRC="breast2-result.gif" HEIGHT=200 ALT="chicken breast">
+
+<HR>
+<I>
+go to <A HREF="../index.html">CM3113 home page</A>
+</I>
+
+</BODY>
+</HTML>
