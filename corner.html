@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD><TITLE>Extracting Corner Properties - Paul Rosin</TITLE></HEAD>
+
+<BODY>
+
+<H1>Extracting Corner Properties</H1>
+<P>
+The three most commonly used features in computer vision are regions, edges,
+and corners.
+Whereas regions are normally
+attributed properties to make them useful as input for subsequent processing
+stages such as matching,
+little except for strength was extracted by early edge and corner
+detectors
+
+<P>
+We describe methods to measure the following properties of grey level
+corners:
+subtended angle, orientation, contrast, bluntness (or rounding of the apex),
+and boundary curvature (for cusps).
+Unlike most of the published methods for extracting these properties
+these methods are relatively simple, efficient and robust.
+They rely on the corner being pre-detected by a standard operator,
+thus making the measurement problem more tractable.
+
+<P>
+Some examples are shown below:
+
+<P>
+detection of corner angle 
+<BR>
+<IMG SRC="inria-ang.gif">
+
+<P>
+detection of corner contrast
+(indicated by the size of circle)
+<BR>
+<IMG SRC="inria-contrast.gif">
+
+<P>
+detection of corner bluntness
+(indicated by the size of circle)
+<BR>
+<IMG SRC="inria-blunt.gif">
+
+<P>
+More details are given in:
+<BR>
+
+<UL>
+<LI>
+P.L. Rosin,
+"Measuring corner properties",
+<I>Computer Vision and Image Understanding</I>,
+vol. 73, no. 2, pp. 291-307, 1999.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/corner-CVIU-postprint.pdf">Post-print</A>|
+DOI: <A HREF="http://dx.doi.org/10.1006/cviu.1998.0719">10.1006/cviu.1998.0719</A>
+</LI>
+
+<LI>
+P.L. Rosin, "Augmenting corner descriptors",
+<I>Graphical Models and Image Processing</I>,
+vol. 58, no. 3, pp. 286-294, 1996.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/corner-GMIP-postprint.pdf">Post-print</A>|
+DOI: <A HREF="http://dx.doi.org/10.1006/gmip.1996.0023">10.1006/gmip.1996.0023</A>
+</LI>
+</UL>
+
+<P>
+<I>return to <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/index.html">Paul Rosin's</A> homepage</I>
+
+</BODY>
+</HTML>

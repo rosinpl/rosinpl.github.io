@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><TITLE>Reverse Engineering of Reliefs</TITLE></HEAD>
+<BODY>
+
+<h1>Reverse Engineering of Reliefs</h1>
+
+<h2>Introduction</h2>
+
+<P>
+Complex decorative reliefs are often added to CAD models in such application areas as sign-making, packaging, and ceramics to make product designs more interesting, more characteristic of the company, or of higher intrinsic value.
+
+<P>
+New reliefs can be created from 2D artwork using software such as Delcam’s ArtCAM, or can be hand-crafted, typically on a planar surface, and reverse engineered using a 3D scanner. Unfortunately, extraction of the relief from the scan of a physical part is only possible when the relief is lying on a planar surface. As in general such reliefs lie on freeform surfaces, reverse engineering methods are needed to separate the relief from the non-planar background, and to assist in the application of the relief to a different base surface.
+
+<P>
+This project aims to device mathematical methods and algorithms for the reverse engineering and reapplication of reliefs. The work concerns separating scan points belonging to the relief from the background, identifying single units of repeating relief patterns, fitting the background surface and flattening the relief’s underlying surface.
+
+<P>
+Some relief objects are shown below:
+
+<table height="80%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/relief/image004.jpg" height=80%>
+</td>
+</tr>
+<tr>
+<td>
+A duck relief
+</td>
+</tr>
+</table>
+
+&nbsp &nbsp &nbsp &nbsp &nbsp
+
+<table height="80%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/relief/image006.jpg" height=80%>
+</td>
+</tr>
+<tr>
+<td>
+Bird relief on a textured background
+</td>
+</tr>
+</table>
+
+&nbsp &nbsp &nbsp &nbsp &nbsp
+
+<table height="80%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/relief/image008.jpg" height=80%>
+</td>
+</tr>
+<tr>
+<td>
+Cyclic Reliefs
+</td>
+</tr>
+</table>
+
+
+<P>
+More details are given in:
+<TABLE cellspacing="10">
+
+<TR> <TD align="left"> <img src="http://users.cs.cf.ac.uk/Paul.Rosin/relief/image010.jpg" height="100"></A> </TD>
+     <TD>
+    <LI>
+    S.-L. Liu, R.R. Martin, F.C. Langbein, P.L. Rosin,
+    <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/relief-SPM.pdf">
+    "Segmenting Reliefs on Triangle Meshes",
+    </A>
+    Proc. ACM Symp. Solid and Physical Modeling,
+    pp. 7-16, 2006.
+    </LI>
+    </LI>
+    </TD>
+</TR>
+
+<TR> <TD align="left"> <img src="http://users.cs.cf.ac.uk/Paul.Rosin/relief/image014.jpg" height="100"></A> </TD>
+     <TD>
+    <LI>
+    S. Liu, R.R. Martin, F.C. Langbein, P.L. Rosin,
+    <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/MathsofSurfaces2007.pdf">
+    "Segmenting Periodic Reliefs on Triangle Meshes",
+    </A>
+    Maths of Surfaces XII,
+    LNCS vol. 4647, pp. 290-306, 2007.
+    </LI>
+    </TD>
+</TR>
+
+
+<TR> <TD align="left"> <img src="http://users.cs.cf.ac.uk/Paul.Rosin/relief/image016.jpg" height="100"></A> </TD>
+     <TD>
+<LI>
+    S.-L. Liu, R.R. Martin, F.C. Langbein, P.L. Rosin,
+    <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/background-IJCC.pdf">
+    "Background Surface Estimation for Reverse Engineering of Reliefs",
+    </A>
+    <I>International Journal of CAD/CAM,</I>
+    vol. 7, no. 4, 2007.
+    </LI>
+    </TD>
+</TR>
+
+<TR> <TD align="left"> <img src="http://users.cs.cf.ac.uk/Paul.Rosin/relief/image012.jpg" height="100"></A> </TD>
+     <TD>
+    <LI>
+    S. Liu, R.R. Martin, F.C. Langbein, P.L. Rosin,
+    "Segmenting Geometric Reliefs from Textured Background Surfaces",
+    <I>Computer-Aided Design &amp; Applications,</I>
+    vol. 4, no. 5, pp. 565-583, 2007.
+    DOI: <A HREF="http://dx.doi.org/10.1080/16864360.2007.10738492">10.1080/16864360.2007.10738492</A>
+    </LI>
+    </TD>
+</TR>
+
+</TABLE>
+
+<P>
+<I>return to <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/index.html">Paul Rosin's</A> homepage</I>
+
+</BODY></HTML>

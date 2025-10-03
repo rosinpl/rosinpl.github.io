@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><TITLE>Non-Photorealistic Rendering</TITLE></HEAD>
+<BODY>
+
+<h1>Non-Photorealistic Rendering</h1>
+
+<B>
+<font size="+1">
+You can
+<A HREF="http://www.cs.cf.ac.uk/npr/">upload your images</A>
+and try out some of our non-photorealistic rendering methods.
+<BR>
+Click <A HREF="https://www.youtube.com/watch?v=uOLt20dTy1E&list=PL1IHsoWwec4coKKek8gyzW5TC0DpTBuRC" target=_blank>here</A>
+to see some stylised video re-rendering using one of our techniques.
+</font>
+</B>
+
+<P>
+There are many approaches to non-photorealistic rendering. We have investigated several
+different styles as outlined below.
+</P>
+
+<P>
+Our first approach takes noisy range images as input and uses them to produce 3D
+pen-and-ink style portraits.
+For models of moderate complexity it is real-time,
+allowing the pose and drawing style to be modified interactively.
+The algorithm first finds sections of suggestive
+contours, then chains them by carefully considering whether they are compatible.
+The style can be controlled, allowing varying stroke type, thickness, smoothness, and opacity.
+A further development of this approach is to use deviation from a mean face to exaggerate features
+for caricaturing.
+</P>
+
+<P>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/caricature.gif" width=400 alt="caricature">
+
+<P>
+Our second approach renders images in a highly abstracted manner, reminiscent of the
+art of later Matisse, or Kandinsky.
+The image is segmented at multiple scales using graph cut, and
+a variety of simple shapes (e.g. circles, triangles, squares, superellipses and so on)
+are fitted to each region.
+The system automatically chooses the shape that best represents the region;
+the choice is made via a supervised classifier so
+the "best shape" depends on the subjectivity of a user.
+
+<P>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/arty1.gif" height=200 alt="arty">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/arty2.gif" height=200 alt="arty">
+
+<P>
+Continuing with this idea we combine lines (white as well as black to give highlights) with dark and light tonal blocks which can be abstracted or decorated in various ways. This 
+allows us to achieve a combination of realism (e.g. recognisable portraits) with abstraction.
+There is a three-tone version (black and white lines and regions applied to a gray canvas):
+
+<P>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/barack.gif" height=300 alt="barack">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/barack-thr3CleanRefined.gif" height=300 alt="barack">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/barack-thr3QuadHoleCleanRefined-para.gif" height=300 alt="barack">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/barack-thr3CleanTextureInvertRefined.gif" height=300 alt="barack">
+
+<P>
+as well as a two-scale, two-tone version (black and white):
+<P>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/annan.gif" height=200 alt="barack">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/cameron.gif" height=200 alt="barack">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/clinton.gif" height=200 alt="barack">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/gates.gif" height=200 alt="barack">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/johnston.gif" height=200 alt="barack">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/sarkozy.gif" height=200 alt="barack">
+<BR>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/annan2.gif" height=200 alt="barack">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/cameron2.gif" height=200 alt="barack">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/clinton2.gif" height=200 alt="barack">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/gates2.gif" height=200 alt="barack">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/johnson2.gif" height=200 alt="barack">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/sarkozy2.gif" height=200 alt="barack">
+
+<P>
+Separately we had developed a circular thresholding algorithm.
+We found that applying it to the hue component of an image,
+and then uniformly colouring each hue class, can give attractive results
+(both two and three class thresholding are shown below):
+
+<P>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/1067914921-f9d82538bf-b.png" width=300 alt="plane">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/1067914921-f9d82538bf-b-npr2.png" width=300 alt="plane">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/1067914921-f9d82538bf-b-npr3.png" width=300 alt="plane">
+<BR>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/1419833062-de62ca0c71-b.png" width=300 alt="buildings">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/1419833062-de62ca0c71-b-npr2.png" width=300 alt="buildings">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/1419833062-de62ca0c71-b-npr3.png" width=300 alt="buildings">
+
+<P>
+The circular thresholding algorithm can also be used to apply "spot colour" to emphasise
+certain colourful regions in the image (which can be rendered in various stylised ways):
+
+<P>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/3370647224_b09ee1fca9_b.png" width=300 alt="bird">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/3370647224_b09ee1fca9_b-resSpreadW-Paintify.png" width=300 alt="bird">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/3370647224_b09ee1fca9_b-resSpreadW-dithered.png" width=300 alt="bird">
+<BR>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/RD-0669" width=300 alt="students">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/RD-0669-resSpreadW-GC-coloured" width=300 alt="students">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/RD-0669-resSpreadW-GC-coloured-stamp" width=300 alt="students">
+
+<P>
+Another modification is a specialised portrait version, that creates a "puppet" style, and also a version
+inspired by the artist Julian Opie.
+<P>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/obama4.png" width=300 alt="obama">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/obama4-s1000-d30-puppet.png" width=300 alt="obama">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/obama4-s1000-d30-opie.png" width=300 alt="obama">
+
+<P>
+A different approach to stylization that we have taken attempts to find global linear
+structures in the image and emphasise them,
+which could potentially involve extreme geometric distortion, forcing the linear structures
+to align horizontally and vertically:
+
+<P>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/w-09.gif" width=300 alt="vase">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/w-09-poly-sup0-def0-enh1-snap1-ncuts-NoLines.gif" width=300 alt="vase">
+<P>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/guard.gif" width=300 alt="guard">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/guard-poly-sup0-def1-hv22-enh1-snap1-ncuts-NoLines.gif" width=300 alt="guard">
+
+<P>
+Another approach to portraits was taken, in which watercolour styling was applied,
+with an emphasis on retaining the recognisability of the people by preserving
+the important facial features:
+
+<P>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/5834064643_6751a38cd8_o.jpg" width=600 alt="watercolour">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/npr/5834064643_6751a38cd8_o-watercolour-w2-p1-d1-b1-f1-glazing.jpg" width=600 alt="watercolour">
+
+<P>
+Processing portrait images in a line drawing style was done using a GAN:
+
+<P>
+<IMG src="http://users.cs.cf.ac.uk/Paul.Rosin/npr/img_1701.png" width=200>
+<IMG src="http://users.cs.cf.ac.uk/Paul.Rosin/npr/img_1696.png" width=200>
+<IMG src="http://users.cs.cf.ac.uk/Paul.Rosin/npr/img_1682.png" width=200>
+<IMG src="http://users.cs.cf.ac.uk/Paul.Rosin/npr/img_1794.png" width=200>
+<IMG src="http://users.cs.cf.ac.uk/Paul.Rosin/npr/img_1673.png" width=200>
+<BR>
+<IMG src="http://users.cs.cf.ac.uk/Paul.Rosin/npr/img_1701_fake_B.png" width=200>
+<IMG src="http://users.cs.cf.ac.uk/Paul.Rosin/npr/img_1696_fake_B.png" width=200>
+<IMG src="http://users.cs.cf.ac.uk/Paul.Rosin/npr/img_1682_fake_B.png" width=200>
+<IMG src="http://users.cs.cf.ac.uk/Paul.Rosin/npr/img_1794_fake_B.png" width=200>
+<IMG src="http://users.cs.cf.ac.uk/Paul.Rosin/npr/img_1673_fake_B.png" width=200>
+
+<P>
+More details are given in:
+<BR>
+
+<UL>
+
+<LI>
+M.M. Cheng, X. Liu, J. Wang, S.P. Lu, Y. Lai, P.L. Rosin,
+"Structure-Preserving Neural Style Transfer",
+IEEE Transactions on Image Processing, vol. 29, no. 1, pp. 909-920, 2020.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/DetailEnNPR-TIP-postprint.pdf">Post-print</A>|DOI: <A HREF="http://dx.doi.org/10.1109/TIP.2019.2936746">10.1109/TIP.2019.2936746</A>
+</LI>
+<BR>
+
+<LI>
+R. Yi, Y.J. Liu, Y.K. Lai, P.L. Rosin,
+"Quality Metric Guided Portrait Line Drawing Generation From Unpaired Training Data",
+IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 45, no. 1, pp. 905-918, 2023.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/unpairedDrawingGAN-postprint.pdf">Post-print</A>|DOI: <A
+HREF="https://doi.org/10.1109/TPAMI.2022.3147570">10.1109/TPAMI.2022.3147570</A>
+</LI>
+<LI>
+R. Yi, M. Xia, Y.J. Liu, Y.K. Lai and P.L. Rosin,
+"Line Drawings for Face Portraits From Photos Using Global and Local Structure Based GANs",
+IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 43, no. 10, pp. 3462-3475, 2021.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/APDrawingGAN-PAMI-postprint.pdf">Post-print</A>|DOI: <A
+HREF="https://doi.org/10.1109/TPAMI.2020.2987931">10.1109/TPAMI.2020.2987931</A>
+</LI>
+<LI>
+R. Yi, Y.J Liu, Y.K. Lai, P.L. Rosin,
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/UnpairedDrawingGAN.pdf">
+"Unpaired Portrait Drawing Generation via Asymmetric Cycle Mapping",</A>
+CVPR, 2020.
+</LI>
+<LI>
+R. Yi, Y.J. Lai, Y.K. Lai, P.L Rosin,
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/APDrawingGAN.pdf">
+"APDrawingGAN: Generating Artistic Portrait Drawings from Face Photos with Hierarchical GANs",</A>
+CVPR, pp. 10743-10752, 2019.
+</LI>
+<BR>
+
+<LI>
+P.L. Rosin, Y.K. Lai,
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/watercolour-PSIVT.pdf">
+"Watercolour Rendering of Portraits",</A>
+PSIVT Workshop: Vision meets Graphics,
+LNCS vol. 10799, pp. 268-282, 2017.  
+</LI>
+<BR>
+
+<LI>
+P.L. Rosin and Y.K. Lai,
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/portraits-CAe.pdf">
+"Non-Photorealistic Rendering of Portraits",</A>
+Expressive: Symposium on Computational Aesthetics, 
+pp. 159-170, 2015.
+</LI>
+
+<LI>
+P.L. Rosin, Y.K. Lai,
+"Artistic Minimal Rendering with Lines and Blocks",
+Graphical Models, vol. 75, pp. 208-229, 2013.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/npr-GM-postprint.pdf">Post-print</A>|DOI: <A HREF="http://dx.doi.org/10.1016/j.gmod.2013.03.004">10.1016/j.gmod.2013.03.004</A>
+</LI>
+<LI>
+P.L. Rosin, Y.K. Lai,
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/lines-NPAR.pdf">
+"Towards artistic minimal rendering",
+</a>
+Int. Symp. on Non-Photorealistic Animation and Rendering (NPAR),
+pp. 119-127, 2010.
+</LI>
+<BR>
+
+<LI>
+Y.K. Lai, P.L. Rosin,
+"Efficient Circular Thresholding",
+IEEE Transactions on Image Processing,
+vol. 23, no. 3, pp. 992-1001, 2014.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/circular-IP-postprint.pdf">Post-print</A>|DOI: <A HREF="http://dx.doi.org/10.1109/TIP.2013.2297014">10.1109/TIP.2013.2297014</A>
+</LI>
+<BR>
+
+<LI>
+Y.K. Lai, P.L. Rosin,
+"Artistic Rendering Enhancing Global Structure",
+The Visual Computer, vol. 390, no. 10, pp. 1179-1193, 2014.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/global-VC-postprint.pdf">Post-print</A>|DOI: <A HREF="http://dx.doi.org/10.1007/s00371-013-0898-x">10.1007/s00371-013-0898-x</A>
+</LI>
+<BR>
+
+<LI>
+P.L. Rosin, Y.K. Lai,
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/spot-CAe.pdf">
+"Non-Photorealistic Rendering with Spot Colour",
+</a>
+<i>Symposium on Computational Aesthetics,</i>
+pp. 67-75, 2013. 
+</LI>
+<BR>
+
+<LI>
+Y.Z. Huang, R.R. Martin, P.L. Rosin, X.X. Meng and C.L. Yang,
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/face-drawing-ChinaF.pdf">
+"Expressive line drawings of human faces from range images",
+</a>
+<i>Science in China Series F: Information Sciences,</i>
+vol. 52, no. 2, pp. 295-307, 2009.
+</LI>
+<BR>
+
+<LI>
+Y.Z. Song, D. Pickup, C. Li, P. Rosin, P. Hall,
+"Abstract Art by Shape Classification",
+IEEE Transactions on Visualization and Computer Graphics,
+vol. 19, no. 8, pp. 1252-1263, 2013.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/arty-TVCG-postprint.pdf">Post-print</A>|DOI: <A HREF="http://dx.doi.org/10.1109/TVCG.2013.13">10.1109/TVCG.2013.13</A>
+</LI>
+<LI>
+Y.Z. Song, P.L. Rosin, P.M. Hall and J. Collomosse,
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/CAE08.pdf">
+"Arty Shapes",
+</a>
+Proc. Computational Aesthetics in Graphics, Visualization, and Imaging,
+pp. 65-72, 2008.
+</LI>
+<BR>
+
+</UL>
+
+<P>
+<I>return to <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/index.html">Paul Rosin's</A> homepage</I>
+
+</BODY></HTML>

@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><TITLE>Image and Mesh Colourisation and Transfer</TITLE>
+<meta name="keywords" content="image colorization, image transfer, mesh colorization, color enhancement">
+</HEAD>
+<BODY>
+
+<h1>Image and Mesh Colourisation and Transfer</h1>
+
+<P>
+We have developed several effective methods for performing colourisation of both images and 3D meshes.
+The figure shows how colour from the reference images on the top row are applied to the target greylevel image on the bottom row (left).
+
+<P>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/colourisation/multirefs.jpg" alt="multiple colourisations">
+
+<P>
+Our colourisation approach can also be applied to colour transfer:
+
+<P>
+<!--
+hack to get inline-block to work under IE7 : add zoom:1; *display: inline
+-->
+<table width="15%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/colourisation/colourTransfer1a.jpg" width=100%>
+</td>
+</tr>
+<tr>
+<td>
+target image
+</td>
+</tr>
+</table>
+
+<table width="15%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/colourisation/colourTransfer1b.jpg" width=100%>
+</td>
+</tr>
+<tr>
+<td>
+reference image
+</td>
+</tr>
+</table>
+
+<table width="15%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/colourisation/colourTransfer1result.jpg" width=100%>
+</td>
+</tr>
+<tr>
+<td>
+colour transfer result
+</td>
+</tr>
+</table>
+
+<table width="15%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/colourisation/colourTransfer2a.jpg" width=100%>
+</td>
+</tr>
+<tr>
+<td>
+target image
+</td>
+</tr>
+</table>
+
+<table width="15%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/colourisation/colourTransfer2b.jpg" width=100%>
+</td>
+</tr>
+<tr>
+<td>
+reference image
+</td>
+</tr>
+</table>
+
+<table width="15%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/colourisation/colourTransfer2result.jpg" width=100%>
+</td>
+</tr>
+<tr>
+<td>
+colour transfer result
+</td>
+</tr>
+</table>
+
+<P>
+Our colourisation approach can also be applied to coloured 3D meshes.
+Here are examples of results for three typical color edit propagation tasks:
+
+<table height="10%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/colourisation/mesh_colourisation.jpg" height=20%>
+</td>
+</tr>
+<tr>
+<td>
+mesh colourisation using scribbles
+</td>
+</tr>
+</table>
+
+&nbsp &nbsp &nbsp &nbsp &nbsp
+
+<table height="10%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/colourisation/mesh_enhancement.jpg" height=20%>
+</td>
+</tr>
+<tr>
+<td>
+mesh colour enhancement
+</td>
+</tr>
+</table>
+
+&nbsp &nbsp &nbsp &nbsp &nbsp
+
+<table height="10%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/colourisation/mesh_recolouring.jpg" height=20%>
+</td>
+</tr>
+<tr>
+<td>
+mesh colour editing
+</td>
+</tr>
+</table>
+
+
+<P>
+More details are given in:
+<BR>
+<UL>
+<LI>
+B. Li, Y.K. Lai, P.L. Rosin,
+"Sparse graph regularized mesh color edit propagation",
+IEEE Transactions on Image Processing,
+vol. 29, no. 1, pp.  5408-5419, 2020.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/mesh-colourisation-postprint.pdf">Post-print</A>|DOI: <A
+HREF="http://dx.doi.org/10.1109/TIP.2020.2980962">10.1109/TIP.2020.2980962</A>
+</LI>
+<LI>
+B. Li, Y.K. Lai, M. John, P.L. Rosin,
+"Automatic Example-Based Image Colorization Using Location-Aware Cross-Scale Matching",
+IEEE Transactions on Image Processing, vol. 28, no. 9, pp. 4606-4619, 2019.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/colourisation-cross-TIP-postprint.pdf">Post-print</A>|DOI: <A
+HREF="http://dx.doi.org/10.1109/TIP.2019.2912291">10.1109/TIP.2019.2912291</A>
+</LI>
+<LI>
+B. Li, F. Zhao, Z. Su, X. Liang, Y.K. Lai, P.L. Rosin,
+"Example-Based Image Colorization Using Locality Consistent Sparse Representation",
+IEEE Trans. Image Processing,
+vol. 26, no. 11, pp. 5188-5202, 2017.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/colourisation-TIP-postprint.pdf">Post-print</A>|DOI: <A
+HREF="http://dx.doi.org/10.1109/TIP.2017.2732239">10.1109/TIP.2017.2732239</A>
+</LI>
+<LI>
+B. Li, Y.K. Lai, P.L. Rosin,
+"Example-based image colorization via automatic feature selection and fusion",
+Neurocomputing,
+vol. 266, pp. 687-698, 2017.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/colourisation-neuro-postprint.pdf">Post-print</A>|DOI: <A
+HREF="http://dx.doi.org/10.1016/j.neucom.2017.05.083">10.1016/j.neucom.2017.05.083</A>
+</LI>
+</UL>
+
+<P>
+<I>return to <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/index.html">Paul Rosin's</A> homepage</I>
+
+</BODY></HTML>

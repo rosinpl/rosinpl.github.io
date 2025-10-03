@@ -1,0 +1,314 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD><TITLE>Virtual Unrolling of Scrolled Parchments - Paul Rosin</TITLE></HEAD>
+
+<BODY>
+
+<H1>Virtual Unrolling of Scrolled Parchments (and Film)</H1>
+
+<P>
+There are many historic scrolled parchments in collections that are
+extremely delicate due to age as well as to damage caused by fire, water, etc.
+This project uses high resolution X-ray microtomography
+to obtain a 3D scan of such documents, and then performs
+"virtual unrolling" so that the documents can be read without actually physically unrolling them
+which would cause further damage.
+
+<P>
+There are many technical challenges, such as the segmentation of the data into
+foreground (parchment and ink) and background (air, parchment container, etc),
+as well as the unrolling and visualisation of the layers.
+Some technical details are available in the papers below,
+although the computation pipeline is continuing to develop.
+
+<P>
+I gave an interview on
+<B>BBC Radio Wales - Science Cafe</B>,
+describing our work on revealing the contents of
+the 16th century Diss Heywood scroll, which is badly burnt.
+You can listen to it <A HREF="ScienceCafe.mp3"> here.</A>
+
+<P>
+Also, a brief overview can be read on the 
+<A
+HREF="https://atlasofscience.org/virtual-unrolling-of-damaged-historic-scrolls-from-x-ray-micro-tomography-scans/">
+Atlas of Science</A>.
+
+<P>
+Our earlier work was covered by the <B>One Show on BBC One</B>
+which showcased our result of processing a 15th century scroll from Bressingham Manor,
+Norfolk which had been badly water damaged a long time ago,
+and had consequentially lain in a mostly unreadable state in the Norfolk Record Office for many years.
+The scroll could only be unrolled a few lines, as shown below
+<BR>
+<IMG alt="Bressingham scroll" SRC="https://users.cs.cf.ac.uk/Paul.Rosin/scrollBressingham/Bressingham-photo.jpg">
+
+<P>
+A 3D X-ray scan was captured for the project, and is shown here as a 2D fly through. The bright spots indicate ink.
+<BR>
+<iframe src="https://www.youtube.com/embed/6ph17U4N4Lw" height="315" width="560" frameborder="0"></iframe></p>
+<BR>
+After image segmentation, ink projection and 3D alignment, the result is complete.
+The process of 3D alignment is critical, and is visualised for a small portion of the scroll below:
+<BR>
+<iframe src="https://www.youtube.com/embed/FAd3-5rmm28" height="500" width="260" frameborder="0"></iframe>
+
+<P>
+The final result is high resolution - and so you can see each character in extremly high detail.
+<BR>
+<IMG alt="Bressingham result" SRC="https://users.cs.cf.ac.uk/Paul.Rosin/scrollBressingham/final.jpg">
+
+
+<P>
+Watch this segment of the One Show on BBC One to see members of the team 
+(which is made up of archivists, physicists, and computer scientists)
+describe the project.
+<BR>
+<iframe src="https://www.youtube.com/embed/FXkQz9fOafU" height="315" width="560" frameborder="0"></iframe>
+
+<P>
+<B>BBC Radio 5 Naked Science Podcast</B> also covered the project in 2013.
+You can listen to it <A HREF="https://users.cs.cf.ac.uk/Paul.Rosin/NakedScience.mp3"> here.</A>
+
+<P>
+Have a look at
+<A HREF="http://apocalypto.org.uk/">
+The Apocalypto Project webpage</A>
+to find out more about this and other aspects of the project.
+
+<P>
+A brief overview of the context of the project
+is in the
+<A HREF="https://users.cs.cf.ac.uk/Paul.Rosin/CardiffNews-parchment.pdf">
+February 2012 issue</A>
+of the Cardiff News.
+
+<P>
+We have recently applied a modified version of our method to extract historic film footage from badly damaged silver nitrate film.
+For details see:
+C. Liu, P.L. Rosin, Y.K. Lai, G.R. Davis, D. Mills, C. Norton,
+<A HREF="https://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/snow-white-Euromed.pdf">
+"Recovering Historical Film Footage by Processing Microtomographic Images",</A>
+Int. Conf. on Digital Heritage: Progress in Cultural Heritage: Documentation, Preservation, and Protection,
+pp. 219-231, 2016.
+
+<H2>In the News</H2>
+<UL>
+
+<H3>
+2018
+</H3>
+
+<LI>
+<A
+HREF="https://www.pressreader.com/uk/history-revealed/20181101/282823602164358">
+History Revealed - Damaged Scrolls Virtually Unwrapped</A>
+</LI>
+
+<LI>
+<A
+HREF="http://newsbreaks.infotoday.com/NewsBreaks/Virtually-Unraveling-the-Damaged-Past-at-Cardiff-University-129090.asp">
+Virtually Unraveling the Damaged Past at Cardiff University</A>
+</LI>
+
+<LI>
+<A HREF="https://www.bbc.co.uk/news/uk-wales-45734251">
+BBC News - Cardiff University's new X-ray method reveals ancient scroll</A>
+</LI>
+
+<LI>
+<A
+HREF="https://www.edp24.co.uk/news/secrets-of-burnt-16th-century-diss-heywood-manor-scroll-revealed-by-x-ray-1-5724666">
+Eastern Daily Press - X-rays reveal secrets of burnt 16th century Norfolk scroll</A>
+</LI>
+
+<LI>
+<A HREF="https://www.digitaltrends.com/cool-tech/16th-century-scroll-cutting-edge-tech/">
+Digital Trends - Here’s how scientists read a charred 16th-century scroll without unraveling it </A>
+</LI>
+
+<LI>
+<A
+HREF="https://motherboard.vice.com/en_us/article/yw9qgv/scientists-used-x-rays-to-virtually-unravel-burnt-400-year-old-scroll">
+Motherboard - Scientists Used X-Rays to Virtually Unravel a Burnt 400-Year-Old Scroll</A>
+</LI>
+
+<LI>
+<A HREF="https://www.popularmechanics.com/technology/a23596172/16th-century-scroll-read-x-rays-university-of-cardiff/">
+Popular Mechanics - Researchers Used X-Rays to Read This 400-Year-Old Burnt Up Scroll</A>
+</LI>
+
+<LI>
+<A HREF="https://www.iflscience.com/editors-blog/xrays-reveal-hidden-text-in-500yearold-scroll-thought-too-damaged-to-read/">
+IFL Science - X-Rays Reveal Hidden Text In 500-Year-Old Scroll Thought Too Damaged To Read</A>
+</LI>
+
+<LI>
+<A
+HREF="https://www.dailymail.co.uk/sciencetech/article-6235837/Tudor-parchment-burned-fused-centuries-old-accident-deciphered-X-RAY.html">
+Daily Mail - 
+Secrets of 500-year-old scroll are finally revealed by X-RAY: Tudor plans for a country house burned and fused together in centuries-old accident are finally decoded
+</A>
+
+<LI>
+<A
+HREF="https://www.cardiff.ac.uk/news/view/1314153-scientists-virtually-unravel-burnt-16th-century-scroll">
+Cardiff University press release </A>
+</LI>
+
+<H3>
+2013
+</H3>
+
+<LI>
+<A HREF="https://www.youtube.com/watch?v=MDDjD02IvD0&list=UU7sSuZ0K6pfZAihUxFUDO8Q&index=1">
+EPSRC YouTube video</A>
+</LI>
+
+<LI>
+<A HREF="https://www.bbc.co.uk/news/uk-england-norfolk-25117533">
+BBC News - Bressingham scroll: 'Unreadable' parchment's secrets revealed </A>
+</LI>
+
+<LI>
+<A HREF="http://www.bbc.co.uk/news/uk-wales-22557875">
+BBC News - Cardiff University: X-rays ‘read’ ink in historic scrolls</A>
+</LI>
+
+<LI>
+<A HREF="https://users.cs.cf.ac.uk/Paul.Rosin/Correio.pdf">
+Correio Braziliense</A>
+(in Portuguese) and
+<A HREF="https://users.cs.cf.ac.uk/Paul.Rosin/scroll-brazil.html">
+translated version</A>
+</LI>
+
+<LI>
+<A
+HREF="https://www.theengineer.co.uk/issues/may-2013-online/technology-reads-secrets-of-ancient-scrolls/">
+the Engineer - Technology reads secrets of ancient scrolls</A>
+</LI>
+
+<LI>
+<A
+HREF="https://www.researchinformation.info/news/x-ray-technique-should-help-historians-uncover-lost-information?news_id=1251">
+Research Information - X-ray technique should help historians uncover lost information</A>
+</LI>
+
+<LI>
+<A HREF="https://phys.org/news/2013-05-unreadable.html">
+Phys.org - Reading the unreadable</A>
+</LI>
+
+<LI>
+<A HREF="https://motherboard.vice.com/en_us/article/get-ready-for-digitalized-medieval-parchments">
+Motherboard - Get ready for digitalized medieval parchments</A>
+</LI>
+
+<LI>
+<A HREF="http://www.spacedaily.com/reports/Technology_lets_fragile_unreadable_historical_documents_to_be_read_999.html">
+Space Daily - Technology lets fragile, unreadable historical documents to be read</A>
+</LI>
+
+<LI>
+<A HREF="http://www.computescotland.com/abracadabra-for-fragile-scrolls-6196.php">
+Compute Scotland - Abracadabra for fragile scrolls</A>
+</LI>
+
+<LI>
+<A HREF="http://www.upi.com/Science_News/Technology/2013/05/16/Technology-lets-fragile-unreadable-historical-documents-to-be-read/UPI-25531368728421/">
+UPI.com - Technology lets fragile, unreadable historical documents to be read</A>
+</LI>
+
+<LI>
+<A HREF="http://cacm.acm.org/news/164483-new-imaging-system-reads-ancient-scrolls/fulltext">
+ACM TechNews - New imaging system reads ancient scrolls</A>
+</LI>
+
+<LI>
+<A HREF="http://www.manchesterwired.co.uk/news.php/1484551-Cardiff-University-X-rays-read-ink-in-historic-scrolls">
+Manchester Wired - Cardiff University: X-rays read ink in historic scrolls</A>
+</LI>
+
+<LI>
+<A HREF="http://www.laboratoryequipment.com/news/2013/05/x-rays-can-read-fragile-rolled-historical-documents">
+Laboratory Equipment - X-Rays can read fragile rolled up historical documents</A>
+</LI>
+
+<LI>
+<A HREF="http://www.foxnews.com/tech/2013/12/03/3d-x-ray-technology-to-reveal-secrets-unreadable-15th-century-scroll.html">
+Fox News - 3D X-ray technology to reveal secrets of 'unreadable' 15th century scroll </A>
+</LI>
+
+<LI>
+<A HREF="http://www.cardiff.ac.uk/news/view/39657-reading-the-unreadable">
+Cardiff University press release </A>
+</LI>
+
+</UL>
+
+<P>
+More details of our work are given in:
+<BR>
+
+<UL>
+<LI>
+P.L. Rosin, Y.K. Lai, C. Liu, G.R. Davis, D. Mills, G. Tuson, Y. Russell,
+"Virtual Recovery of Content from X-Ray Micro-Tomography Scans of Damaged Historic Scrolls",
+Scientific Reports, vol. 8, no. 11901, 2018.
+<A HREF="https://www.nature.com/articles/s41598-018-29037-x.pdf">Post-print</A>|DOI: <A
+HREF="http://dx.doi.org/10.1038/s41598-018-29037-x">10.1038/s41598-018-29037-x</A>
+</LI>
+
+<LI>
+C. Liu, P.L. Rosin, Y.K. Lai, W. Hu,
+"Robust Virtual Unrolling of Historical Parchment XMT Images",
+IEEE Transactions on Image Processing,
+vol. 27, no. 4, pp. 1914-1926, 2018.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/scrolls-TIP-postprint.pdf">Post-print</A>|DOI: <A
+HREF="http://dx.doi.org/10.1109/TIP.2017.2783626">10.1109/TIP.2017.2783626</A>
+</LI>
+
+
+<LI>
+C. Liu, P.L. Rosin, Y.K. Lai, G.R. Davis, D. Mills, C. Norton,
+<A HREF="https://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/snow-white-Euromed.pdf">
+"Recovering Historical Film Footage by Processing Microtomographic Images",</A>
+Int. Conf. on Digital Heritage: Progress in Cultural Heritage: Documentation, Preservation, and Protection,
+pp. 219-231, 2016.
+</LI>
+
+<LI>
+C. Liu, P.L. Rosin, Y.K. Lai, W. Hu,
+<A HREF="https://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/DH-scroll.pdf">
+"Robust Segmentation of Historical Parchment XMT Images for Virtual Unrolling",</A>
+Digital Heritage, pp. 11-18, 2015.
+</LI>
+
+<LI>
+D. Mills, A. Curtis, G. Davis, P. Rosin, Y. Lai,
+"Apocalypto - Revealing the Bressingham Roll",
+Journal Of Paper Conservation,
+vol. 15, no. 3, pp. 14-19, 2014.
+</LI>
+
+<LI>
+O. Samko, Y. Lai, D. Marshall, P.L. Rosin,
+"Virtual Unrolling and Information Recovery From Scanned Scrolled Historical Documents",
+Pattern Recognition, vol. 47, no. 1, pp. 248-259, 2014.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/scroll-PR-postprint.pdf">Post-print</A>|DOI: <A HREF="http://dx.doi.org/10.1016/j.patcog.2013.06.015">10.1016/j.patcog.2013.06.015</A>
+</LI>
+
+<LI>
+O. Samko, Y. Lai, D. Marshall, P.L. Rosin,
+<A HREF="https://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/scrolls-BMVC.pdf">
+"Segmentation of Parchment Scrolls for Virtual Unrolling",</A>
+British Machine Vision Conference, 2011.
+</LI>
+</UL>
+
+<P>
+<I>return to <A HREF="https://users.cs.cf.ac.uk/Paul.Rosin/index.html">Paul Rosin's</A> homepage</I>
+
+</BODY>
+</HTML>

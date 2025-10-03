@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><TITLE>Shape Analysis: Convexity</TITLE></HEAD>
+<BODY>
+
+<h1>Shape Analysis: Convexity</h1>
+
+<P>
+With colleagues I have developed a variety of shape measures
+(see also <A HREF="shape.html">here</A> for some of them).
+In particular, convexity is widely used in many applications,
+and four different approaches are given here.
+
+<P>
+The first is a "boundary-based" measure, which means that
+it is more sensitive to boundary defects from convexity
+than the standard "area-based" convexity measure.
+It is simple to compute, being based on just the
+perimeter of the shape and the
+perimeter of its minimal enclosing rectangle.
+Moreover, it is also possible to analyse
+shapes consisting of multiple polygons, such as the diatom shapes below
+which contain internal detail. The figure shows 
+the diatoms ranked in decreasing convexity by computing the convexity of both their boundaries and their internal contours.
+
+<P>
+<IMG SRC="convexity1.jpg" width=800 alt="convexity">
+
+<P>
+The goal of the second convexity measure was to treat intrusions and protrusions equally,
+as compared to the standard convex hull based approach that is much more sensitive to protrusions.
+This was achieved by replacing the convex hull with a "robustified" version which
+we defined as the convex polygon that maximised the overlap with the input shape.
+Examples are shown below of the input boundaries overlaid with the best convex polygon,
+and the shapes are ranked in increasing convexity.
+
+<P>
+<IMG SRC="convexity2.png" width=800 alt="convexity">
+
+<P>
+Like our first approach, the third convexity measure 
+can be applied to shapes with partially extracted boundaries
+consisting of several disconnected curve segments.
+It is based on randomly sampling pairs of points on the curves
+and testing for the proportion that belong to the curve.
+It enables the three signatures, each of which have been written which variable numbers of segments,
+to be differentiated (the numbers under each shape are the convexity values).
+
+<P>
+<IMG SRC="convexity3.png" width=800 alt="convexity">
+
+<P>
+The fourth convexity measure also takes a probabilistic approach.
+It incorporates both area-based and boundary-based information, and
+and estimates the probability that for randomly
+chosen points A and B from the boundary of S all
+points from the line segment [AB] also belong to S, under
+the assumption that A and B are chosen uniformly along
+the boundary of S. Some test shapes ranked by convexity are shown below.
+
+<P>
+<IMG SRC="convexity4.png" width=800 alt="convexity">
+
+<P>
+More details are given in:
+<BR>
+
+<UL>
+<LI>
+J. Zunic, P.L. Rosin,
+"Measuring Shapes with Desired Convex Polygons",
+IEEE Transactions Pattern Analysis and Machine Intelligence,
+vol. 42, no. 6, pp. 1394-1407, 2020.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/convex-poly-PAMI-postprint.pdf">Post-print</A>|DOI: <A
+HREF="http://dx.doi.org/10.1109/TPAMI.2019.2898830">10.1109/TPAMI.2019.2898830</A>
+</LI>
+<LI>
+P.L. Rosin,
+"Classification of Pathological Shapes using Convexity Measures",
+Pattern Recognition Letters,
+vol. 30, no. 5, pp. 570-578, 2009.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/lesions-PRL-postprint.pdf">Post-print</A>|
+DOI: <A HREF="http://dx.doi.org/10.1016/j.patrec.2008.12.001">10.1016/j.patrec.2008.12.001</A>
+</LI>
+<LI>
+P.L. Rosin, J. Zunic,
+"Probabilistic convexity measure",
+<I>IET Image Processing,</I>
+vol. 1, no. 2,
+pp. 182-188, 2007.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/convexityProb-IET-postprint.pdf">Post-print</A>|
+DOI: <A HREF="http://dx.doi.org/10.1049/iet-ipr:20060185">10.1049/iet-ipr:20060185</A>
+</LI>
+<LI>
+J. Zunic, P.L. Rosin,
+"Convexity measure for shapes with partially extracted boundaries",
+<I>Electronics Letters,</I>
+vol. 43, no. 7, pp. 380-382, 2007.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/convexityOpen-EL-postprint.pdf">Post-print</A>|
+DOI: <A HREF="http://dx.doi.org/10.1049/el:20070280">10.1049/el:20070280</A>
+</LI>
+<LI>
+P.L. Rosin, C.L. Mumford,
+"A symmetric convexity measure",
+<I>Computer Vision and Image Understanding</I>,
+vol. 103, no. 2, pp. 101-111, 2006.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/convexity-CVIU-postprint.pdf">Post-print</A>|DOI: <A HREF="http://dx.doi.org/10.1016/j.cviu.2006.04.002">10.1016/j.cviu.2006.04.002</A>
+</LI>
+<LI>
+J. Zunic, P.L. Rosin,
+"A New Convexity Measure for Polygons",
+<I>IEEE Transactions Pattern Analysis and Machine Intelligence</I>,
+vol. 26, no. 7, pp. 923-934, 2004.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/convexity-PAMI-postprint.pdf">Post-print</A>|
+DOI: <A HREF="http://dx.doi.org/10.1109/TPAMI.2004.19">10.1109/TPAMI.2004.19</A>
+</LI>
+<LI>
+P.L. Rosin,
+"Shape partitioning by convexity",
+<I>IEEE Transactions Systems, Man, and Cybernetics,</I>
+part A, vol. 30, no. 2, pp. 202-210, 2000.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/parts-SMC-postprint.pdf">Post-print</A>|
+DOI: <A HREF="http://dx.doi.org/10.1109/3468.833102">10.1109/3468.833102</A>
+</LI>
+</UL>
+
+<P>
+<I>return to <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/index.html">Paul Rosin's</A> homepage</I>
+
+</BODY></HTML>

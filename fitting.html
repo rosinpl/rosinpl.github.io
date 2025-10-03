@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Fitting</title></head>
+<body>
+
+<h1>Feature Fitting</h1>
+
+When data is extracted from in image it is often converted into a more
+convenient abstract, higher level, representation.
+This is generally done by fitting a model to the data.
+Several problems exist, in particular robustness and efficiency.
+Under noisy conditions many fitting methods fail, while complicated non-linear
+models may be difficult to fit and require slow iterative techniques.
+
+Work is underway on developing new methods for fitting ellipses and
+superellipses to data.
+For the former this involves applying robust statistics to improve
+robustness.
+For the latter new error functionals have been developed as well as new
+simpler, faster fitting methods.
+An example of fitting a superellipse to the data (in red) is shown below.
+With so much data missing it is extremely difficult to get a reasonable
+fit.
+<p>
+<img src="super.gif" alt="superellipse">
+</p>
+
+<P>
+More details are given in:
+<BR>
+
+<UL>
+<LI>
+X. Zhang and P.L. Rosin,
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/superellipse-PR-postprint.pdf">
+"Superellipse fitting to partial data",
+</A>
+Pattern Recognition, vol. 36, no. 3, pp. 743-752, 2003
+</LI>
+<LI>
+P.L. Rosin, "Fitting superellipses", IEEE Trans. Pattern Analysis and Machine Intelligence,
+vol. 22, no. 7, pp. 726-732, 2000.
+</LI>
+<LI>
+P.L. Rosin, "Further five-point fit ellipse fitting", Graphical Models and Image Processing,
+vol. 61, no. 5, pp. 245-259, 1999.
+</LI>
+<LI>
+P.L. Rosin, "A note on the least squares fitting of ellipses", Pattern Recognition Letters,
+vol. 14,
+pp. 799-808, 1993.
+</LI>
+<LI>
+P.L. Rosin,
+"Ellipse fitting using orthogonal hyperbolae and Stirling's oval",
+Graphical Models and Image Processing,
+vol. 60, no. 3, pp. 209-213, 1998.
+</LI>
+<LI>
+P.L. Rosin, "Ellipse fitting by accumulating five-point fits", Pattern Recognition Letters,
+vol. 14,
+pp. 661-669, 1993.
+</LI>
+</UL>
+
+<P>
+You can download
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/ellipse/">code</A>
+to implement several <B>ellipse</B> fitting methods
+as well as
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/superellipses/">code</A>
+to implement several <B>superellipse</B> fitting methods.
+
+<P>
+<I>return to <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/index.html">Paul Rosin's</A> homepage</I>
+
+</body></html>

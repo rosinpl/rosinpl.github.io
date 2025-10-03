@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Face Editing</title></head>
+<body>
+
+<h1>Face editing using sketches and images</h1>
+
+<B>DeepFaceEditing</B> allows users to intuitively edit a face image to manipulate its geometry and appearance, requiring a representation that disentangles these properties. Given (a) an input image, (b) shows two examples of using a reference image to edit the appearance of the input image. Alternatively, (c) first shows an example replacing the geometry of the face with a sketch while keeping the appearance, followed by an example using both a sketch and a reference image to edit the geometry and appearance of the input image.
+
+<p>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/editing/DeepFaceEditing.jpg" height="500" alt="DeepFaceEditing">
+</p>
+
+<h1>Hair editing using text and images</h1>
+
+<B>HairManip</B> is based on the hierarchical division of facial attributes in StyleCLIP, and further divides the hair information into four categories: coarse, medium, fine, and extra fine. Based on our experience, coarse and medium-level semantic information corresponds to hairstyle attributes, while fine and extra fine-level semantic information corresponds to hair color attributes. We train hairstyle and hair color editing sub-networks to handle these sources of information independently. Our approach supports hairstyle and hair color editing individually or jointly, and conditional inputs can be either images or text.
+
+<p>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/editing/HairManip.jpg" height="500" alt="HairManip">
+</p>
+
+
+<P>
+More details are given in:
+<BR>
+
+<UL>
+<LI>
+S.Y. Chen, F.L. Liu, Y.K. Lai, P.L. Rosin, C. Li, H. Fu, L. Gao,
+"DeepFaceEditing: Deep Face Generation and Editing with Disentangled Geometry and Appearance Control",
+ACM Transactions on Graphics, vol. 40, no. 4, art. 90, pp. 1–15, 2021.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/DeepFaceEditing-postprint.pdf">Post-print</A>|DOI: <A
+HREF="https://doi.org/10.1145/3450626.3459760">10.1145/3450626.3459760</A>
+</LI>
+<LI>
+H. Zhao, L. Zhang, P. L. Rosin, Y.K. Lai, Y. Wang,
+"HairManip: High Quality Hair Manipulation via Hair Element Disentangling",
+Pattern Recognition, vol. 147, art. 110132, 2024.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/HairManip-PR-postprint.pdf">Post-print</A>|DOI: <A
+HREF="https://doi.org/10.1016/j.patcog.2023.110132">10.1016/j.patcog.2023.110132</A>
+</LI>
+</UL>
+
+<P>
+<I>return to <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/index.html">Paul Rosin's</A> homepage</I>
+
+</body></html>

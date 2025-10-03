@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD><TITLE>Extracting Natural Scales of Curves - Paul Rosin</TITLE></HEAD>
+
+<BODY>
+
+<H1>Extracting Natural Scales of Curves</H1>
+<P>
+An alternative to representing curves at a single scale or a fixed number
+of multiple scales is to represent them only at their <B>natural</B>
+(i.e. most significant) scales. This allows all the important information
+concerning the different sized structures contained in the curve to be
+explicitly represented without the overhead of redundant representations of
+the curve.
+
+<P>
+Our earlier work developed techniques for determining global natural scales
+of curves, and found that the normalised number of points of inflection
+worked well.
+More recently we have looked at the more difficult task of estimating local
+natural scales of curves.
+Since these estimates are more sensitive to noise and other variations
+merging across and within scales is applied to reduce fragmentation.
+
+<P>
+Examples of the overlapping sections of the curve represented at their
+natural scales are shown below:
+
+<P>
+Koch snowflake
+<BR>
+<IMG SRC="koch.gif" width="100%">
+
+<P>
+the Queen
+<BR>
+<IMG SRC="queen.gif" width="100%">
+
+<P>
+More details are given in:
+<BR>
+
+<UL>
+<LI>
+P.L. Rosin,
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/natural-PRL.pdf">
+"Determining local natural scales of curves",</A>
+Pattern Recognition Letters
+vol. 19, no. 1, pp. 63-75, 1998.
+</LI>
+<LI>
+P.L. Rosin and S. Venkatesh,
+"Extracting natural scales using Fourier descriptors",
+Pattern Recognition, vol. 26, pp. 1383-1393, 1993.
+</LI>
+<LI>
+P.L. Rosin, "Representing curves at their natural scales",
+Pattern Recognition, vol. 25, pp. 1315- 1325, 1992.
+</LI>
+</UL>
+
+<P>
+You can download
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/smoothing/">code</A>
+to implement the extraction of global natural scales.
+
+<P>
+<I>return to <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/index.html">Paul Rosin's</A> homepage</I>
+
+</BODY>
+</HTML>

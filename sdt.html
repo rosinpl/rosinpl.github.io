@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD><TITLE>Salience Distance Transform - Paul Rosin</TITLE></HEAD>
+
+<BODY>
+
+<H1>Salience Distance Transform</H1>
+<P>
+The distance transform efficiently computes the distance at each pixel
+to the nearest feature pixel.
+It is a useful tool in computer vision,
+and has many applications in model matching,
+as well as extracting features such as medial axes.
+
+<P>
+A weakness of the approach is the requirement to provide a binary feature
+map.
+Thus, when applying it to edge maps for instance, this means that the edges
+must be thresholded.
+Over or under thresholding then degrades the effectiveness of the distance
+transform in the (e.g. model matching) application.
+
+<P>
+We have developed an improvement called the <B>salience distance transform</B>
+which avoids thresholding, and instead combines other properties of the
+features.
+
+<P>
+The following examples show how different thresholds produce very different
+results from the standard distance transform.
+Even without thresholding the salience distance transform reduces the effect
+of the low level edge clutter by incorporating edge magnitude.
+Further introducing edge length as a salient property further accentuates the
+dominant features in the scene.
+
+<P>
+<!--
+hack to get inline-block to work under IE7 : add zoom:1; *display: inline
+-->
+<table width="30%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="venice.gif">
+</td>
+</tr>
+<tr>
+<td>
+the original image
+</td>
+</tr>
+</table>
+
+<table width="30%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="venice-edge.gif">
+</td>
+</tr>
+<tr>
+<td>
+edge map
+</td>
+</tr>
+</table>
+
+<table width="30%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="res-dtL.gif">
+</td>
+</tr>
+<tr>
+<td>
+log mapped (standard) distance transform of thresholded edges
+</td>
+</tr>
+</table>
+
+<table width="30%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="res-dt2L.gif">
+</td>
+</tr>
+<tr>
+<td>
+log mapped (standard) distance transform of edges when
+thresholded at a different level
+</td>
+</tr>
+</table>
+
+<table width="30%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="res-sdt1L.gif">
+</td>
+</tr>
+<tr>
+<td>
+salience distance transform using edge magnitude
+(no thresholding)
+</td>
+</tr>
+</table>
+
+<table width="30%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="res-sdt2L.gif">
+</td>
+</tr>
+<tr>
+<td>
+salience distance transform using edge magnitude and edge list length
+</td>
+</tr>
+</table>
+
+<P>
+More details are given in:
+<BR>
+
+<UL>
+<LI>
+P.L. Rosin and G.A.W. West, "Salience distance transforms", CVGIP: Graphical
+Models and Image Processing, vol 57, no. 6, pp. 483-521, 1995.
+</LI>
+</UL>
+
+<P>
+You can download
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/sdt/">code</A>
+to implement the salience distance transform.
+
+<P>
+<I>return to <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/index.html">Paul Rosin's</A> homepage</I>
+
+</BODY>
+</HTML>

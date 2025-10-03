@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><TITLE>Facial Analysis/Synthesis</TITLE></HEAD>
+<BODY>
+
+<h1>Facial Analysis/Synthesis</h1>
+
+<P>
+We are working on various aspects of facial analysis/synthesis,
+both in 2D and 3D.
+Our early work was concerned with driving the facial appearance from
+audio input alone, i.e. "talking heads".
+
+<BR>
+<IMG SRC="speech.jpg" alt="speech">
+
+<P>
+The basic flat active appearance model was also modified to use a hierarchy,
+which enabled better control of the model.
+
+<BR>
+<IMG SRC="face-hierarchy.jpg" alt="face hierarchy">
+
+<P>
+Our face model has been applied to synthesise
+stimuli for psychological experiments.
+The images below show how a single parameter of the model
+(the current value given by the red dot)
+can be used to vary the smile. This was used to determine how the
+temporal dynamics affected the perception of a smile as genuine or fake.
+
+<BR>
+<IMG SRC="smile.jpg" alt="smile">
+
+<P>
+In other work we have coupled pairs of models such that
+one can drive the other.
+Below, the left column shows input video to which one model is fitted.
+The estimated model parameters can then transfered to other models
+(as shown in the other two columns) so that these faces are animated
+to produce expressions in their own characteristic manner.
+
+<BR>
+<IMG SRC="expression-transfer.jpg" alt="expression transfer">
+
+<P>
+More details are given in:
+<BR>
+
+<UL>
+<LI>
+E. Krumhuber, A.S.R. Manstead, D. Cosker, D. Marshall, P.L. Rosin,
+"Effects of Dynamic Attributes of Smiles in Human and Synthetic
+Faces: A Simulated Job Interview Setting",
+Journal of Nonverbal Behavior,
+vol. 33, no. 1, pp. 1-15, 2009.
+</LI>
+<LI>
+D. Cosker, R. Borkett, D. Marshall and P.L. Rosin,
+"Towards automatic performance-driven animation between multiple types of
+facial model",
+IET Computer Vision, vol. 2, no. 3, pp. 129-141, 2008.
+</LI>
+<LI>
+E. Krumhuber, A.S.R. Manstead, D. Cosker, D. Marshall, P.L. Rosin, A.
+Kappas,
+"Facial dynamics as indicators of trustworthiness and cooperative behavior",
+<i>Emotion,</i>
+vol. 7, no. 4, pp. 730-735, 2007.
+</LI>
+<LI>
+D. Cosker, D. Marshall, P. L. Rosin, S. Paddock and S. Rushton,
+"Towards Perceptually Realistic Talking Heads: Models, Metrics and McGurk",
+vol. 2, no. 3, pp. 270-285, 2005.
+</LI>
+<LI>
+D.P. Cosker, A.D. Marshall, P.L. Rosin, Y.A. Hicks,
+"Speech-driven facial animation using a hierarchical model",
+IEE Proc. Vision, Image and Signal Processing,
+vol. 151, no. 4, pp. 314-321, 2004.
+</LI>
+</UL>
+
+<P>
+<I>return to <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/index.html">Paul Rosin's</A> homepage</I>
+
+</BODY></HTML>

@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Computing Image Salience</title></head>
+<body>
+
+<h1>Computing Image Salience</h1>
+
+In recent years a large number of methods have been developed for computing saliency maps from images.
+The majority of them involve analysing the colour distribution (e.g. looking for rare patches of colour).
+Also, many involve performing a segmentation of the image, and analyse the similarity of regions in terms of colour, etc.
+
+<P>
+In contrast we have developed an extremely simple method that is based on edges alone,
+and does not require the potentially unreliable stage of image segmentation.
+Edges are computed using a pyramid, and the distance transform is applied to the edge magnitudes at multiple thresholds to 
+generate an estimate of edge density, which we have found to often be a reasonable indicator of salience.
+
+<P>
+<!--
+hack to get inline-block to work under IE7 : add zoom:1; *display: inline
+-->
+<table width="30%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="19021.jpg" width=100%>
+</td>
+</tr>
+<tr>
+<td>
+source image
+</td>
+</tr>
+</table>
+
+<table width="30%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="19021-salience.jpg" width=100%>
+</td>
+</tr>
+<tr>
+<td>
+salience map
+</td>
+</tr>
+</table>
+
+<table width="30%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="19021-overlay.jpg" width=100%>
+</td>
+</tr>
+<tr>
+<td>
+overlaid thresholded salience map
+</td>
+</tr>
+</table>
+
+<table width="30%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+
+<table width="30%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="19021-salienceCP.jpg" width=100%>
+</td>
+</tr>
+<tr>
+<td>
+salience map with central prior
+</td>
+</tr>
+</table>
+
+<table width="30%" style="display: inline-block; vertical-align: top; zoom:1; *display: inline">
+<tr>
+<td>
+<IMG SRC="19021-overlayCP.jpg" width=100%>
+</td>
+</tr>
+<tr>
+<td>
+overlaid thresholded salience map
+</td>
+</tr>
+</table>
+
+<P>
+For some data sets, including a central prior can generate better results,
+although this is not always the case (see the example above).
+
+<P>
+More details are given in:
+<BR>
+
+<UL>
+<LI>
+P.L. Rosin,
+"A simple method for detecting salient regions",
+Pattern Recognition, vol. 42, no. 11, pp. 2363-2371, 2009.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/salience-PR-postprint.pdf">Post-print</A>|DOI: <A HREF="http://dx.doi.org/10.1016/j.patcog.2009.04.021">10.1016/j.patcog.2009.04.021</A>
+</LI>
+</UL>
+
+<P>
+You can download
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/salience/">code</A>
+to implement the original method described in the paper as well as
+an extended version.
+
+<P>
+<I>return to <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/index.html">Paul Rosin's</A> homepage</I>
+
+</body></html>

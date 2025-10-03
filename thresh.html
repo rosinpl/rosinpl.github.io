@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<HTML><HEAD><TITLE>Thresholding for Change Detection</TITLE></HEAD>
+<BODY>
+
+<H1>Thresholding for Change Detection</H1>
+
+<H2>Introduction</H2>
+
+<P>
+Due to its simplicity image differencing is a popular 
+method for change detection. It only requires calculating the absolute 
+values of the difference between the corresponding pixels in two images, 
+and large values in the difference map then indicate locations of change. 
+
+<P>
+The difference map is usually binarised by thresholding it at some
+pre-determined value to obtain a change/no-change classification.
+However, the threshold value is critical, since too low a value will 
+swamp the difference map with spurious changes,
+while too high a value will suppress significant 
+changes. The proper value of the threshold is dependent on the scene,
+illumination, etc. and should be calculated
+dynamically.
+
+<H2>Two New Thresholding Methods</H2>
+
+<P>
+Several general approaches are possible for determining thresholds for 
+change detection. First the signal, noise, or both can be modelled.
+Second, either their intensity and/or spatial properties can be modelled.
+Here we will just describe the two spatial methods listed in the bottom row.
+</P>
+
+<TABLE BORDER="3">
+<tr>
+<th></th>
+<th><I>noise</I></th>
+<th><I>signal</I></th>
+</tr>
+<tr>
+<th><I>intensity</I></th>
+<td>Normal model</td>
+<td>intensity distributions</td>
+</tr>
+<tr>
+<th><I>spatial</I></th>
+<td>Poisson model</td>
+<td>stable number of regions</td>
+</tr>
+</TABLE> 
+
+<B>Table 1:</B> Different categories of techniques for threshold selection
+
+<H3>Modelling the spatial distribution of the noise</H3>
+
+<P>
+If we assume that the noise is white then its spatial distribution over the 
+image will be random.
+To quantify the randomness we will make the assumption that the
+observations follow a Poisson distribution.
+This can be tested using the <EM>relative variance</EM>
+<I>
+V<SUB>r</SUB> = s<SUP>2</SUP> / 
+<var style="text-decoration: overline">x</var>.
+</I>
+It is calculated by first counting the number of observations (in our case
+the number of above threshold pixels in the difference map) in <I>n</I> windows,
+<I>
+{x<SUB>i&nbsp</SUB>}<SUB>i=1...n</SUB>,
+</I>
+from which the mean
+<var style="text-decoration: overline">x</var>,
+and variance
+<I>
+s<SUP>2</SUP>,
+</I>
+of the
+<I>
+x<SUB>i</SUB>
+</I>
+can be found.
+Although the test is sensitive to the window size and point density it works
+adequately as long as
+<var style="text-decoration: overline">x</var>
+is sufficiently large.
+
+
+<P>
+For our purposes we do not wish to detect the spatially random noise, but
+rather to avoid it in our thresholded image.
+We therefore select the threshold which maximises the relative variance,
+thereby maximising "clumpiness" (regions of change) and minimising the
+Poisson distribution (noise).
+
+<H3>Modelling the spatial distribution of the signal</H3>
+
+<P>
+The location, size, and number of the regions of change are generally 
+unknown. However, we might expect that these properties will remain 
+fairly stable over a wide range of threshold values,
+whereas down
+at the noise level small changes in the threshold value can substantially 
+alter the number of regions. Such an observation suggests that if a range 
+of threshold values is found that leads to a stable number of regions, then 
+these regions are unlikely to come from noise, and so a value from this 
+range will provide a suitable threshold.
+Rather than counting the number of regions the image's Euler number can be
+used, and gives almost identical results
+and can be computed more efficiently.
+
+<P>
+A stable threshold range will correspond to a plateau in the graph of the
+Euler numbers against thresholds.
+However, given the noisy, fragmented nature of images it is more to model
+the shape of the graph as a decaying exponential.
+Therefore a suitable partition point between the signal and noise is the
+"corner" of the curve.
+which we find as the
+point on the curve with maximum deviation from the straight line drawn
+between the end points of the curve.
+
+<H2>Experimental Results</H2>
+
+<P>
+Results are shown using
+methods based on:
+the Poisson distribution,
+the stable Euler number,
+the Normal noise intensity model,
+the Normal noise intensity model applied to 
+the difference image constructed from two
+frames after running the Sobel edge detector,
+the Kolmogorov-Smirnov and Cram&#233;r-von Mises tests,
+Pearson's rank correlation coefficient,
+Spearman's rank correlation,
+
+<P>
+Both of the spatial methods (the Poisson noise model 
+and the stable Euler number) generally performed best.
+
+<BR>
+<A NAME="140">&#160;</A><A NAME="girl">&#160;</A> <IMG WIDTH=571 HEIGHT=676 ALT="figure" SRC="girl-thresh.gif">
+<BR>
+<B>Figure 1:</B> Pedestrian crossing car park
+
+<H2>More Information</H2>
+
+<P>
+More details of thresholding algorithms I have developed are given in
+the following papers:
+<BR>
+
+<UL>
+<LI>
+P.L. Rosin, J. Hervas,
+"Remote Sensing Image Thresholding Methods for Determining Landslide Activity",
+<I>International Journal of Remote Sensing,</I>
+vol. 26, no. 6, pp. 1075-1092, 2005.
+</LI>
+<LI>
+P.L. Rosin, E. Ioannidis,
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/stathis.pdf">
+"Evaluation of global image thresholding for change detection",
+</A>
+<I>Pattern Recognition Letters</I>,
+vol. 24, no. 14, pp. 2345-2356, 2003.
+</LI>
+<LI>
+P.L. Rosin,
+"Comments on "Ground from figure discrimination'"
+<I>Pattern Recognition Letters</I>,
+vol. 24, no. 15 , pp. 2761-2766, 2003.
+</LI>
+<LI>
+P.L. Rosin,
+"Thresholding for Change Detection",
+<I>Computer Vision and Image Understanding</I>,
+vol. 86, no. 2, pp. 79-95, 2002.
+</LI>
+<LI>
+P.L. Rosin,
+"Unimodal thresholding",
+<I>Pattern Recognition</I>, vol. 34, no. 11, pp. 2083-2096, 2001.
+</LI>
+<LI>
+P.L. Rosin,
+"Edges: saliency measures and automatic thresholding",
+<I>Machine Vision and Applications</I>,
+vol. 9, pp. 139-159, 1997.
+</LI>
+<LI>
+S. Venkatesh, P.L. Rosin, "Dynamic threshold determination by local and global edge 
+evaluation", CVGIP: <I>Graphical Models and Image Processing</I>, vol. 57, no. 2, pp. 146-160, 
+1995. 
+</LI>
+</UL>
+
+<P>
+You can download
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/change/">code</A>
+to implement change detection.
+
+<P>
+<I>return to <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/">Paul Rosin's</A> homepage</I>
+
+</BODY></HTML>

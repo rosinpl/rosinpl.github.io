@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><TITLE>Cellular Automata</TITLE></HEAD>
+<BODY>
+
+<h1>Cellular Automata</h1>
+
+<P>
+Over the last fifty years cellular automata (CA) have become increasingly popular,
+but their application to image processing has been limited by the need to
+manually generate rule sets.
+Therefore, we have investigated the possibility of training
+CAs to perform several image processing tasks,
+using the sequential floating forward search method to select good rule sets.
+A range of tasks were tested: noise filtering, thinning, and convex hulls.
+Our approach was developed for binary images, but can
+also be applied to gray scale images using threshold decomposition.
+
+<P>
+For example, given examples of images corrupted with 3 X 3 salt and pepper blocks,
+the following rules were learnt:
+<BR>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/ca/14.gif" alt="rule">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/ca/9.gif" alt="rule">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/ca/31.gif" alt="rule">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/ca/41.gif" alt="rule">
+<BR>
+The rules are based on 3 X 3 neighbourhood patterns of eight white and/or black
+(displayed as gray) pixels which are matched to windows in the test corrupted image, and
+are shown with a black central pixel - which is flipped after the
+application of the rule.
+
+<P>
+Applying these rules to the first image below gives the second image.
+Compare this to the best results achieved using multiple iterations of
+either a 3 X 3 or 5 X 5 median filter (shown as 3rd and 4th images):
+<BR>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/ca/mm-3-0.01-text2.gif" alt="noisy text">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/ca/mm-3-0.01-ca-text2.gif" alt="noisy text">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/ca/mm-3-0.01-medopt-text2.gif" alt="noisy text">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/ca/mm-3-0.01-med5opt-text2.gif" alt="noisy text">
+</P>
+
+<P>
+More recent work has looked at learning rules for grey level images.
+Some examples of applying these rule to remove various types of noise are shown:
+<BR>
+<IMG alt="CA destriping" SRC="http://users.cs.cf.ac.uk/Paul.Rosin/ca/ca-destripe.gif">
+<IMG alt="CA denoising" SRC="http://users.cs.cf.ac.uk/Paul.Rosin/ca/ca-denoise.gif">
+<BR>
+
+<P>
+A different application of CAs is to perform copy-move forgery detection.
+Our approach combined CAs with Local Binary Patterns (LBPs)
+to extract simple and low dimensional feature vectors in the form of CA rules that represent
+local changes in pixel luminance values. 
+the following shows the tampered image, the ground truth, and the CMF regions detected
+by our method:
+
+<BR>
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/ca/cmf-source.png" width=300 alt="CMFD">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/ca/cmf-GT.png" width=300 alt="CMFD">
+<IMG SRC="http://users.cs.cf.ac.uk/Paul.Rosin/ca/cmf-result.png" width=300 alt="CMFD">
+<BR>
+
+<P>
+More details are given in:
+<BR>
+<UL>
+<LI>
+P.L. Rosin,
+"Training Cellular Automata for Image Processing",
+<I>IEEE Transactions on Image Processing</I>,
+vol. 15, no. 7, pp. 2076-2087, 2006.
+</LI>
+<LI>
+P.L. Rosin,
+"Image Processing using 3-State Cellular Automata",
+<I>Computer Vision and Image Understanding</I>,
+vol. 114, no. 7, pp. 790-802, 2010.
+</LI>
+<LI>
+P.L. Rosin, X. Sun,
+"Cellular Automata as a Tool for Image Processing",
+in <I>Emerging Topics in Computer Vision and its Applications,</I>
+editor C.H. Chen,
+pp. 233-251, 2011.
+</LI>
+</UL>
+see also
+<UL>
+<LI>
+D. Tralic, S. Grgic, X. Sun, P.L. Rosin,
+"Combining Cellular Automata and Local Binary Patterns for Copy-Move Forgery Detection",
+Multimedia Tools and Applications,
+vol. 75, no. 24, pp. 16881-16903, 2016.
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/CMFD-MTA-postprint.pdf">Post-print</A>|DOI: <A HREF="http://dx.doi.org/10.1007/s11042-015-2961-2">10.1007/s11042-015-2961-2</A>
+</LI>
+<LI>
+P.L. Rosin and X. Sun,
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/edge-CAbook.pdf">
+"Edge Detection Using Cellular Automata",
+</A>
+in <I>Cellular Automata in Image Processing and Geometry</I>,
+editors P. Rosin, A. Adamatzky and X. Sun,
+pp. 85-103, 2014.
+DOI: <A HREF="http://dx.doi.org/10.1007/978-3-319-06431-4_5">10.1007/978-3-319-06431-4_5</A>
+</LI>
+<LI>
+D. Tralic, P.L. Rosin, X. Sun, S. Grgic,
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/CMFD-CAbook.pdf">
+"Copy-Move Forgery Detection Using Cellular Automata",
+</A>
+in <I>Cellular Automata in Image Processing and Geometry</I>,
+editors P. Rosin, A. Adamatzky and X. Sun,
+pp. 105-125, 2014.
+DOI: <A HREF="http://dx.doi.org/10.1007/978-3-319-06431-4_6">10.1007/978-3-319-06431-4_6</A>
+</LI>
+
+<LI>
+"Cellular Automata in Image Processing and Geometry",
+editors P. Rosin, A. Adamatzky and X. Sun,
+Springer, 2014.
+DOI: <A HREF="http://dx.doi.org/10.1007/978-3-319-06431-4">10.1007/978-3-319-06431-4</A>
+</LI>
+</UL>
+
+<P>
+<I>return to <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/index.html">Paul Rosin's</A> homepage</I>
+
+</BODY></HTML>
