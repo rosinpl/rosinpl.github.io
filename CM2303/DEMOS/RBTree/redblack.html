@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Red/Black Tree Demo</title>
+</head>
+<body>
+<center>
+<h1>Red/Black Tree Demonstration</h1>
+<applet code="RB.class" width=640 height=450></applet>
+</center>
+<br>
+<font size=+1><b>Usage:</b></font>
+Type an integer into the text field.  Click on the <b>Add Node</b>
+button to begin insertion of a red node with the specified integer
+value.  Click on the <b>Next Step</b> button to see what happens on
+the next iteration of insertion.  Click on the <b>Restart</b> button
+to start from an empty tree.  To delete a node, click on the <b>Delete
+Node</b> button, then click on the node you wish to delete.  The node
+should turn green.  Click on the <b>Next Step</b> button repeatedly to
+see the steps involved in deleting the node.  The delete feature is
+not fully tested and some deletions may result in trees that lose
+their red/black properties.  Please report problems to 
+<a href="mailto:franco@gauss.ececs.uc.edu">franco@gauss.ececs.uc.edu</a>.
+Click on the <b>Undo</b> button to
+restore the tree to it's state before the last node was inserted or
+deleted.  See any elementary data structures text for a description
+of the rules of insertion and deletion including rotation and color
+reversals.
+<p>
+<font size=+2><b>Red/Black Trees:</b></font>  These are binary trees
+with the following properties.
+<p>
+<ol>
+<li>
+Every node has a value.
+<li>
+The value of any node is greater than the value of its left child and less
+than the value of its right child.
+<li>
+Every node is colored either red or black.
+<li>
+Every red node that is not a leaf has only black children.
+<li>
+Every path from the root to a leaf contains the same number of black
+nodes.
+<li>
+The root node is black.
+</ol>
+<p>
+An <i>n</i> node red/black tree has the property that its height is
+<i>O(lg(n))</i>.  Another important property is that a node can be
+added to a red/black tree and, in <i>O(lg(n))</i> time, the tree can
+be readjusted to become a larger red/black tree.  Similarly, a node
+can be deleted from a red/black tree and, in <i>O(lg(n))</i> time,
+the tree can be readjusted to become smaller a red/black tree.
+Due to these properties, red/black trees are useful for data storage.
+<p>
+<font size=+2><b>Insertion:</b></font> The rules for readjustment when
+inserting depend on the concept of rotation.
+<p>
+</body>
+</html>
