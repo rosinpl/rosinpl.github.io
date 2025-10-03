@@ -1,0 +1,164 @@
+<HTML><HEAD><TITLE>Duality Demo</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 5.50.4807.2300" name=GENERATOR>
+<META content="Allen Miu" name=Author>
+<META 
+content="duality, java, applet, computational, geometry, 6.838, demo" 
+name=Keywords></HEAD>
+<BODY text=#000000 vLink=#51188e aLink=#ff0000 link=#0000ef 
+bgColor=#ffcc99>&nbsp; 
+<H1>Duality Demo</H1>
+<H2>User Interface</H2>
+
+The user interface requires the user to select two options.  The MODE
+option should always be selected first, and then the type of OBJECT to
+be inserted.  The applet runs in three modes: Insert, Query, and Edit.
+The following sections outline what the user can do for each mode of
+operation.  Please not that the applet accepts input from the left mouse
+button only.
+
+<H3>Insert Mode</H3>
+
+The user can insert POINT or SEGMENTs.  The duals of these types of
+objects will be inserted into the BSP data structure in the dual plane.
+
+<UL>
+  <LI>To insert a POINT, select Insert Mode AND POINT.  Then click the
+  left mouse button on either plane.  WHEN ENTERING A POINT, BE CAREFUL
+  THAT YOU DO NOT GET CONFUSED WITH ENTERING A SEGMENT THAT HAS TWO
+  COINCIDING ENDPOINTS.  The BSP queries may not work as you expected
+  when this happens.</LI> 
+  <LI>To insert a SEGMENT, select Insert Mode AND SEGMENT.  Then click the left
+  mouse button to mark the first POINT, drag out the desired SEGMENT
+  length and orientation before releasing the button. </LI>
+</UL>
+
+<H3>Query Mode</H3>
+
+Objects inserted in Query Mode are NOT inserted into the BSP data
+structure.  The Query Mode allows the user to insert ONE SEGMENT query
+and a MULTIPLE-SEGMENT QUERY; the applet does not handle primal POINT
+queries (I ran out of time).  Triangles and Circles can also be entered
+for visualization purposes in the Query Mode but their dual lines are
+not entered into the BSP data structure nor is there any BSP query
+operations performed with them.structure.
+
+<UL>
+  <LI>To insert a LINE Query, select Query Mode AND SEGMENT(LINE).
+  Enter the LINE object by a left CLICK.  PLEASE EDIT THE ROTATION AND
+  TRANSLATION OF THE QUERY IN "EDIT MODE", as if you were editing a
+  LINE.
+  </LI>
+  <LI>To select a SEGMENT for a MULTIPLE-SEGMENT query, highlight a
+  segment and LEFT CLICK.</LI> 
+  <LI>To insert a Triangle object, select
+  Query Mode AND Triangle.  The first click anchors the first vertex,
+  second click anchors the second vertex, and third click completes the
+  triangle.
+  </LI>
+  <LI>To insert a Circle object, select Query Mode AND Circle.  Place
+  the center of the circle by a left mouse click.  The radius can be
+  changed by selecting EDIT MODE and drag the circle while holding the
+  CONTROL key.  The Cicle may be moved in EDIT mode by dragging the
+  cirlce without holding the CONTROL key.
+  </LI>
+</UL>
+
+<H3>Edit Mode</H3>
+
+No objects may be entered in this mode; only translation, rotation and
+scaling operations are permitted.  The following outlines what editing
+operation is supported for each object.
+
+<UL>
+  <LI>POINT - Left CLICK and drag the POINT.  Hold Alt to restrict
+  rectilinear translations.</LI>
+  <LI>SEGMENT - Left CLICK and drag on main SEGMENT to translate the object
+  without rotation.  Left CLICK and drag on either end POINT to translate an
+  endpoint.  Left CLICK, CONTROL, and drag on SEGMENT to rotate SEGMENT
+  without translation.  Hold down ALT key to restrict rectilinear mouse movements.</LI>
+  <LI>Line - Same as line except no endpoint editing</LI>
+  <LI>Triangle - Left CLICK on triangle edges to translate Triangle, on an
+  endpoint to translate endpoint.  ALT key for recctilinear
+  restriction.</LI>
+  <LI>Circle - Left CLICK and drag on cirlce to translate the object.
+  Hold CONTROL key for changing the radius.</LI>
+  <LI>Wedge - Translation is same as Line but rotation is restricted around the
+  fulcrum.  Left CLICK and drag fulcrum to translate wedge without
+  rotation.</LI>
+  <LI>Dual line families of Triangle and Circle - EDITING NOT SUPPORTED</LI>
+</UL>
+
+<APPLET code=dualapplet.class width=815 height=435
+archive="dual.jar"></APPLET> 
+
+<H2>Remarks</H2>
+<UL>
+  <LI>I fail to recognize the dual relationship for the LINE query.</LI>
+  <LI>I did not the implement the Point Query.</LI> <LI>The set of lines that
+  stabs a set of segments correspond to the dual vertices that are
+  contained in all of the corresponding dual wedges in the dual plane.
+  <LI>An "interesting" dual relationship is demonstrated in the Cirlce
+  object.  Mouse over a Circle object and you'll see two yellow vertices
+  in the primal plane.  By default, these primal vertices are symmetric
+  about the x axis.  The corresponding dual lines are parallel within the
+  dual "conic" formed by the Circle.  Hold SHIFT and mouse over the
+  Cirlce again, the primal vertices that are symmetric about the center
+  of the Circle will be highlighted.  The dual lines are symmetric about
+  the the "inner axis" of the conic.  Finally, hold the CONTROL key, the
+  vertices that are symmetric about the y axis will be highlighted.  The
+  resulting dual lines are symmetric about the intersecting axis of the
+  dual conic.
+  </LI>
+</UL>
+
+
+
+<H2>Sources</H2>(<A href="dual.src.tar">tar bundle</A>)<BR><BR>
+<A href="BSPCell.java">BSPCell.java</A><BR>            
+<A href="Controls.java">Controls.java</A><BR>           
+<A href="CustomFrame.java">CustomFrame.java</A><BR>        
+<A href="DrawingArea.java">DrawingArea.java</A><BR>        
+<A href="dualapplet.java">dualapplet.java</A><BR>         
+<A href="DualityCircle.java">DualityCircle.java</A><BR>      
+<A href="DualityObject.java">DualityObject.java</A><BR>      
+<A href="DualityObjectSet.java">DualityObjectSet.java</A><BR>   
+<A href="DualitySegment.java">DualitySegment.java</A><BR>     
+<A href="DualitySegmentSet.java">DualitySegmentSet.java</A><BR>  
+<A href="DualityTriangle.java">DualityTriangle.java</A><BR>    
+<A href="DualityTriangleDual.java">DualityTriangleDual.java</A><BR>
+<A href="DualityVertex.java">DualityVertex.java</A><BR>      
+<A href="DualityWedge.java">DualityWedge.java</A><BR>       
+<A href="DualityWedgeSet.java">DualityWedgeSet.java</A><BR>    
+<A href="Face.java">Face.java</A><BR>               
+<A href="HalfSpace.java">HalfSpace.java</A><BR>          
+<A href="main.java">main.java</A><BR>               
+<A href="Node.java">Node.java</A><BR>               
+<A href="Segment.java">Segment.java</A><BR>            
+<A href="SegmentList.java">SegmentList.java</A><BR>        
+<A href="Util.java">Util.java</A><BR>               
+<A href="Vertex.java">Vertex.java</A><BR>             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
