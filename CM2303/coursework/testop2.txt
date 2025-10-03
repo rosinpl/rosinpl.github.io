@@ -1,0 +1,4 @@
+insert 24
+insert 659
+locate 24
+delete 24
