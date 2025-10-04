@@ -1,0 +1,7 @@
+cat head i tail > index.html
+cat head c tail > call.html
+cat head s tail > submission.html
+cat head ii tail > invited.html
+cat head p tail > people.html
+cat head pp tail > program.html
+cat head f tail > final.html

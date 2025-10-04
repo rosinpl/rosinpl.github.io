@@ -1,0 +1,75 @@
+<HTML>
+<HEAD><TITLE>CM3113</TITLE></HEAD>
+<BODY>
+
+<H1>CM3113 - Computer Vision</H1>
+
+<H2>Lab Sheet - Week 2</H2>
+<H2>Image Acquisition and Early Processing</H2>
+
+<HR>
+
+<P>
+Investigate the effects of the Nyquist Criterion.
+Subsample this image of <A HREF="circles1.pgm">circles</A>
+by a factor of eight.
+Do this by simply selecting every eighth pixel in every eighth row
+and put them into a new image whose width and height are smaller by a factor of eight.
+Now see what happens if before subsampling you first remove the high frequencies,
+e.g. by blurring?
+
+<P>
+Here's another image of
+<A HREF="circles2.pgm">circles</A>
+to have a go at.
+(As you see, you can generate some pretty pictures by aliasing).
+
+<HR>
+
+<P>
+So far you have just looked at operations on single pixels.
+Let's move on to local neighbourhood operations.
+Write a program to look at each pixel's eight neighbours.
+(You may find it easiest to use an extra double loop).
+Now you can apply some noise filtering to lena with added
+<A HREF="lena-noise1.pgm">Gaussian</A> noise
+and
+<A HREF="lena-noise2.pgm">salt and pepper</A> noise.
+<P>
+Write programs to perform
+<li>
+blurring - i.e. replace each pixel by the average intensity in its neighbourhood
+<li>
+median filtering - i.e. replace each pixel by the median intensity in its
+neighbourhood
+
+<P>
+Look at the histograms of the images before and after these operations.
+Can you explain why they look the way they do?
+(You can download code for a
+<A HREF="histogram.py">simple python histogram program</A>.)
+<!--
+<A HREF="Hist.java">simple Java histogram applet</A>
+along with this
+<A HREF="Hist.html">html file</A>.) 
+-->
+
+<HR>
+
+<P>
+Implement unsharp masking to improve the appearance of this
+<A HREF="lena-blur.pgm">blurry</A> 
+version of lena.
+You first need to further blur it.
+You can experiment with generating varying degrees of blur by repeatedly blurring it.
+Subtract the further blurred version from the original (blurry) image and add the
+result to the original (blurry) image.
+Make sure the output values are in the range 0-255.
+
+<HR>
+<I>
+go to <A HREF="../index.html">CM3113 home page</A>
+</I>
+
+</BODY>
+</HTML>

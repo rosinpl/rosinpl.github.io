@@ -1,0 +1,25 @@
+<p>
+The detection of manipulations in digital images and video is becoming an increasingly important topic. State-of-the-art methods in computer vision and computer graphics make it feasible to edit images and videos in a visually plausible way. This allows non-expert users with off-the-shelf hardware to create believable content that is oftentimes barely distinguishable from original recordings. One recent example that went through the popular media are DeepFakes, which allows to automatically manipulate faces in video with a Generative Adversarial Network.
+</p>
+
+<p>
+The goal of image and video forensics is to provide an analyst with computational tools to assess the authenticity and origin of a digital media recording. Recent years have led to the development of a number of algorithmic tools. A number of model-based techniques have been proposed for the analysis of imaging devices which perform little postprocessing. These methods exploit, for example, particularities of compression formats, imaging sensors and optics, and physical relations in the scene. Modern imaging devices often create images that are the result of a computational editing process, which makes it difficult to distinguish camera-internal processing from (potentially malicious) post-hoc image editing. For example, digital image stabilization or artificial focus blur are such in-camera operations that significantly abstract the digital content from the raw sensory readings.
+</p>
+
+<p>
+The goal of this workshop is to bring together experts from computer vision, computer graphics, and image processing to advance the state-of-the-art in detecting post-hoc image manipulations, and in linking images and video to camera models or even individual devices.
+</p>
+
+<H2>Topics of interest include</H2>
+<UL>
+<LI>Blind noise-based manipulation detection</LI>
+<LI>Deep learning-based manipulation detection</LI>
+<LI>Physics-based manipulation detection</LI>
+<LI>Counter-forensics, and counter-counter forensics</LI>
+<LI>Format-based forensic methods</LI>
+<LI>Noise-based device attribution</LI>
+<LI>Statistical splicing detection</LI>
+<LI>Mixed learning- and model-based manipulation detection</LI>
+<LI>Datasets for manipulation detection</LI>
+<LI>Image- and video phylogeny</LI>
+</UL>

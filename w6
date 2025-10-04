@@ -1,0 +1,60 @@
+#!/bin/bash
+# ==== CONFIG ====
+REPO="rosinpl/rosinpl.github.io"
+BRANCH="main"
+SRC="."
+# ================
+
+# Ensure you’re authenticated with GitHub
+gh auth status >/dev/null 2>&1 || gh auth login
+
+# Ensure .nojekyll exists so GH Pages serves everything
+gh api "repos/$REPO/contents/.nojekyll" \
+  -X PUT \
+  -f message="Ensure .nojekyll for GitHub Pages" \
+  -f branch="$BRANCH" \
+  -f content="" >/dev/null 2>&1 || true
+
+# Helper: robust base64 encoder
+encode_file() {
+  if [ -x /usr/bin/base64 ]; then
+    /usr/bin/base64 < "$1" | tr -d '\n'
+  elif command -v openssl >/dev/null 2>&1; then
+    openssl base64 -A -in "$1"
+  else
+    python3 - "$1" <<'PY'
+import sys, base64
+with open(sys.argv[1], 'rb') as f:
+    sys.stdout.write(base64.b64encode(f.read()).decode('ascii'))
+PY
+  fi
+}
+
+# Walk files and upload
+find "$SRC" -type f -print0 | while IFS= read -r -d '' f; do
+  rel="${f#./}"
+  echo "Uploading: $rel"
+
+  b64="$(encode_file "$f")"
+
+  sha=$(gh api "repos/$REPO/contents/$rel?ref=$BRANCH" \
+        -H "Accept: application/vnd.github+json" -q .sha 2>/dev/null || true)
+
+  if [ -n "$sha" ]; then
+    gh api "repos/$REPO/contents/$rel" \
+      -X PUT \
+      -f message="Update $rel" \
+      -f branch="$BRANCH" \
+      -f content="$b64" \
+      -f sha="$sha" >/dev/null
+  else
+    gh api "repos/$REPO/contents/$rel" \
+      -X PUT \
+      -f message="Add $rel" \
+      -f branch="$BRANCH" \
+      -f content="$b64" >/dev/null
+  fi
+done
+
+echo "Done. Wait ~1–2 minutes, then refresh: https://rosinpl.github.io/"
+

@@ -1,0 +1,39 @@
+<p>
+RGB-D images capture both photometric and geometric information,
+and over the last few years the cost of
+RGB-D sensors has dropped while their accuracy has increased.
+RGB-D sensors and analytics is a timely topic, as
+RGB-D data is now
+widespread and has been incorporated into many applications,
+such as health care, robotics, fashion, metrology, vehicular technology.
+<p>
+However, data is still typically noisy and incomplete, data processing
+techniques still lag behind traditional image modalities, real-time processing
+of data becomes more challenging as data volumes increase. Therefore, many
+research challenges remain.
+
+<p>
+The benefit of this workshop will be to provide the opportunity for people from
+disparate areas such as computer vision, robotics, graphics, as well as
+application areas such as healthcare and creative industries, to exchange
+ideas.
+</p>
+
+<H2>Topics of interest include</H2>
+<UL>
+<LI>Acquisition of RGBD data</LI>
+<LI>Joint analysis of colour and depth</LI>
+<LI>Processing of temporal RGBD data</LI>
+<LI>Recognition from RGBD data, e.g. human activity detection, object detection, event detection</LI>
+<LI>RGBD salient object detection</LI>
+<LI>Robust processing of RGBD data</LI>
+<LI>Real-time tracking from RGBD data</LI>
+<LI>Segmentation of RGBD data</LI>
+<LI>Extracting features from RGBD data</LI>
+<LI>Geometric and semantic modelling from RGBD data</LI>
+<LI>3D reconstruction from RGBD data</LI>
+<LI>RGBD SLAM</LI>
+<LI>The evaluation of RGBD systems & datasets</LI>
+<LI>Applications of RGBD systems</LI>
+<LI>RGBD LiDAR processing</LI>
+</UL>

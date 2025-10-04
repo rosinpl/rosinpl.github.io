@@ -1,0 +1,27 @@
+a.ad1 {width: 220px; height: 90px; text-align: left;}
+.header .adText1 {color:#000000;text-decoration:normal; font-family: Arial; font-size:11px; font-weight: normal; font-style: normal; text-align: center;}
+a .adLink1 {color:#041C50; text-decoration:normal; font-family: Arial; font-size:12px; font-weight: normal; font-style: normal; text-align: center;}
+a.abg {color:#333;text-decoration:none; font-family: Arial; font-size:11px; font-weight: normal; font-style: normal;}
+#adsense_noticia a {color:#333;text-decoration:none; font-family: Arial; font-size:11px; font-weight: normal; font-style: normal;}
+a .adTitle1 {color:#365D94;text-decoration:underline; font-family: Arial; font-size:16px; font-weight: bold; font-style: normal;}
+.header .ad_box1 {border-style:solid;border-width:0;px; border-color:#000000; height:90px;width:220px;margin-left:0px; opacity: 1; background-image: url(); background: nottransparent; text-align:left;}
+
+.ad_box1_pemat {border: 1px solid #E2E2E2; height:190px;width:626px;margin-left:0px; opacity: 1; background-image: url(); background: nottransparent; text-align:left; margin-top:15px;}
+.adTitle1_pemat {color:#041C50;text-decoration:normal; font-family: Arial; font-size:22px; font-weight: bold; font-style: normal;}
+.adLink1_pemat {color:#EFB31E; text-decoration:normal; font-family: Arial; font-size:13px; font-weight: normal; font-style: normal;}
+.adText1_pemat {color:#000000;text-decoration:normal; font-family: Arial; font-size:14px; font-weight: normal; font-style: normal; text-align:center;}
+
+.ad_box1_botao {border-style:solid;border-width:0;px; border-color:000000; height:250px;width:300px;margin-left:0px; opacity: 1; background-image: url(); background: nottransparent; text-align:left;}
+.adTitle_botao {color:#365D94; font-family: Arial; font-size:16px; font-weight: bold; font-style: normal; text-decoration:underline; }
+.adLink_botao {overflow: hidden; color:#041C50;text-decoration:underline; font-family: Arial; font-size:10px; font-weight: normal; font-style: normal;}
+.adText_botao {color:#000000;text-decoration: normal; font-family: Arial; font-size:13px; font-weight: normal; font-style: normal;}
+
+.adTitle1_pemat2 {color:#EFB31E;text-decoration:normal; font-family: Arial; font-size:22px; font-weight: bold; font-style: normal;}
+
+#adsense_noticia a .adTitle {color:#365D94;text-decoration:normal; font-family: Arial; font-size:14px; font-weight: bold; font-style: normal;}
+#adsense_noticia a .adLink {color:#041C50; text-decoration:normal; font-family: Arial; font-size:12px; font-weight: normal; font-style: normal; text-align: center;}
+.adText_botao {color:#000000;text-decoration: normal; font-family: Arial; font-size:13px; font-weight: normal; font-style: normal;}
+
+#adsense_noticia table td {
+    padding: 6px;
+}

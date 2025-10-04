@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>PSIVT Workshop on Vision meets Graphics</TITLE>
+
+<META http-equiv="Content-Type" content="text/html;charset=utf-8">
+<SCRIPT language="JavaScript" type="text/javascript">
+<!--
+// ==============================================
+// Copyright 2003 by jsCode.com
+// Source: jsCode.com
+// Author: etLux
+// Free for all; but please leave in the header.
+// ==============================================
+
+// Set up the image files to be used.
+var theImages = new Array() // do not change this
+// To add more image files, continue with the
+// pattern below, adding to the array. Rememeber
+// to increment the theImages[x] index!
+
+theImages[0] = 'img/15869966_wm.jpg'
+theImages[1] = 'img/15871046_wm.jpg'
+theImages[2] = 'img/20553294_wm.jpg'
+theImages[3] = 'img/20553541_wm.jpg'
+theImages[4] = 'img/20561393_wm.jpg'
+theImages[5] = 'img/20561544_wm.jpg'
+theImages[6] = 'img/70791188_wm.jpg'
+
+// ======================================
+// do not change anything below this line
+// ======================================
+
+var j = 0
+var p = theImages.length;
+
+var preBuffer = new Array()
+for (i = 0; i < p; i++){
+   preBuffer[i] = new Image()
+   preBuffer[i].src = theImages[i]
+}
+
+var whichImage = Math.round(Math.random()*(p-1));
+function showImage(){
+document.write('<p align="center"> <img src="'+theImages[whichImage]+'" width=50% ></p>');
+}
+
+//-->
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<SCRIPT language="JavaScript" type="text/javascript">
+<!--
+// ==============================================
+// Copyright 2003 by jsCode.com
+// Source: jsCode.com
+// Author: etLux
+// Free for all; but please leave in the header.
+// ==============================================
+showImage();
+//-->
+</SCRIPT>
+      <TABLE cellpadding=3 cellspacing=0 border=0 width="100%">
+        <TR>
+          <TD>
+            <H2 align="center">workshop in conjunction with <A HREF="http://www.psivt.org/psivt2015/index.php">PSIVT 2015</A> on</H2>
+            <H1 align="center">Vision meets Graphics</H1>
+            <H2 align="center"></H2>
+          </TD>
+        </TR>
+      </TABLE>
+
+      <TABLE cellpadding=3 cellspacing=0 border=0 width="100%">
+        <TR>
+          <TD width="18%" bgcolor="#cccccc" align="center"><A HREF="index.html">Home</A></TD>
+          <TD width="18%" bgcolor="#cccccc" align="center"><A HREF="call.html">Call for papers</A></TD>
+          <TD width="18%" bgcolor="#cccccc" align="center"><A HREF="submission.html">Submission</A></TD>
+          <TD width="18%" bgcolor="#cccccc" align="center"><A HREF="people.html">People</A></TD>
+          <TD width="18%" bgcolor="#cccccc" align="center"><A HREF="invited.html">Invited Speakers</A></TD>
+          <TD width="18%" bgcolor="#cccccc" align="center"><A HREF="program.html">Program</A></TD> 
+        </TR>
+      </TABLE>
+
+<H2>Invited Speakers</H2>
+
+<TABLE cellpadding="10" width = "100%">
+<!-- *********************************************** -->
+<TR>
+<TD width="33%" align="center"> <IMG SRC="img/sagar.jpg" height = "300px" alt="Mark Sagar"> </TD>
+<TD width="33%" align="center"> <IMG SRC="img/mould.jpg" height = "300px" alt="David Mould"> </TD>
+</TR>
+
+<!-- *********************************************** -->
+<TR>
+<TD align="center">
+<A HREF="https://unidirectory.auckland.ac.nz/profile/msag003">Mark Sagar</A>
+<BR>
+<EM>
+Laboratory for Animate Technologies
+<BR>
+Auckland Bioengineering Institute
+<BR>
+University of Auckland
+</EM>
+</TD>
+
+<TD align="center">
+<A HREF="http://people.scs.carleton.ca/~mould">David Mould</A>
+<BR>
+<EM>
+Graphics, Imaging and Games Lab
+<BR>
+School of Computer Science
+<BR>
+Carleton University 
+</EM>
+</TD>
+</TR>
+
+<!-- *********************************************** -->
+<TR>
+<TD align="center">
+<BR>
+<B>
+Autonomous Facial Animation using models of embodied cognition
+</B>
+</TD>
+
+<TD align="center">
+<BR>
+<B>
+Detail Preservation and Enhancement in Image Stylization
+</B>
+</TD>
+</TR>
+
+<!-- *********************************************** -->
+<TR>
+<TD valign="top">
+This talk describes the general approach and design of a framework which integrates computer graphics, computer vision and neural networks to
+create autonomous expressive embodied models of behaviour based on affective and cognitive neuroscience theories. The goal of our research is to
+integrate current theories and models to create a large functioning sketch of several fundamental aspects of human behaviour including face to
+face interaction, to explore how it may emerge from interaction of low level and high level systems in a top-down bottom up approach. A key aim is
+to create as naturalistic models as possible in order to elicit and respond to the appropriate behaviours from the user, involving both sensing
+and synthesis of visual and auditory stimuli. We illustrate how these features come together in a psychobiological simulation of an infant Baby X
+currently under development, which aims to combine models of early interactive behaviour and learning.
+</TD>
+
+<TD valign="top">
+Non-photorealistic rendering is the art and science of creating
+synthetic images reminiscent of artistic styles and media.
+Traditional techniques from both computer vision and computer
+graphics are commonly employed: low- and mid-level image processing,
+simulation, procedural modeling. 
+
+<P>
+In this talk, I will give a tour of selected image stylization
+methods, including algorithms for stippling, scratchboard,
+and watercolor effects. Image stylization commonly removes
+detail from the input photograph; I will emphasize strategies
+for preserving and enhancing detail, increasing image richness.
+
+<P>
+Suitable filter design can
+preserve salient image details such as irregular silhouettes
+while softening small-scale texture and noise; I will present
+the cumulative range geodesic filter, specifically intended for
+image simplification with medium-scale detail preservation.
+Alternatively, arbitrary detail can be merged with an input
+photograph, whether arising from additional input images
+or generated at runtime through image-guided particle systems.
+I will discuss examples of both.
+</TD>
+</TR>
+
+<!-- *********************************************** -->
+<TR>
+<TD valign="top">
+<BR>
+<EM>
+Academy Award winner Associate Professor Dr. Mark Sagar is the director of the Laboratory for Animate Technologies at the Auckland Bioengineering
+Institute, where his interest is in bringing digital characters to life using artificial nervous systems to empower the next generation of human
+computer interaction. His laboratory is pioneering neurobehavioral animation that combines biologically based models of faces and neural systems
+to create live, naturally intelligent, and highly expressive interactive systems. Mark previously worked as the Special Projects Supervisor at
+Weta Digital and Sony Pictures Imageworks and developed technology for the characters in blockbusters such as Avatar, King Kong, and Spiderman 2.
+His pioneering work in computer-generated faces was recognized with two consecutive Scientific and Engineering Oscars in 2010 and 2011. Dr. Sagar
+holds a Ph.D. in Bioengineering and is a recipient of the University of Auckland’s 2012 Distinguished Alumni Award.
+</EM>
+</TD>
+
+<TD valign="top">
+<BR>
+<EM>
+David Mould received his PhD in computer graphics from the University of
+Toronto in 2002. Prior to this, he earned a BSc in combined physics and
+computer science from the University of British Columbia. He was a faculty
+member at the University of Saskatchewan for six years, and is presently 
+an associate professor at Carleton University, where he directs the 
+Graphics, Imaging, and Games Lab in the School of Computer Science. Dr. 
+Mould's research interests include game design, non-photorealistic 
+rendering, and procedural natural phenomena.
+</EM>
+</TD>
+</TR>
+
+</TABLE>
+
+
+</BODY>
+</HTML>

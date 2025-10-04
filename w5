@@ -1,0 +1,9 @@
+git init
+git add -A
+touch .nojekyll                      # so GH Pages serves everything as-is
+git commit -m "Import from Cardiff server"
+git branch -M main
+
+git remote add origin https://github.com/rosinpl/rosinpl.github.io.git
+# Replace remote content with this snapshot (use -f only if you intend to overwrite)
+git push -f origin main

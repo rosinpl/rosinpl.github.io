@@ -1,0 +1,75 @@
+<HTML>
+<HEAD><TITLE>CM3113</TITLE></HEAD>
+<BODY>
+
+<H1>CM3113 - Computer Vision</H1>
+
+<H2>Lab Sheet - Week 3</H2>
+<H2>Image Thresholding</H2>
+
+<HR>
+
+<P>
+For some images thresholding can be straightforward.
+For instance, thresholding the following image
+using Tsai's moment matching algorithm or Otsu's minimum variance method
+produce very similar results.
+<BR>
+<IMG SRC="wdg2.gif" HEIGHT=200 ALT="widget">
+<IMG SRC="wdg2-tsai.gif" HEIGHT=200 ALT="widget">
+<IMG SRC="wdg2-tsai.gif" HEIGHT=200 ALT="widget">
+
+<P>
+On the other hand, other images are trickier, and so thresholding the following image 
+using Tsai's moment matching algorithm: or Otsu's minimum variance method:
+produce significantly different results.
+<BR>
+<IMG SRC="pap2.gif" HEIGHT=200 ALT="penPaper">
+<IMG SRC="pap2-tsai.gif" HEIGHT=200 ALT="penPaper">
+<IMG SRC="pap2-otsu.gif" HEIGHT=200 ALT="penPaper">
+
+<P>
+Write a program to threshold the above <A HREF="wdg2.pgm">widget.</A>
+Try this simple algorithm: threshold at the mean image intensity.
+
+<P>
+Once you've got that going try out the algorithm on thresholding a
+<A HREF="wdg3.pgm">small widget,</A> an
+<A HREF="wdg2s.pgm">edge detected version</A>
+of the widget, and the image above of a
+<A HREF="pap2.pgm">pen and paper.</A>
+
+<P>
+<LI>
+What are the results of thresholding?
+<LI>
+Why does the algorithm produce this results?
+<LI>
+If you had used the algorithm we covered in class that looked in the intensity
+histogram for two peaks, what would the effect have been? 
+
+<HR>
+
+<P>
+The following image is an example of
+<A HREF="underwriting.pgm">underwriting</A>.
+That is, it is a photograph of a piece of paper that has been written on
+twice, in both the horizontal and vertical directions.
+One set of handwriting was made by Dickens and the other is by Elvis Presley!
+What would you expect the intensity distribution of the image to look like?
+Write a program to extract out each of the two messages.
+
+<P>
+Your results should look like:
+<BR>
+<IMG SRC="underwriting.gif" HEIGHT=400 ALT="underwriting">
+<IMG SRC="underwriting1.gif" HEIGHT=400 ALT="underwriting">
+<IMG SRC="underwriting2.gif" HEIGHT=400 ALT="underwriting">
+
+<HR>
+<I>
+go to <A HREF="../index.html">CM3113 home page</A>
+</I>
+
+</BODY>
+</HTML>

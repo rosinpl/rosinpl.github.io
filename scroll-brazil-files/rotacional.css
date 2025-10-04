@@ -1,0 +1,54 @@
+/*------===[ PORTLET: Box Super ]===------*/
+
+.box_uaisuper {float:right; width:220px; margin-top:10px; background:#fbfdf7; *margin-bottom:-10px; _margin-bottom:-20px;overflow:hidden;}
+.box_uaisuper .h3{color:#336633; font-size:17px; display:block; font-family:"Trebuchet MS", Trebuchet, Arial, sans-serif; font-weight:normal}
+.box_uaisuper .p{color:#666666; font-size:13px;  display:block; font-family:"Trebuchet MS", Trebuchet, Arial, sans-serif; margin-bottom:5px}
+.box_uaisuper img{margin-right:0px}
+.box_uaisuper_altura {height:95px}
+.topico02{background:#ebebeb; text-align:right;  padding-right:5px; border-right:10px solid #365d94; height:24px; margin-bottom:10px}
+.topico02 p{position:relative; top:-2px; font-size:22px; font-family:"Trebuchet MS", Trebuchet, Arial, sans-serif; color:#efb31e; font-weight:bold; margin-bottom:0px}
+.ims_toposuper {background:#c1cea3; height:27px; background-image:url(http://imgs.em.com.br/topo_imgsuper.png); background-repeat:no-repeat; background-position:0 0px; cursor:pointer}
+.mini_materia_super {list-style-image:none; list-style-position:outside; list-style-type:none; margin-bottom:4px; clear:both}
+.mini_materia_super li{border-bottom:1px solid #c1cea3; padding-left:0px;font-family:"Trebuchet MS", Trebuchet, Arial, sans-serif; font-size:12px; color:#666666}
+.mini_materia_super li a{font-family:"Trebuchet MS", Trebuchet, Arial, sans-serif; font-size:12x; color:#666666}
+.mini_materia_super li a span{font-size:14px;}
+.mini_materia_super li .h1{color:#336633; display:inline; font-size:14px; font-family:"Trebuchet MS", Trebuchet, Arial, sans-serif; font-weight:bold}
+.mini_materia_super img{position:relative; top: 3px; margin-left: 0px}
+
+/* NOVO BOX SUPER */
+
+.f1 {position:relative}
+.fotorota_ant {	left:0; margin-top:-42px; top:50%; position:absolute}
+.fotorota_pro {position:absolute; right:13px; margin-top:-42px; top:50%}
+.fotorota_ant_super {	left:0; margin-top:-42px; top:50%; position:absolute}
+.fotorota_pro_super {position:absolute; right:0px; margin-top:-42px; top:50%; _margin-right:10px;}
+.box_shandow_super{background:#c1cea3;  float:left; font-family:trebuchet MS; font-size:14px; height:30px; padding:6px; position:relative; top:-14px; width:208px; font-weight:bold; margin-top:10px; overflow:hidden}
+.box_letras_super{color:white; float:left; font-family:trebuchet MS; font-size:14px; height:35px; padding:8px 5px 5px 5px; position:relative; top:-13px; width:215px; font-weight:bold; margin-top:-49px; overflow:hidden; z-index:2}
+.box_letras_super a {color:white !important;font-size:14px;font-weight:bold; z-index:2}
+.box_letras_super a:hover {text-decoration:underline;}
+.boxsuper_listas {
+	float:right;
+	width:220px;
+	background:#FBFDF7;
+}
+
+.boxft_super{
+	height: 205px;
+	width: 253px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background: url("http://imgs.em.com.br/loading.gif") no-repeat scroll center center transparent;
+}
+
+/* BARRA FINAL */
+
+
+.barrasuper_fundo {background:#c1cea3; width:220px; height:25px;margin-bottom:15px;}
+.barrasuper_fundo_txt {text-align:center; font-family:"Trebuchet MS"; font-size:12px; color:#FFFFFF}
+.barrasuper_fundo_txt a{color:#FFFFFF; text-decoration:none; font-size:12px;line-height:26px;}
+.barrasuper_fundo_txt a:hover{color:#FFFFFF; text-decoration:underline}
+
+.fl_super{float:right; position:relative;width:220px !important;height:200px !important; *height:210px !important;margin:0 !important;}
+.body ul.mini_materia_super{margin:0;}
+
+.fl_super img.foto_capa {width:220px; height:158px}

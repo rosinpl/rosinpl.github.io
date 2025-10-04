@@ -1,0 +1,40 @@
+<HTML>
+<HEAD><TITLE>CM3113</TITLE></HEAD>
+<BODY>
+
+<H1>CM3113 - Computer Vision</H1>
+
+<H2>Lab Sheet - Week 10</H2>
+<H2>Recognition</H2>
+
+<HR>
+
+<IMG SRC="classifierScreenshot.png" HEIGHT=400 ALT="classifierScreenshot">
+
+<P>
+Play with this simple MATLAB
+<A HREF="classifier.zip">code</A>
+that implements a linear classifier (based on the bisector of the line between the two class feature centroids)
+demo, that uses global region shape measures.
+
+<P>
+Try selecting samples from each class to build a classifier, and then see the results.
+The 2 rows shown in the window consist of 2 classes of fish (one class per row); note that the rightmost 2 columns have some noise, which causes problems for the circularity shape measure.
+
+<P>
+Modify the code to replace circularity with one of MATLAB's other shape measures to see if you can improve the classification accuracy.
+
+<P>
+You can also try the first two rotation, translation, and scale (RTS) invariant moments, based on your work for <A HREF="descriptors.html">Lab 4</A>.
+
+<P>
+You can improve the simple bisector based linear classifier with better alternatives.
+For example, although not covered in class, Fisher's linear discriminant is one good version, and can be implemented relatively straightforwardly in MATLAB.
+
+<HR>
+<I>
+go to <A HREF="../index.html">CM3113 home page</A>
+</I>
+
+</BODY>
+</HTML>

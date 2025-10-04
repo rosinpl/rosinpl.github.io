@@ -1,0 +1,76 @@
+<HTML>
+<HEAD><TITLE>CM3113</TITLE></HEAD>
+<BODY>
+
+<H1>CM3113 - Computer Vision</H1>
+
+<H2>Lab Sheet - Week 2</H2>
+<H2>Introduction to Image Manipulation and MATLAB</H2>
+
+<HR>
+
+<P>
+To start you off, here's a simple Java
+<A HREF="Invert.java">program</A>
+(which uses <A HREF="Image.java">Image.java</A>)
+<!--
+(alternatively for Maths students you can use the C
+<A HREF="invert.c">program</A> instead)
+-->
+for reading in a PGM image such as
+<A HREF="lena.pgm">lena</A>
+inverting the intensities, and writing them back out to a file
+as another PGM image.
+After compilation, call the program as
+<B>java Invert input-image output-image</B>.
+
+<P>
+Save the program and image, and check that the program works.
+
+<P>
+Now try modifying the program in some basic ways, and apply it to some images.
+<li>
+rescale the image intensities by a factor of 0.4
+<li>
+rescale the image intensities by a factor of 1.4
+<li>
+rescale the image intensities by a factor of 1.4 and clip overflows
+(i.e. reset values greater than 255 to 255)
+<li>
+flip image upside-down
+
+<HR>
+
+<P>
+Now have a go at using Matlab. 
+Look at the basic 
+<A HREF="matlab.html">tutorial</A>
+to get started.
+
+<P>
+Once you have familiarised yourself with its workings repeat the exercise above
+in Matlab.
+The trickiest task is the clipping, and there at least three ways to do it:
+<li>
+using <b>for</b> loops
+<li>
+using the <b>find</b> command
+<li>
+using the <b>></b> operator to generate masks.
+
+<!--
+<HR>
+
+<P>
+To finish off, try out a Java
+<A HREF="DTmatch/DTmatch.html">applet</A>
+that demonstrates <b>ear matching</b>!
+-->
+
+<HR>
+
+<I>
+go to <A HREF="../index.html">CM3113 home page</A>
+</I>
+</BODY>
+</HTML>

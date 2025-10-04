@@ -1,0 +1,58 @@
+<H2>Author Guidelines</H2>
+
+<P>
+All submissions will be handled electronically through the online submission system.
+Each paper will be peer-reviewed.
+Reviews will be double-blind according to ACCV guidelines.
+In submitting a manuscript to this workshop, the authors
+acknowledge that during the review period
+no paper substantially similar in content has been submitted to another workshop or conference.
+</P>
+
+<P>
+<!--
+Accepted workshop papers will be published by Springer in the Lecture Notes in Computer Science (LNCS) series.
+-->
+
+<H2>Paper Length and Format</H2>
+
+<!--
+Manuscripts should be submitted as PDF files and should be <B>no more than 14 pages</B> in the LNCS paper format.
+-->
+Manuscripts should be submitted as PDF files.
+The submission page length is <B>14 pages for content plus maximum 2 pages for references.</B>
+
+<H2>Paper Style and Template</H2>
+
+The paper template is identical to the main ACCV2018 conference:
+
+LaTeX Templates (zip):
+<A HREF="http://accv2018.net/wp-content/uploads/accv2018kit.zip">accv2018kit.zip</A>
+<BR>
+Example submission paper with detailed instructions:
+<A HREF="https://eccv2018.org/wp-content/uploads/2018/02/eccv2018submission.pdf">accv2018submission.pdf</A>
+
+<!--
+<P>
+Articles should be prepared in English according to the 
+<A HREF="http://www.springer.com/cn/computer-science/lncs/conference-proceedings-guidelines">Springer Lecture Notes in Computer Science guidelines and templates.</A>
+-->
+
+<H2>Online Submission Site</H2>
+
+
+Please submit papers
+by 24th September 2018
+through the 
+<A HREF=https://cmt3.research.microsoft.com/RGBD2018>
+online submission site.</a>
+ 
+<H2>Registration</H2>
+
+To have your paper included in the proceedings at least one of the authors must be registered at a full registration rate.
+<!--
+According to IAPR rules, one registration is fine for having multiple co-authored papers at the conference.
+-->
+
+</UL> 
+

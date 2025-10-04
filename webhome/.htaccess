@@ -1,0 +1,9 @@
+<Limit GET>
+order deny,allow
+deny from all
+AuthType Basic
+AuthUserFile /etc/master/staffpasswd
+AuthName "Staff Only Directory"
+require valid-user
+satisfy any
+</Limit>

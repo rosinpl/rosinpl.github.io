@@ -1,0 +1,56 @@
+/*------===[ PORTLET: Box Eleições ]===------*/
+
+.box_uaisuper_eleicoes_medio {float:left; width:365px; margin-top:10px; background:#F6F6F6; margin-bottom: 10px; *margin-bottom:10px; _margin-bottom:20px;overflow:hidden;}
+.box_uaisuper_eleicoes_medio .h3{color:#7AB8DD; font-size:17px; display:block; font-family:"Trebuchet MS", Trebuchet, Arial, sans-serif; font-weight:normal}
+.box_uaisuper_eleicoes_medio .p{color:#666666; font-size:13px;  display:block; font-family:"Trebuchet MS", Trebuchet, Arial, sans-serif; margin-bottom:5px}
+.box_uaisuper_eleicoes_medio img{margin-right:0px}
+.box_uaisuper_eleicoes_altura_medio {height:95px}
+
+.topico02_medio {background:#ebebeb; text-align:right;  padding-right:5px; border-right:10px solid #365d94; height:24px; margin-bottom:10px}
+.topico02_eleicoes_medio p{position:relative; top:-2px; font-size:22px; font-family:"Trebuchet MS", Trebuchet, Arial, sans-serif; color:#efb31e; font-weight:bold; margin-bottom:0px}
+.ims_toposuper_eleicoes_medio {background:#D9E8F4; height:37px; background-image:url(http://imgsapp2.correiobraziliense.com.br/imgs/eleicoes_cb_media.jpg); background-repeat:no-repeat; background-position:0 0px; cursor:pointer}
+
+
+.mini_materia_super_eleicoes_medio {list-style-image:none; list-style-position:outside; list-style-type:none; margin-bottom:4px;clear:both}
+.mini_materia_super_eleicoes_medio li{border-bottom:1px solid #D9E8F4; padding-left:0px; padding-bottom:3px; font-family:"Trebuchet MS", Trebuchet, Arial, sans-serif; font-size:12px; color:#666666}
+.mini_materia_super_eleicoes_medio li a{font-family:"Trebuchet MS", Trebuchet, Arial, sans-serif; font-size:12x; color:#666666}
+.mini_materia_super_eleicoes_medio li a span{font-size:12px;}
+.mini_materia_super_eleicoes_medio li .h1{color:#78B7DD; display:inline; font-size:12px; font-family:"Trebuchet MS", Trebuchet, Arial,sans-serif; font-weight:bold}
+.mini_materia_super_eleicoes_medio img{position:relative; top: 3px; margin-left: 0px}
+
+
+/* NOVO BOX SUPER */
+
+.f1_medio {position:relative}
+.fotorota_ant_medio {left:0; margin-top:-42px; top:50%; position:absolute}
+.fotorota_pro_medio {position:absolute; right:13px; margin-top:-42px; top:50%}
+.fotorota_ant_super_medio { left:0; margin-top:-42px; top:50%; position:absolute}
+.fotorota_pro_super_medio {position:absolute; right:0px; margin-top:-42px; top:50%; _margin-right:10px;}
+.box_shandow_super_eleicoes_medio {background:#B9CDDE;  float:left; font-family:trebuchet MS; font-size:14px; height:12px; padding:6px; position:relative; top:30px; *top:-1px; width:363px; font-weight:bold; margin-top:20px; *margin-top:10px; overflow:hidden}
+.box_letras_super_eleicoes_medio {color:white; float:left; font-family:trebuchet MS; font-size:14px; height:57px; padding:4px 5px 5px 5px; position:relative; top:-5px; width:350px; font-weight:bold; margin-top:1px; overflow:hidden; z-index:2}
+.box_letras_super_eleicoes_medio a {color:white;font-size:17px;font-weight:normal; z-index:2; color:#041C50;}
+.box_letras_super_eleicoes_medio a:hover {text-decoration:underline;}
+
+.boxsuper_listas_eleicoes_medio {
+	float:right;
+	width:375px;
+	background:#EAF1F5;
+}
+
+.boxft_super_eleicoes_medio {
+	height: 235px;
+	width: 253px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background: url("imgs/loading.gif") no-repeat scroll center center transparent;
+}
+
+/* BARRA FINAL */
+
+.barrasuper_fundo_eleicoes_medio {background:#B9CDDE; width:365px; height:25px;margin-bottom:15px;}
+.barrasuper_fundo_txt_eleicoes_medio {text-align:center; font-family:"Trebuchet MS"; font-size:12px; color:#CCCCCC}
+.barrasuper_fundo_txt_eleicoes_medio a{color:#FFFFFF; text-decoration:none; font-size:12px;line-height:26px;}
+.barrasuper_fundo_txt_eleicoes_medio a:hover{color:#FFFFFF; text-decoration:underline}
+
+.fl_super_eleicoes_medio {float:right; position:relative;width:365px;height:250px; *height:260px;}
+.body ul.mini_materia_super_eleicoes_medio {margin:0;}

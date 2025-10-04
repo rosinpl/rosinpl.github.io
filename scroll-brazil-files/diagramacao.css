@@ -1,0 +1,415 @@
+/*
+//	Diagramação - Eu estudante 
+//	Conteúdo
+*/
+
+/*Imports*/
+@import url(http://fonts.googleapis.com/css?family=Pontano+Sans);/*font-family: 'Pontano Sans', sans-serif;*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans); /*font-family: 'Open Sans', sans-serif;*/
+
+
+
+/*Temp*/
+div.ColunaEsquerda div.Block  a b  img{
+   -moz-box-shadow: 10px 10px 5px #888;
+   -webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+}
+
+b.innerborder .left span{color: #2A2A2A;}
+
+
+
+/*Globals*/
+body{font-family: 'Open Sans', sans-serif; font-weight: 100;}
+
+.master{width: 990px; margin: 0 auto;}
+.clear{clear:both;}
+
+/*bg-Colors*/
+.bgBranco{background-color: #FFFFFF;}		
+.bgCinza1{background-color: #FCFCFC;}		.bgAzul1{background-color:#3079C9;} /*Claro*/
+.bgCinza2{background-color: #EAEAED;}		.bgAzul2{background-color:#21538A;}
+.bgCinza3{background-color: #D5D5D5;}		.bgAzul3{background-color:#1F4B7D; color:#FFFFFF;} /*Médio*/
+.bgCinza4{background-color: #AFAFAF;}		.bgAzul4{background-color:#183C63;}
+.bgCinza5{background-color: #6F6F6F;}		.bgAzul5{background-color:#0F253D;} /*Escuro*/
+
+/*margem verticais*/							/*paddings verticais*/
+.mgv60{margin-top:60px; margin-bottom:60px;}	.pdv60{padding-top:60px; padding-bottom:60px;}
+.mgv20{margin-top:20px; margin-bottom:20px;}	.pdv20{padding-top:20px; padding-bottom:20px;}
+.mgv15{margin-top:15px; margin-bottom:15px;}	.pdv15{padding-top:15px; padding-bottom:15px;}
+.mgv10{margin-top:10px; margin-bottom:10px;}	.pdv10{padding-top:10px; padding-bottom:10px;}
+.mgv5{margin-top:5px; margin-bottom:5px;}		.pdv5{padding-top:5px; padding-bottom:5px;}
+.mgv2{margin-top:2px; margin-bottom:2px;}		.pdv2{padding-top:2px; padding-bottom:2px;}
+
+/*margem horizontais*/							/*paddings horizontais*/
+.mgh20{margin-left:20px; margin-right:20px;}	.pdh20{padding-left:20px; padding-right:20px;}
+.mgh15{margin-left:15px; margin-right:15px;}	.pdh15{padding-left:15px; padding-right:15px;}
+.mgh10{margin-left:10px; margin-right:10px;}	.pdh10{padding-left:10px; padding-right:10px;}
+.mgh5{margin-left:5px; margin-right:5px;}		.pdh5{padding-left:5px; padding-right:5px;}
+.mgh2{margin-left:2px; margin-right:2px;}		.pdh2{padding-left:2px; padding-right:2px;}
+
+/*margem laterais*/
+.mgld{margin-right: 16px;}
+
+
+/*bordas Azuis*/
+.brdb5{border-bottom: 5px solid #1F4B7D;}
+.brdb2{border-bottom: 2px solid #1F4B7D;}
+.brdb1{border-bottom: 1px solid #D5D1D1;}
+
+
+
+
+div.container1{
+	float: left; 
+	width: 600px;
+}
+	a.logoHeader{
+		float: left;
+
+	}
+
+div.container2{
+    float: right;
+    width: 350px;
+}
+
+
+/*
+//Urgente*/
+div.destaque{}
+	div.bgTituloDestaque{float: left; text-transform: uppercase; letter-spacing:1px;}
+	div.txtDestaque{float: left; width: 80%; text-transform: uppercase; letter-spacing:1px;}
+	
+/*
+//Bloco 1*/
+div.bloco1{}
+
+div.containerTitulo{}
+
+div.separadorExt{
+	background-color: #1F4B7D;
+	background-repeat: repeat-x;
+	height: 1px;
+	width: 50%;
+}
+
+div.separadorInt{float:right; width:360px; background-color: white; height: 1px;}
+div.separadorInt2{margin-left: -79%; width: 662px; background-color: #1F4B7D; height: 1px;}
+div.separadorInt3{float:right; width:196px; background-color: white; height: 1px;}
+div.separadorInt4{float:right; width:370px; background-color: white; height: 1px;}
+
+span.titulo{color:#143287; text-transform: uppercase; font-size: 24px; padding-left: 5px;}
+span.titulo2{color:#143287; text-transform: uppercase; font-size: 40px;}
+
+div.conteudo{
+	width: 664px;
+	float: left;
+}
+	div.colunaEsquerda{
+		width: 365px;
+		float: left;
+		margin-top: 10px;
+	}
+	
+	/*Notícias*/
+	.ntc1-Box{
+		border-bottom: 1px solid #D5D1D1;
+		padding: 0 0 15px;
+	}
+	
+	.ntc1-Titulo{
+		color: #B82222;
+		font-size: 0.9em;
+		text-transform: uppercase;
+		margin: 0px;
+		font-weight: bold;
+	}
+	
+	.ntc1-Subtitulo{
+		color: #585052;
+		font-size: 1.3em;
+	}
+	
+	.ntc1-Chamada{
+		color: #585052;
+		/*font-size: 1.1em;*/
+		margin: 2px 0;
+		text-align: justify;
+	}
+	
+	/*Educação*/
+	div.colunaDireita{
+		width: 273px;
+		float: right;
+		margin-top: 10px;
+	}
+	
+	div.boxEnsino{
+		margin-bottom: 20px;
+    		margin-top: 20px;
+	}	
+		
+		/*Educação Básica*/
+		div.tituloEB{
+			background-color: #EE7681;
+			text-align: center;
+		}
+		
+		h2.estiloEB{
+			text-transform: uppercase;
+			text-align: center;
+			color: white;
+			font-size: 14px;
+		}
+		
+		span.noticiaEB{
+			color: #CD6F78;
+			/*font-size: 14px;*/
+		}
+		
+		/*Educação Profissional*/
+		div.tituloEP{
+			background-color: #E7B06E;
+			text-align: center;
+		}
+		
+		h2.estiloEP{
+			text-transform: uppercase;
+			text-align: center;
+			color: white;
+			font-size: 14px;
+		}
+		
+		span.noticiaEP{
+			color: #BA6E13;
+			/*font-size: 14px;*/
+		} 
+		
+		/*Ensino Superior*/
+		div.tituloES{
+			background-color: #78CB67;
+			text-align: center;
+		}
+		
+		h2.estiloES{
+			text-transform: uppercase;
+			text-align: center;
+			color: white;
+			font-size: 14px;
+		}
+		
+		span.noticiaES{
+			color: #509D40;
+			/*font-size: 14px;*/
+		} 
+		
+		/*Pós-Graduação*/
+		div.tituloPG{
+			background-color: #475EEA;
+			text-align: center;
+		}
+		
+		h2.estiloPG{
+			text-transform: uppercase;
+			text-align: center;
+			color: white;
+			font-size: 14px;
+		}
+		
+		span.noticiaPG{
+			color: #152273;
+			/*font-size: 14px;*/
+		} 
+	
+div.publicidade{
+	width: 301px;
+	float: right;
+}
+
+/*
+//Bloco 2*/
+div.bloco2{}
+
+/*
+//Bloco 3*/
+div.bloco3{}
+
+/*
+//Bloco 4*/
+div.bloco4{}
+
+/*Ultimas Alterações*/
+.box_noticia{
+	margin-top: 20px;
+	font-family: Trebuchet MS !important;
+}
+
+#abanoticia{
+	margin-top:10px;
+	margin-bottom: 10px;
+	color: #333333;
+    	display: block;
+    	font-size: 13px;
+    	letter-spacing: -0.02em;
+    	/*line-height: 1.45em;*/
+}
+
+/**/
+#ad_box1_pemat #ad_unit_pemat{
+	width:100%;
+}
+
+
+/*Estilo P�ginas Intermediarias*/
+.block{
+	border-bottom: 1px solid #CECECE;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.redlight {
+    color: #B82222;
+    font-size: 1em;
+    margin: 0;
+    outline: medium none !important;
+    padding: 0;
+    text-decoration: none;
+}
+
+.h2 {
+    color: #585052;
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+/*
+// Barra de Ultimas Not�cias
+*/
+
+.tabbed_fields {
+    background: url("http://imgsapp2.correiobraziliense.com.br/imgs/tabbed_fields.gif") repeat scroll center bottom #FFFFFF;
+    padding: 5px;
+    text-align: right;
+}
+
+.tabbed_link {
+    border: 0 none;
+}
+
+.tabbed_link.biglist {
+    margin: 4px -5px;
+    padding: 0;
+}
+
+.zebra {
+    background-color: #F6F6F6;
+}
+
+.tabbed_link a span {
+    padding: 4px;
+}
+
+.tabbed_link a span {
+    padding: 4px;
+}
+
+.tabbed_link a{
+    display: block;
+    padding: 5px;
+}
+
+.tabbed_pagination{
+    clear: both;
+    text-align: center;
+}
+
+.tabbed_totalpages{
+    background: none repeat scroll 0 0 #E7E8EA;
+    border-top: 1px solid #93AEBF;
+    margin-top: 4px;
+    padding: 4px;
+    text-align: right;
+}
+
+.leftpg {
+    float: left;
+    margin: 2px 10px 2px 235px !important;
+}
+
+.left {
+    float: left;
+    margin: 2px 10px 2px 0 !important;
+}
+
+.tabbed_totalpages input {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #93AEBF;
+    text-align: center;
+}
+
+.tabbed_area li {
+    background: none repeat scroll 0 0 #B1C2C1;
+    color: #FFFFFF;
+    display: block;
+    float: right;
+    margin: 0 3px -1px;
+    padding: 2px 6px;
+}
+
+
+.tabbed_area li {
+    float: left;
+    margin: 0 5px -1px 0;
+}
+
+
+.tabbed_totalpages a.p_ok {
+    background: url("http://imgsapp2.correiobraziliense.com.br/imgs/pagination.gif") no-repeat scroll -152px 0 transparent;
+    height: 13px;
+    margin-top: 3px;
+    overflow: hidden;
+    padding: 0;
+    width: 29px;
+}
+
+.tabbed_totalpages a.p_top {
+    background: url("http://imgsapp2.correiobraziliense.com.br/imgs/pagination.gif") no-repeat scroll -181px 0 transparent;
+    height: 13px;
+    margin-top: 3px;
+    overflow: hidden;
+    padding: 0;
+    width: 47px;
+}
+
+.tabbed_pagination a.p_left_all.inactive {
+    background: url("http://imgsapp2.correiobraziliense.com.br/imgs/pagination.gif") no-repeat scroll 0 center transparent;
+    cursor: default;
+}
+
+.tabbed_pagination a.p_left.inactive {
+    background: url("http://imgsapp2.correiobraziliense.com.br/imgs/pagination.gif") no-repeat scroll -19px center transparent;
+    cursor: default;
+}
+
+.tabbed_pagination a.current {
+    background-color: #93AEBF;
+}
+
+.date{
+    background: none repeat scroll 0 0 #93AEBF;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    margin: 4px;
+    padding: 2px;
+}
+
+/*Unileya*/
+
+#title{margin:0 !important; text-align:center; width: 523px;}
+div.blocoUnileya1{}
+div#tudo div#content div#title h1{margin:0 !important; text-align:center; width: 523px;}

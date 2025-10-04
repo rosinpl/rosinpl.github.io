@@ -1,0 +1,74 @@
+body{
+	padding:0px;
+	margin:0px 0px 0px 8px;
+}
+
+#tudo{
+	width: 980px;
+	height: 350px;
+	border: 0px solid #000;
+	margin:0 auto;
+}
+
+#content{
+	border: 1px solid #e9e9e9;
+	margin: 0;
+	height: 230px!important;
+	padding-top:60px;
+	position:relative;
+	width: 290px;
+}
+
+#title{
+	background:url(img/back-title.png) no-repeat;
+	height:49px;
+	position:absolute;
+	right:6px;
+	top:10px;
+	width:100%;
+}
+
+#title h1{
+	color:#fff;
+	font-family: 'Ropa Sans', sans-serif;
+	font-size:21px;
+	margin:10px 0px 0px 16px;
+}
+
+.txt{
+	color:#666;
+	font-family: arial, sans-serif;
+	font-size:14px;
+}
+.produto_bro{
+	border-bottom:1px solid #e9e9e9!important;
+	float:left;
+	height:68px;
+	border:0px solid #000;
+	margin:5px 0px 0px 5px;
+	width:280px;
+}
+.produto_bro img{
+	width: 62px;
+}
+
+.produto_bro:last-child{
+	border-bottom:none!important;
+}
+
+.produto_bro  a{
+	width: 180px;
+	height:30px;
+	margin:0;
+	color:#333333;
+	text-decoration: none;
+}
+
+/*.teste{
+	border-bottom:1px solid #e9e9e9;
+	display:table;
+	height:70px;
+	margin:auto;
+	position:relative;
+	width:300px;
+*/}

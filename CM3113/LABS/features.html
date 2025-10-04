@@ -1,0 +1,66 @@
+<HTML>
+<HEAD><TITLE>CM3113</TITLE></HEAD>
+<BODY>
+
+<H1>CM3113 - Computer Vision</H1>
+
+<H2>Lab Sheet - Week 3</H2>
+<H2>Feature Detection</H2>
+
+<HR>
+
+<P>
+Write a program to perform the Sobel edge detector.
+You can apply it to some of the images we used before
+(e.g. the <A HREF="wdg2.pgm">widget</A>)
+to check your results.
+
+<HR>
+
+<P>
+Now modify your program to make it detect lines (bars).
+Apply it to this image of the
+<A HREF="forth.pgm">Forth rail bridge.</A>
+
+<P>
+(Note: just combine two orthogonal convolution masks in a similar manner to the Sobel edge detector,
+although more properly an approach similar to the compass edge detector should be used.)
+
+<HR>
+
+<P>
+Using the median filter you wrote in the previous lab
+to implement a median based corner detector ("Local ordered grey levels as an aid to corner detection", 1984) and apply it to
+these images of office scenes:
+<A HREF="office1.pgm">office1</A>
+and
+<A HREF="inria.pgm">inria</A>.
+Just generate the raw cornerity map (median filtered image minus the original image -
+and make the value positive!),
+don't worry about non-maximal suppression.
+If you have time experiment with different sized windows (i.e. larger than 3 by 3
+windows).
+
+<P>
+What are the strengths and weaknesses of the algorithm?
+What about applying it to another sort of image such as
+<A HREF="lena.pgm">lena</A>
+
+<!--
+<HR>
+
+<P>
+Finish off by playing with this
+<A HREF="Snake/Snake.html">applet</A>
+
+which demonstrates a sophisticated method of object segmentation (using
+<B>snakes</B>) applied to an edge detected image.
+-->
+
+<HR>
+<I>
+go to <A HREF="../index.html">CM3113 home page</A>
+</I>
+
+</BODY>
+</HTML>

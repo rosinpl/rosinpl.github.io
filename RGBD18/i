@@ -1,0 +1,90 @@
+<p>
+RGB-D images capture both photometric and geometric information,
+and over the last few years the cost of
+RGB-D sensors has dropped while their accuracy has increased.
+RGB-D sensors and analytics is a timely topic, as
+RGB-D data is now
+widespread and has been incorporated into many applications,
+such as health care, robotics, fashion, metrology, vehicular technology.
+<p>
+However, data is still typically noisy and incomplete, data processing
+techniques still lag behind traditional image modalities, real-time processing
+of data becomes more challenging as data volumes increase. Therefore, many
+research challenges remain.
+</p>
+
+<!--
+<p>
+You can find details of
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/VG2015/">Vision meets Graphics 2015</A>
+which was held in Auckland.
+</p>
+-->
+
+<H2>Important Dates (11:59 Pacific Time)</H2>
+
+
+<TABLE cellspacing="10">
+<TR>
+     <TD>
+     &nbsp; &bull;
+     Submission of full papers:
+     </TD>
+     <TD>
+     <B><FONT COLOR="#ff0014">
+     <em>30st September, 2018 (deadline extended)</em>
+     </FONT></B>
+     </TD>
+</TR>
+<TR>
+     <TD>
+     &nbsp; &bull;
+     Notification of acceptance:
+     </TD>
+     <TD>
+     <em>19th October, 2018</em>
+     </TD>
+</TR>
+<TR>
+     <TD>
+     &nbsp; &bull;
+     Camera ready papers:
+     </TD>
+     <TD>
+     <em>31st October, 2018</em>
+     </TD>
+</TR>
+<TR>
+     <TD>
+     &nbsp; &bull;
+     Workshop date:
+     </TD>
+     <TD>
+     <em>2nd December, 2018</em>
+     </TD>
+</TR>
+</TABLE>
+
+
+<H2>Venue</H2>
+<p>
+The workshops will be held as part of ACCV 2018 in Perth, Australia.
+For details, please see the 
+<A HREF="http://accv2018.net/">ACCV webpage</A>
+</p>
+
+
+<H2>Workshop Proceedings</H2>
+<p>
+All of the workshops held in association with ACCV 2018 will have their
+peer-reviewed proceedings published by Springer-Verlag in the LNCS series.
+</p>
+
+<H2>Contact</H2>
+<p>
+If you have any comments or questions, send an email to
+<a href="mailto:paul.rosin@cs.cf.ac.uk">Prof Paul Rosin</a>,
+<a href="mailto:laiy4@cardiff.ac.uk">Dr Yukun Lai</a> or
+<a href="mailto:toby.breckon@durham.ac.uk">Prof Toby Breckon</a>
+
+</p>

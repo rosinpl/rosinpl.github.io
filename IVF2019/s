@@ -1,0 +1,55 @@
+<H2>Author Guidelines</H2>
+
+
+<H3>Paper Preparation</H3>
+
+For review, a complete paper should be submitted using the <I>for_review</I> format and the guidelines provided in the author kit. All reviews are double-blind, so please be careful not to include any identifying information including the authors’ names or affiliations. All papers should be submitted as PDF files (10 MB maximum).
+</P>
+<P>
+Accepted papers will be allocated 8 pages in the proceedings. Please note that References/Bibliography at the end of the paper will NOT count toward the aforementioned page limit. That is, a paper can be up to 8 pages + the references.
+</P>
+<P>
+Use the WACV 2019 Author Kit <A HREF="wacv2019-author-kit.zip">[zip file].</A>
+
+<H3>Supplemental Materials</H3>
+
+You may also submit supplemental materials to assist with the review. These may include videos, additional images or other results, or appendices. Please note that the submitted paper should be as self-contained as possible and that these materials should supplement not complete the content of the paper.
+</P>
+<P>
+All supplemental materials must be zipped into a single file, or you may submit a single PDF file for non-video materials. In either case, the maximum file allowed size for the supplemental materials is 30 MB.
+
+<H3>Other Policies</H3>
+
+All papers submitted for WACV must represent original, unpublished work.
+</P>
+<P>
+Dual submission elsewhere is not permitted.
+</P>
+<P>
+By submitting a manuscript to WACV, the authors assert that it has not been previously published in substantially similar form. An arXiv.org paper is not counted as a previously published paper because it cannot be rejected. A university technical report is also not counted as a prior publication because it is typically not peer reviewed. Furthermore, no paper which contains significant overlap with the contributions of this paper either has been or will be submitted during the WACV 2019 review period to either a journal or any conference (including WACV 2019) or any workshop. Papers violating this condition will be rejected.
+</P>
+<P>
+If there are papers that may appear to the reviewers to violate this condition, then it is your responsibility to: (1) cite these papers (preserving anonymity), (2) argue in the body of your paper why your WACV paper is non-trivially different from these concurrent submissions, and (3) include anonymized versions of those papers in the supplemental material.
+</P>
+<P>
+All work submitted to WACV is considered confidential until the papers appear.  Note the conference will be publishing electronically, about 2 weeks before the conference, so plan any patent dates accordingly.
+
+<!--
+xxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxx
+<P>
+Accepted workshop papers will be published by Springer in the Lecture Notes in Computer Science (LNCS) series.
+-->
+
+<H2>Online Submission Site</H2>
+
+Please submit papers
+by 31st October, 2018 through the 
+<A HREF="https://cmt3.research.microsoft.com/IVF2019">online submission site.</A>
+ 
+<H2>Registration</H2>
+
+Every paper must have at least one author registered by the camera-ready deadline, November 20, 2018. This can be a student author and one person can register multiple papers as long as that person is a co-author on each of the papers.
+
+</UL> 

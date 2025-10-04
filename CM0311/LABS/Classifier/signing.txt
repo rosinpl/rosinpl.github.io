@@ -1,0 +1,4 @@
+jar cvf Classify.jar Classify.class
+keytool -genkey -validity 1000 -keystore pKeyStore -alias keyName
+keytool -selfcert -keystore pKeyStore -alias keyName -validity 1000
+jarsigner -tsa http://timestamp.digicert.com -keystore pKeyStore Classify.jar keyName

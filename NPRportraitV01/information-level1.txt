@@ -1,0 +1,24 @@
+Source images comprising level 1 of the NPRportrait benchmark.
+All images came from Flickr unless otherwise specified.
+
+Photo credits:
+1   Piratska strana,
+2   IFES - International Fellowship of Evangelical Students,
+3   Mecklenburg County,
+4   Jesse Gross (Wikimedia),
+5   iKobe!,
+6   IFES - International Fellowship of Evangelical Students,
+7   Pexels (pixabay),
+8   Ethan M Sigmon,
+9   IFES - International Fellowship of Evangelical Students,
+10  projectofheart,
+11  Oregon Department of Forestry,
+12  Partij van de Arbeid,
+13  Partij van de Arbeid,
+14  chidi (pixabay),
+15  SANGONeT ICT for NGOs Conference,
+16  Mecklenburg County,
+17  jaymarable,
+18  IFES - International Fellowship of Evangelical Students,
+19  Partij van de Arbeid,
+20  Matthew Roth.

@@ -1,0 +1,84 @@
+<H2>Invited Speakers</H2>
+
+<TABLE cellpadding="10" width = "100%">
+<!-- *********************************************** -->
+<TR>
+<TD width="33%" align="center"> <IMG SRC="img/sagar.jpg" height = "300px" alt="Mark Sagar"> </TD>
+<TD width="33%" align="center"> <IMG SRC="img/mould.jpg" height = "300px" alt="David Mould"> </TD>
+</TR>
+
+<!-- *********************************************** -->
+<TR>
+<TD align="center">
+<A HREF="https://unidirectory.auckland.ac.nz/profile/msag003">Mark Sagar</A>
+<BR>
+<EM>
+Laboratory for Animate Technologies
+<BR>
+Auckland Bioengineering Institute
+<BR>
+University of Auckland
+</EM>
+</TD>
+
+<TD align="center">
+<A HREF="http://people.scs.carleton.ca/~mould">David Mould</A>
+<BR>
+<EM>
+Graphics, Imaging and Games Lab
+<BR>
+School of Computer Science
+<BR>
+Carleton University 
+</EM>
+</TD>
+</TR>
+
+<!-- *********************************************** -->
+<TR>
+<TD align="center">
+<BR>
+<B>
+title: TBC
+</B>
+</TD>
+
+<TD align="center">
+<BR>
+<B>
+title: TBC
+</B>
+</TD>
+</TR>
+
+<!-- *********************************************** -->
+<TR>
+<TD valign="top">
+abstract: TBC
+</TD>
+
+<TD valign="top">
+abstract: TBC
+
+</TD>
+</TR>
+
+<!-- *********************************************** -->
+<TR>
+<TD valign="top">
+<BR>
+<EM>
+bio: TBC
+</EM>
+</TD>
+
+<TD valign="top">
+<BR>
+<EM>
+bio: TBC
+</EM>
+</TD>
+</TR>
+
+</TABLE>
+

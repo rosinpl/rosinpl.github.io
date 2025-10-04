@@ -1,0 +1,62 @@
+
+<HTML>
+<HEAD>
+<SCRIPT SRC="slider3.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+
+// code to (pre)load images making up a stack and allow user to
+// go through the stack with a slider bar
+
+// assumes file names are dic201.gif - dic251.gif according to first & last
+  var first = 201;
+  var last = 251;
+  var imagewidth = 640;
+  var imageheight = 477;
+
+  var mySlider1 = new Slider( "Slider1" );
+
+  var myimages=new Array()
+
+  function place() {
+    mySlider1.placeSlider( "Slider1Rail" );
+  }
+
+  function preloadimages(first,last){
+    for (i=first;i<=last;i++){
+      myimages[i-first]=new Image()
+      myimages[i-first].src="dic"+i+".gif"
+    }
+  }
+
+
+  function changepic(id,item) {
+    document[id].src = myimages[item-first].src;
+  }
+
+  preloadimages(first,last);
+
+-->
+</SCRIPT>
+</HEAD>
+
+<BODY onLoad="place()">
+
+<IMG NAME="stack" SRC="dic201.gif" WIDTH=640  HEIGHT=477 >
+<BR>
+<IMG NAME="Slider1Rail" SRC="sliderbg.gif">
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+
+  mySlider1.leftValue = first;
+  mySlider1.rightValue = last;
+  mySlider1.defaultValue = first;
+  mySlider1.onchange = "changepic('stack', toDecimals(this.getValue(),0))";
+
+  mySlider1.writeSlider();
+
+-->
+</SCRIPT>
+</BODY>
+</HTML>

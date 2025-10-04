@@ -1,0 +1,55 @@
+<HTML>
+<HEAD><TITLE>CM3113</TITLE></HEAD>
+<BODY>
+
+<H1>CM0311 - Image Processing</H1>
+
+<H2>Lab Sheet - Week 10</H2>
+<H2>3D Vision: Stereo</H2>
+
+<HR>
+
+<P>
+Write a stereo algorithm to compute a disparity (depth) map using correlation.
+For each window in the left image perform correlation in the right image,
+and find the translation that maximises correlation.
+
+<P>
+For example, given the following <A HREF="left.pgm">left</A> and <A HREF="right.pgm">right</A> synthetic stereo image pair
+<BR>
+<IMG SRC="left.gif" WIDTH=200 ALT="left">
+<IMG SRC="right.gif" WIDTH=200 ALT="right">
+<BR>
+your result (i.e. the disparity map) should ideally like this:
+<BR>
+<IMG SRC="disparity.gif" WIDTH=200 ALT="disparity">
+<BR>
+although it is more likely to be more crude - like the following,
+which was generated using a window of 10x10 and a maximum allowed disparity of 8 pixels in any direction:
+<BR>
+<IMG SRC="disparity-mine.gif" WIDTH=200 ALT="disparity">
+
+<HR>
+
+<P>
+You can use the same program to compute optic flow (i.e. motion between image frames).
+Try it out on 
+<A HREF="taxi1.pgm">frame 1</A> and <A HREF="taxi8.pgm">frame 8</A>
+from the famous Hamburg taxi sequence:
+<BR>
+<IMG SRC="taxi1.gif" WIDTH=200 ALT="taxi1">
+<IMG SRC="taxi8.gif" WIDTH=200 ALT="taxi8">
+<BR>
+This a disparity map generated using correlation
+<BR>
+<IMG SRC="disparity-taxi.gif" WIDTH=200 ALT="disparity">
+<BR>
+but the flow vectors (not shown) are also easily derived.
+
+<HR>
+<I>
+go to <A HREF="../index.html">CM3113 home page</A>
+</I>
+
+</BODY>
+</HTML>

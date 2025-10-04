@@ -1,0 +1,100 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (X11; I; SunOS 5.7 sun4u) [Netscape]">
+   <title>  Matlab  </title>
+<!-- -*-html-*- -->
+<link REV="made" HREF="mailto:carlson@math.utah.edu">
+</head>
+<body>
+
+<h1>
+Basic Matlab Tutorial</h1>
+
+<h3>
+Getting started</h3>
+Here is a sample session with Matlab. Text in bold is what you type, ordinary
+text is what the computer "types." You should read this example, then copy
+it at the computer.
+<pre>% <b>matlab
+
+</b>>> <b>a = 1 + 2
+
+</b>a =
+&nbsp;&nbsp;&nbsp;&nbsp; 3</pre>
+
+<pre>>> <b>a^10
+
+</b>ans =
+&nbsp;&nbsp;&nbsp;&nbsp; 59049
+
+>> <b>quit
+
+</b>&nbsp;16 flops.
+
+%</pre>
+This example adds 1 + 2 and stores the result in variable a. It then computes
+a to the power 10 and outputs the result. All results are output unless
+a semi-colon is appending to the command.
+<p>More examples of how to use Matlab facilities are given below.
+<h3>
+Matrices</h3>
+To enter the matrix
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 2
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 4</pre>
+and store it in a variable a, do this:
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >> <b>a = [ 1 2; 3 4 ]</b></pre>
+To redisplay the matrix, just type its name:
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >> <b>a</b></pre>
+To square the matrix a<i> </i>:
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >> <b>a * a</b></pre>
+Now define a matrix b:
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >> <b>b = [ 1 2; 0 1 ]</b></pre>
+and compute the product:
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >> <b>a * b</b></pre>
+and the sum:
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >> <b>s = a + b</b></pre>
+Matrices can sometimes be inverted:
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >> <b>inv(s)</b></pre>
+To check that this is correct, we check that the product of s and its inverse
+is the identity matrix:
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >> <b>s * inv(s)</b></pre>
+
+<h3>
+Loops</h3>
+To loop through a sequence of values try
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >> <b>for i = 1:4</b></pre>
+
+<pre><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>&nbsp; >> <b>i,i^2</b></pre>
+
+<pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; >> <b>end</b></pre>
+
+<h3>
+Images</h3>
+To read in a TIFF image (BMP, HDF, JPEG, PCX, TIFF, XWB formats are supported)
+do
+<pre>&nbsp;&nbsp;&nbsp; >> <b>i=imread('cameraman.tif');</b></pre>
+and display it by
+<pre>&nbsp;&nbsp;&nbsp; >> <b>imshow(i)</b></pre>
+If there are insufficient Image Toolbox licences then use the
+following commands:
+<pre>&nbsp;&nbsp;&nbsp; >> <b>image(i)</b></pre>
+<pre>&nbsp;&nbsp;&nbsp; >> <b>colormap(gray)</b></pre>
+<pre>&nbsp;&nbsp;&nbsp; >> <b>imagesc(i)</b></pre>
+Using imread, the image is stored as a matrix pixel intensities in the
+range 0 to 255, and are represented by the <tt>uint8</tt> datatype. However,
+many mathematical functions can only be applied to the <tt>double</tt>
+class. To convert between <tt>uint8</tt> to <tt>double</tt> (values in
+the range 0 to 1) do
+<pre><tt>&nbsp;&nbsp;&nbsp; >> <b>i=im2uint8(i);</b></tt></pre>
+and from <tt>double</tt> to <tt>uint8</tt>.
+<pre>&nbsp;&nbsp;&nbsp; >> <b>i=im2double(i)</b></pre>
+Again, if there are insufficient Image Toolbox licences then there are
+alternatives:
+<pre>&nbsp;&nbsp;&nbsp; >> <b>i = double(i) ./ 255;</b></pre>
+and
+<pre>&nbsp;&nbsp;&nbsp; >> <b>i = uint8(i .* 255);</b></pre>
+
+</body>
+</html>

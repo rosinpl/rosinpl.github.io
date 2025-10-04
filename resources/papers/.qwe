@@ -1,0 +1,7 @@
+foreach i (CMFD-SCIA.pdf APDrawingGAN.pdf remap-mirage.pdf  JCST-tabu-postprint.pdf  SHREC14-3DOR.pdf  SHREC15-canonical.pdf SHREC16-partial.pdf )
+   ~/bin/pdf-downsize.sh $i 4 xx-$i
+
+   echo ==== $i
+   ls -l $i xx-$i
+   echo
+end

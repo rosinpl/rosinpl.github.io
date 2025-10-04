@@ -1,0 +1,24 @@
+Source images comprising level 2 of the NPRportrait benchmark.
+All images came from Flickr unless otherwise specified.
+	
+Photo credits:
+1   Sgt. Matthew Callahan (Wikimedia),
+2   BBC World Service,
+3   Rod Waddington,
+4   Adam McGuffie,
+5   Pablo El Diablo,
+6   www.j-pics.info,
+7   susan,
+8   Nando.uy,
+9   Christopher Blizzard,
+10  Adam Jones,
+11  Christopher Thompson,
+12  shankar s.,
+13  ptksgc (pixabay),
+14  Sparky,
+15  Nando.uy,
+16  Martin Sharman,
+17  wiki The Photographer,
+18  Greg Peverill-Conti,
+19  Hamish Irvine,
+20  Greg Peverill-Conti.

@@ -1,0 +1,40 @@
+<HTML>
+<HEAD><TITLE>CM3113</TITLE></HEAD>
+<BODY>
+
+<H1>CM3113 - Computer Vision</H1>
+
+<H2>Lab Sheet - Week 11</H2>
+<H2>Colour</H2>
+
+<HR>
+
+<P>
+Here is a Java
+<A HREF="InvertPPM.java">program</A>
+(which uses <A HREF="ImagePPM.java">ImagePPM.java</A>)
+for inverting colour PPM images.
+Test it out on this image of
+<A HREF="faces.ppm">faces</A>.
+Use an image browser to find out typical RGB values of the faces.
+
+<P>
+Modify the program to detect faces and set all skin coloured pixels white.
+It may be easier if normalised colour values rgb (i.e. chromaticities) are used instead, where
+r=R/(R+G+B),
+g=G/(R+G+B),
+b=B/(R+G+B).
+You should get a result something like this:
+
+<BR>
+<IMG SRC="faces-before.gif" ALT="before skin detection">
+--->
+<IMG SRC="faces-after.gif" ALT="after skin detection">
+
+<HR>
+<I>
+go to <A HREF="../index.html">CM3113 home page</A>
+</I>
+
+</BODY>
+</HTML>

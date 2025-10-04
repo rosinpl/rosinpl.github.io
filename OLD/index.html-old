@@ -1,0 +1,788 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<title>Paul Rosin</title>
+<meta name="author" content="Paul Rosin">
+<meta name="description" content="Paul Rosin's home page">
+<meta name="keywords" content="computer science,computer vision,non-photorealistic rendering,mesh processing">
+<meta name="thumbnail" content="http://users.cs.cf.ac.uk/Paul.Rosin/me/plr38.gif">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<script language="JavaScript" type="text/javascript">
+
+<!--
+// ==============================================
+// Copyright 2003 by jsCode.com
+// Source: jsCode.com
+// Author: etLux
+// Free for all; but please leave in the header.
+// ==============================================
+
+// Set up the image files to be used.
+var theImages = new Array() // do not change this
+// To add more image files, continue with the
+// pattern below, adding to the array. Rememeber
+// to increment the theImages[x] index!
+
+theImages[0] = 'me/plr0.gif'
+theImages[1] = 'me/plr1.jpg'
+theImages[2] = 'me/plr2.gif'
+theImages[3] = 'me/plr3.gif'
+theImages[4] = 'me/plr4.gif'
+theImages[5] = 'me/plr5.gif'
+theImages[6] = 'me/plr6.jpg'
+theImages[7] = 'me/plr7.jpg'
+theImages[8] = 'me/plr8.gif'
+theImages[9] = 'me/plr9.gif'
+theImages[10] = 'me/plr10.gif'
+theImages[11] = 'me/plr11.gif'
+theImages[12] = 'me/plr12.jpg'
+theImages[13] = 'me/plr13.jpg'
+theImages[14] = 'me/plr14.jpg'
+theImages[15] = 'me/plr15.gif'
+theImages[16] = 'me/plr16.gif'
+theImages[17] = 'me/plr17.gif'
+theImages[18] = 'me/plr18.gif'
+theImages[19] = 'me/plr19.gif'
+theImages[20] = 'me/plr20.gif'
+theImages[21] = 'me/plr21.gif'
+theImages[22] = 'me/plr22.gif'
+theImages[23] = 'me/plr23.gif'
+theImages[24] = 'me/plr24.gif'
+theImages[25] = 'me/plr25.gif'
+theImages[26] = 'me/plr26.gif'
+theImages[27] = 'me/plr27.gif'
+theImages[28] = 'me/plr28.gif'
+theImages[29] = 'me/plr29.gif'
+theImages[30] = 'me/plr30.jpg'
+theImages[31] = 'me/plr31.gif'
+theImages[32] = 'me/plr32.gif'
+theImages[33] = 'me/plr33.gif'
+theImages[34] = 'me/plr34.gif'
+theImages[35] = 'me/plr35.gif'
+theImages[36] = 'me/plr36.gif'
+theImages[37] = 'me/plr37.gif'
+theImages[38] = 'me/plr38.gif'
+theImages[39] = 'me/plr39.gif'
+theImages[40] = 'me/plr40.gif'
+theImages[41] = 'me/plr41.gif'
+theImages[42] = 'me/plr42.gif'
+theImages[43] = 'me/plr43.gif'
+theImages[44] = 'me/plr44.jpg'
+theImages[45] = 'me/plr45.jpg'
+theImages[46] = 'me/plr46.gif'
+theImages[47] = 'me/plr47.gif'
+
+// ======================================
+// do not change anything below this line
+// ======================================
+
+var j = 0
+var p = theImages.length;
+
+var preBuffer = new Array()
+for (i = 0; i < p; i++){
+   preBuffer[i] = new Image()
+   preBuffer[i].src = theImages[i]
+}
+
+var whichImage = Math.round(Math.random()*(p-1));
+function showImage(){
+document.write('<img src="'+theImages[whichImage]+'" height="200" >');
+}
+
+//-->
+</script>
+
+</head><body>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+// ==============================================
+// Copyright 2003 by jsCode.com
+// Source: jsCode.com
+// Author: etLux
+// Free for all; but please leave in the header.
+// ==============================================
+showImage();
+//-->
+</script>
+
+<!--
+<img src="me2.gif" alt="Paul Rosin photo" height="200">
+-->
+<h1>Paul Rosin</h1>
+Professor of Computer Vision<BR>
+School of Computer Science &amp; Informatics<BR>
+Cardiff University<BR>
+<HR>
+
+<P>
+[ <A HREF="#history">Some History</A>
+| <A HREF="#interests">Research Interests</A>
+| <A HREF="#software">Software</A>
+| <A HREF="#demos">Demos</A>
+| <A HREF="#data">Data</A>
+| <A HREF="#publications">Publications</A>
+| <A HREF="#teaching">Teaching</A>
+| <A HREF="#contact">Contact Details</A>
+]
+</P>
+
+<HR>
+
+<!--
+<P>
+<B><FONT COLOR="#ff0014">
+A Research Associate position is now available in Cardiff School of Computer Science
+on an exciting project that is starting soon:
+"Virtual visualisation for information recovery from unopenable historical documents".
+You can check out the
+<A HREF="http://www.jobs.ac.uk/jobs/TR041/Research_Associate/">
+details here.</A>
+</FONT></B>
+<HR>
+-->
+
+<h2> <font color="red">NEWS</font> </h2>
+
+<TABLE cellspacing="10">
+
+<!--
+<TR> <TD align="left"> <img src="scroll.jpg" alt="scroll" height="100"> </TD> 
+     <TD> 
+		<font size="+2">S</font>ee the university
+		<A HREF="http://www.cardiff.ac.uk/news/articles/reading-the-unreadable-11092.html">
+		press release
+		</A>
+		on our virtual scroll unrolling project.
+</TD>
+</TR>
+-->
+
+<TR> <TD align="left"> <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/scrolls.html"> <img src="scroll.jpg" alt="scroll" height="100"></A> </TD> 
+     <TD> 
+		<font size="+2">O</font>ur work on the virtual unrolling of scrolls was featured on the
+		<A HREF="http://www.youtube.com/watch?v=FXkQz9fOafU">
+		One Show on BBC One.
+		</A>
+		Also check out the University's
+		<A HREF="http://www.cardiff.ac.uk/news/articles/reading-the-unreadable-11092.html">
+		press release
+		</A>
+		and my page for more 
+		<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/scrolls.html">
+		details.
+		</A>
+</TD>
+</TR>
+
+<TR> <TD align="left"><A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/VG2015/"> <img src="vg15.jpg" alt="VG2015" height="100"></A> </TD> 
+     <TD> 
+		<font size="+2">W</font>ith Taehyun Rhee (Victoria University of Wellington) I am organising a workshop on
+		<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/VG2015/">
+		Vision meets Graphics</A>
+		to be held in Auckland on 23rd November 2015 in conjunction with
+		<A HREF="http://www.psivt.org/psivt2015/">
+		PSIVT 2015.
+		</A>
+</TD>
+</TR>
+
+<TR> <TD align="left"><A HREF="http://expressive.graphics/2015">  <img src="cae15.jpg" alt="CAe" height="100"></A> </TD> 
+     <TD> 
+		<font size="+2">I</font> co-organised the 
+		<A HREF="http://expressive.graphics/2015">
+		International Symposium on Computational Aesthetics
+		in Graphics, Visualization, and Imaging
+		</A>
+		(Expressive 2015).
+</TD>
+</TR>
+
+<TR> <TD align="left">
+	<A HREF="http://www.cs.cf.ac.uk/shaperetrieval/shrec15/index.html"
+	onmouseover="document.images['shrec15'].src='shrec15b.jpg';"
+	onmouseout="document.images['shrec15'].src='shrec15a.jpg';"
+	><img src="shrec15a.jpg" name="shrec15" width="100" alt="" border="0"></A>
+    </TD>
+	 <TD> 
+		<font size="+2">W</font>e organised the SHREC'15 competition
+		<A HREF="http://www.cs.cf.ac.uk/shaperetrieval/shrec15/index.html">
+		Canonical Forms for Non-Rigid 3D Shape Retrieval.
+		</A>
+		The results were presented at the
+		<A HREF="http://vc.ee.duth.gr/3dor2015/">
+		Workshop on 3D Object Retrieval
+		</A>
+		which was collocated with
+		<A HREF="http://www.eurographics2015.ch/">
+		Eurographics 2015.
+		</A>
+</TD>
+
+<TR> <TD align="left">
+	<A HREF="http://www.cs.cf.ac.uk/CCDb/"
+	onmouseover="document.images['ccdb'].src='BackchannelImage1.gif';"
+	onmouseout="document.images['ccdb'].src='BackchannelImage2.gif';"
+	><img src="BackchannelImage2.gif" name="ccdb" width="100" alt="" border="0"></A>
+	</TD> 
+     <TD> 
+		<font size="+2">T</font>he annotations and extracted audio-visual features from the sequences
+		of the two way conversations making up the
+		<A HREF="http://www.cs.cf.ac.uk/CCDb/">
+		Cardiff Conversational Database (CCDb)</A>
+		are now available.
+</TD>
+
+<!--
+<TR> <TD align="left"> <img src="PAESNPR13.jpg" alt="PAESNPR13" height="100"> </TD> 
+     <TD> 
+		<font size="+2">W</font>ith Ramakrishna Kakarala (Nanyang Technological University) I organised a workshop on
+		Photographic Aesthetics and Non-Photorealistic Rendering
+		<A HREF="https://sites.google.com/site/paesnpr13/">
+		(PAESNPR13)
+		</A>
+		held in Mexico on 28th October 2013 in conjunction with PSIVT 2013.
+</TD>
+
+<TR> <TD align="left"> <img src="accv.jpg" alt="ACCV logo" height="100"> </TD> 
+     <TD> 
+		<font size="+2">W</font>ith colleagues I organised a workshop on
+		<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/faceworkshop2012/">
+		"Face analysis: The intersection of computer vision and human perception"
+		</A>
+		was held in Korea on the 6th November 2012 in conjunction with ACCV 2012.
+</TD>
+-->
+
+<TR> <TD align="left"> <A HREF="http://www.springer.com/engineering/computational+intelligence+and+complexity/book/978-3-319-06430-7"> <IMG SRC="CAcover.jpg" alt="cover" HEIGHT="100"></A> </TD>
+     <TD> 
+		<font size="+2">A</font>long with Andy Adamatzky and Xianfang Sun I edited a book on
+		<A HREF="http://www.springer.com/engineering/computational+intelligence+and+complexity/book/978-3-319-06430-7">
+		"Cellular Automata in Image Processing and Geometry"
+		</A>
+		which was published by Springer in 2014 as part of their Emergence, Complexity and Computation book series.  
+</TD>
+
+<TR> <TD align="left"> <A HREF="http://www.springer.com/computer/image+processing/book/978-1-4471-4518-9">  <IMG SRC="NPRcover_small.gif" alt="NPRcover" HEIGHT="100"> </A> </TD>
+     <TD> 
+		<font size="+2">A</font>long with John Collomosse I edited a book on
+		<A HREF="http://www.springer.com/computer/image+processing/book/978-1-4471-4518-9">
+		"Image and Video-Based Artistic Stylisation"
+		</A>
+		which was published by Springer in 2013 as part of their Computational Imaging and Vision book series.  
+</TD>
+</TABLE>
+
+<HR>
+
+<A name="history"></A>
+<h2>Some History</h2>
+<P>
+<font size="+2">I</font>
+gained the B.Sc. degree in
+Computer Science and Microprocessor Systems in 1984 from
+<A HREF="http://www.strath.ac.uk/">
+Strathclyde University,</A>
+Glasgow, and the Ph.D. degree in Information Engineering from
+<A HREF="http://www.city.ac.uk/">
+City University,</A>
+London in 1988.
+I was a research fellow at City University,
+developing a prototype system for the Home Office to detect and classify 
+intruders in image sequences. I worked on the Alvey project "Model-Based 
+Interpretation of Radiological Images" at
+Guy's Hospital, London before becoming a lecturer at the
+<A HREF="https://cs.curtin.edu.au">
+Department of Computer Science,</A>
+Curtin University of Technology,
+Perth, Australia.
+I moved to Italy to work at the
+Institute for Remote Sensing Applications at the
+<A HREF="http://ec.europa.eu/dgs/jrc/">
+Joint Research Centre.</A>
+followed by a return to the UK, becoming lecturer at the
+Department of Information Systems and Computing,
+<A HREF="http://www.brunel.ac.uk/">
+Brunel University,</A>
+London, UK.
+At the beginning of 2000 I moved to the
+<A HREF="http://www.cs.cf.ac.uk/">School of Computer Science &amp; Informatics,</A>
+Cardiff University.
+</P>
+<HR>
+
+<A name="interests"></A>
+<h2>Research Interests</h2>
+
+<font size="+2">I</font> am a member of the School's
+<A HREF="http://www.cs.cf.ac.uk/research/vis.php">
+Visual Computing</A> research group (<A HREF="http://www.cs.cf.ac.uk/Dave/3DVG/3dvg.html">old group page</a>).
+Its members are:
+<A HREF="http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=Yukun.Lai"><img
+src="thumbnailsFaces/yukun-thumb.gif" alt=""></A> 
+<A HREF="http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=F.C.Langbein"><img
+src="thumbnailsFaces/frank-thumb.gif" alt=""></A> 
+<A HREF="http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=Dave.Marshall"><img
+src="thumbnailsFaces/dave-thumb.gif" alt=""></A> 
+<A HREF="http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=Ralph.Martin"><img
+src="thumbnailsFaces/ralph-thumb.gif" alt=""></A>
+<A HREF="http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=Paul.Rosin"><img
+src="thumbnailsFaces/paul-thumb.gif" alt=""></A> 
+<A HREF="http://www.cs.cf.ac.uk/contactsandpeople/staffpage.php?emailname=Xianfang.Sun"><img
+src="thumbnailsFaces/xianfang-thumb.gif" alt=""></A>.
+As well working my Visual Computing group colleagues I also collaborate with other researchers such as:
+<A HREF="http://empslocal.ex.ac.uk/people/staff/jz205/"><img src="thumbnailsFaces/jovisa-thumb.gif" alt=""></A>
+<A HREF="http://www.cs.bath.ac.uk/~dpc/"><img src="thumbnailsFaces/darren-thumb.gif" alt=""></A>
+<A HREF="http://www.cs.bath.ac.uk/~pmh/"><img src="thumbnailsFaces/peter-thumb.gif" alt=""></A>
+<A HREF="http://www.swansea.ac.uk/staff/science/computer-science/k.l.tam/"><img src="thumbnailsFaces/gary-thumb.gif" alt=""></A>
+<A HREF="http://www.cardiff.ac.uk/people/view/39436-richmond-stephen"><img src="thumbnailsFaces/richmond-thumb.gif" alt=""></A>.
+We have a weekly 
+<A HREF="http://www.cs.cf.ac.uk/newsandevents/seminars/vlunch.html">
+"vlunch"</a> seminar series which I have organised for many years.
+For historic interest I have listed some of the 
+<A HREF="vlunch.html"> hundreds of previous talks</a>
+since 2003.
+
+<P>
+See also <A HREF="http://www.cs.cf.ac.uk/Dave/3DVG/3dvg.html">
+this (old) page</A> for more details of the group's activities.
+We are also part of the <A HREF="http://www.rivic.org.uk/">
+Research Institute of Visual Computing.</A>
+
+<P>
+My past and present research includes:
+<BR>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/natural.html"
+	onmouseover="document.images['i1'].src='thumbnails/natural2-new.gif';"
+	onmouseout="document.images['i1'].src='thumbnails/natural1-new.gif';"
+	><img src="thumbnails/natural1-new.gif" name="i1" width="100" border="0" alt=""></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/corner.html"
+	onmouseover="document.images['i2'].src='thumbnails/corner2-new.gif';"
+	onmouseout="document.images['i2'].src='thumbnails/corner1-new.gif';"
+	><img src="thumbnails/corner1-new.gif" name="i2" width="100" alt="" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/sdt.html"
+	onmouseover="document.images['i3'].src='thumbnails/sdt2-new.gif';"
+	onmouseout="document.images['i3'].src='thumbnails/sdt1-new.gif';"
+	><img src="thumbnails/sdt1-new.gif" name="i3" width="100" alt="" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/performance.html"
+	onmouseover="document.images['i4'].src='thumbnails/perform2-new.gif';"
+	onmouseout="document.images['i4'].src='thumbnails/perform1-new.gif';"
+	><img src="thumbnails/perform1-new.gif" name="i4" width="100" alt="" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/thresh.html"
+	onmouseover="document.images['i5'].src='thumbnails/thresh2-new.gif';"
+	onmouseout="document.images['i5'].src='thumbnails/thresh1-new.gif';"
+	><img src="thumbnails/thresh1-new.gif" name="i5" width="100" alt="" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/fitting.html"
+	onmouseover="document.images['i6'].src='thumbnails/super2-new.gif';"
+	onmouseout="document.images['i6'].src='thumbnails/super1-new.gif';"
+	><img src="thumbnails/super1-new.gif" name="i6" width="100" alt="" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/shape.html"
+	onmouseover="document.images['i7'].src='thumbnails/shape2-new.gif';"
+	onmouseout="document.images['i7'].src='thumbnails/shape1-new.gif';"
+	><img src="thumbnails/shape1-new.gif" name="i7" width="100" alt="" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/convexity.html"
+	onmouseover="document.images['i8'].src='thumbnails/convexity2-new.gif';"
+	onmouseout="document.images['i8'].src='thumbnails/convexity1-new.gif';"
+	><img src="thumbnails/convexity1-new.gif" name="i8" width="100" alt="" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/ca.html"
+	onmouseover="document.images['i9'].src='thumbnails/ca2-new.gif';"
+	onmouseout="document.images['i9'].src='thumbnails/ca1-new.gif';"
+	><img src="thumbnails/ca1-new.gif" name="i9" width="100" alt="cellular automata" border="0"></A>
+
+	<A HREF="http://rbg-web2.rbge.org.uk/DIADIST/"
+	onmouseover="document.images['i11'].src='thumbnails/diatom2-new.gif';"
+	onmouseout="document.images['i11'].src='thumbnails/diatom1-new.gif';"
+	><img src="thumbnails/diatom1-new.gif" name="i11" width="100" alt="diatoms" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/serlio.html"
+	onmouseover="document.images['i10'].src='thumbnails/serlio2-new.gif';"
+	onmouseout="document.images['i10'].src='thumbnails/serlio1-new.gif';"
+	><img src="thumbnails/serlio1-new.gif" name="i10" width="100" alt="art and architecture" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/cbir.html"
+	onmouseover="document.images['i12'].src='thumbnails/cbr2-new.gif';"
+	onmouseout="document.images['i12'].src='thumbnails/cbr1-new.gif';"
+	><img src="thumbnails/cbr1-new.gif" name="i12" width="100" alt="CBIR" border="0"></A>
+
+	<A HREF="http://www.cs.cf.ac.uk/meshfiltering/index.htm"
+	onmouseover="document.images['i13'].src='thumbnails/mesh2-new.gif';"
+	onmouseout="document.images['i13'].src='thumbnails/mesh1-new.gif';"
+	><img src="thumbnails/mesh1-new.gif" name="i13" width="100" alt="mesh filtering" border="0"></A>
+
+	<A HREF="http://www.cs.cf.ac.uk/relief/"
+	onmouseover="document.images['i14'].src='thumbnails/relief2-new.gif';"
+	onmouseout="document.images['i14'].src='thumbnails/relief1-new.gif';"
+	><img src="thumbnails/relief1-new.gif" name="i14" width="100" alt="reliefs" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/landslide.html"
+	onmouseover="document.images['i15'].src='thumbnails/landslide2-new.gif';"
+	onmouseout="document.images['i15'].src='thumbnails/landslide1-new.gif';"
+	><img src="thumbnails/landslide1-new.gif" name="i15" width="100" alt="remote sensing" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/npr.html"
+	onmouseover="document.images['i16'].src='thumbnails/head2-new.gif';"
+	onmouseout="document.images['i16'].src='thumbnails/head1-new.gif';"
+	><img src="thumbnails/head1-new.gif" name="i16" width="100" alt="NPR" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/scrolls.html"
+	onmouseover="document.images['i17'].src='thumbnails/scroll2-new.gif';"
+	onmouseout="document.images['i17'].src='thumbnails/scroll1-new.gif';"
+	><img src="thumbnails/scroll1-new.gif" name="i17" width="100" alt="scrolls" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/basrelief.html"
+	onmouseover="document.images['i18'].src='thumbnails/basrelief2-new.gif';"
+	onmouseout="document.images['i18'].src='thumbnails/basrelief1-new.gif';"
+	><img src="thumbnails/basrelief1-new.gif" name="i18" width="100" alt="bas relief" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/face.html"
+	onmouseover="document.images['i19'].src='thumbnails/face2-new.gif';"
+	onmouseout="document.images['i19'].src='thumbnails/face1-new.gif';"
+	><img src="thumbnails/face1-new.gif" name="i19" width="100" alt="" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/visions.html"
+	onmouseover="document.images['i20'].src='thumbnails/visions2-new.gif';"
+	onmouseout="document.images['i20'].src='thumbnails/visions1-new.gif';"
+	><img src="thumbnails/visions1-new.gif" name="i20" width="100" alt="" border="0"></A>
+
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/salience.html"
+	onmouseover="document.images['i21'].src='thumbnails/salience2-new.gif';"
+	onmouseout="document.images['i21'].src='thumbnails/salience1-new.gif';"
+	><img src="thumbnails/salience1-new.gif" name="i21" width="100" alt="" border="0"></A>
+
+<P>
+For a number of years I was newsletter editor and then secretary of the
+<A HREF="http://www.bmva.org/">British Machine Vision Association</A>.
+</P>
+
+<TABLE cellspacing="10">
+
+<TR> <TD align="left"> <A HREF="http://expressive2014.mpi-inf.mpg.de/CAe/Home"> <img src="cae14.jpg" alt="CAe" height="100"> </A> </TD> 
+     <TD> 
+	<p style="font-size:150%">Computational Aesthetics</P>
+		I co-organised the
+		<A HREF="http://expressive2014.mpi-inf.mpg.de/CAe/Home">
+		Int. Symp. on Computational Aesthetics
+		in Graphics, Visualization, and Imaging
+		</A>
+		which was part of Expressive 2014, held in Vancouver in 2014, and collocated with SIGGRAPH.
+</TD>
+</TR>
+
+<TR> <TD align="left">  <A HREF="https://sites.google.com/site/paesnpr13/"> <img src="PAESNPR13.jpg" alt="PAESNPR13" height="100"> </A> </TD> 
+     <TD> 
+	<p style="font-size:150%">Photographic Aesthetics and Non-Photorealistic Rendering</P>
+		With Ramakrishna Kakarala (Nanyang Technological University) I organised the
+		<A HREF="https://sites.google.com/site/paesnpr13/">
+		PAESNPR13 workshop
+		</A>
+		held in Mexico in 2013 in conjunction with APSIVT 2013.
+</TD>
+
+<TR> <TD align="left"> <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/faceworkshop2012/"> <img src="accv.jpg" alt="ACCV logo" height="100"> </A> </TD> 
+     <TD> 
+	<p style="font-size:150%"> Face analysis: The intersection of computer vision and human perception </P>
+	With colleagues I organised a
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/faceworkshop2012/">
+	workshop</A>
+	in conjunction with ACCV 2012 held in Korea.
+</TD>
+
+<TR> <TD align="left"> <img src="bmvc2002.gif" alt="BMVC logo" height="100"> </TD> 
+     <TD> 
+	<p style="font-size:150%"> British Machine Vision Conference </P>
+	The British Machine Vision Conference (BMVC2002) was held in Cardiff in 2002!
+	You can read about some of the work described at the conference
+	in an article in <A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/HERO/">HERO</A>
+</TD>
+
+<TR> <TD align="left"> <img src="pr.gif" alt="PR logo" height="100"> </TD> 
+     <TD>
+	<p style="font-size:150%"> Agent based Computer Vision </P>
+	I was co-guest editor of the 2004 special issue of Pattern Recognition on
+	<b>Agent based Computer Vision</b>. This was the original
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/cfp2.html">call for papers</A>. 
+</TD>
+
+<TR> <TD align="left"> <img src="jint.gif" alt="JInt logo" height="100"> </TD> 
+     <TD>
+	<p style="font-size:150%"> Neural-Fuzzy Applications in Computer Vision </P>
+	I was co-guest editor of the 2000 special issue of the Journal of Intelligent and Robotic Systems on
+	<b>Neural-Fuzzy Applications in Computer Vision</b>. This was the 
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/papers/JIRS.pdf">editorial,</A>
+	setting the scene.
+</TD>
+
+<TR> <TD align="left"> <img src="nca.gif" alt="JInt logo" height="100"> </TD> 
+     <TD>
+	<p style="font-size:150%"> Machine Vision using Neural Networks </P>
+	I was co-guest editor of the 1998 special issue of Neural Computing and Applications on
+	<b>Machine Vision using Neural Networks</b>.
+</TD>
+</TABLE>
+
+<P>
+I have organised some of the BMVA technical meetings.
+You can read the abstracts for
+<A HREF="http://www.bmva.org/meetings.d/old/feature-meeting.html">
+Low Level Feature Extraction</A>
+and
+<A HREF="http://www.bmva.org/meetings.d/old/meeting-1998-01-21.html">
+AI Methods and Data Fusion in Remote Sensing Image Processing</A>
+.
+</P>
+
+<HR>
+
+<A name="software"></A>
+<h2>Software</h2>
+
+<font size="+2">S</font>ome software that I have developed
+(some of it in collaboration with colleagues) is available for:
+<UL>
+<LI>
+approximating curves by
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/curves/">
+lines and arcs
+</A>
+</LI>
+<LI>
+multi-scale segmentation and matching of curves using
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/codons/">
+codons
+</A>
+</LI>
+<LI>
+automatic
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/smoothing/">
+scale selection
+</A>
+for curve smoothing
+</LI>
+<LI>
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/ellipse/">
+fitting ellipses
+</A>
+<LI>
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/superellipses/">
+fitting superellipses
+</A>
+</LI>
+<LI>
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/threshold/">
+automatic thresholding
+</A>
+of edges
+</LI>
+<LI>
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/unimodal/">
+unimodal thresholding
+</A>
+for edge maps and many other types of image
+</LI>
+<LI>
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/circular/">
+circular thresholding
+</A>
+(for circular quantities such as hue, orientation, etc.)
+</LI>
+<LI>
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/sdt/">
+salience distance transform
+</A>
+</LI>
+<LI>
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/salience/">
+salient region detection
+</A>
+</LI>
+<LI>
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/meshFiltering/">
+mesh filtering
+</A>
+</LI>
+<LI>
+computing 
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/shape/">
+convexity and rectilinearity
+</A>
+shape measures
+</LI>
+<LI>
+computing 
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/linearity/">
+linearity
+</A>
+of curves
+</LI>
+<LI>
+thresholding for
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/resources/change/">
+change detection (difference thresholding)
+</A>
+</LI>
+</UL>
+<HR>
+
+<A name="demos"></A>
+<h2>Demos</h2>
+
+<TABLE cellspacing="10">
+<TR> <TD align="left">
+	<A HREF="http://www.cs.cf.ac.uk/npr/"
+	onmouseover="document.images['demo'].src='jobs1.gif';"
+	onmouseout="document.images['demo'].src='jobs2.gif';"
+	><img src="jobs2.gif" name="demo" width="100" alt="" border="0"></A>
+	</TD> 
+     <TD> 
+		<font size="+2">Y</font>ou can
+		<A HREF="http://www.cs.cf.ac.uk/npr/">
+		upload your images
+		</A>
+		and try out our non-photorealistic rendering
+		method for generating line drawings.
+</TD>
+</TABLE>
+
+<HR>
+
+<A name="data"></A>
+<h2>Data</h2>
+
+<TABLE cellspacing="10">
+<TR> <TD align="left">
+	<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/orientation/index.html"
+	onmouseover="document.images['multishape'].src='sunset-blobs.gif';"
+	onmouseout="document.images['multishape'].src='sunset.gif';"
+	><img src="sunset.gif" name="multishape" width="100" alt="" border="0"></A>
+	</TD> 
+     <TD> 
+		<font size="+2">Y</font>ou can download the
+		<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/orientation/index.html">
+		images</A>
+		used in the paper
+		"An alternative approach to computing shape orientation with an application to compound shapes",
+		Jovisa Zunic and Paul L. Rosin,
+		International Journal of Computer Vision,
+		vol. 81, no. 2, pp. 138-154, 2009.
+</TD>
+
+<TR> <TD align="left">
+	<A HREF="http://www.cs.cf.ac.uk/CCDb/"
+	onmouseover="document.images['ccdb2'].src='BackchannelImage1.gif';"
+	onmouseout="document.images['ccdb2'].src='BackchannelImage2.gif';"
+	><img src="BackchannelImage2.gif" name="ccdb2" width="100" alt="" border="0"></A>
+	</TD> 
+     <TD> 
+		<font size="+2">T</font>he annotations and extracted audio-visual features from the sequences
+		of the two way conversations making up the
+		<A HREF="http://www.cs.cf.ac.uk/CCDb/">
+		Cardiff Conversational Database (CCDb)</A>
+		are available.
+</TD>
+
+<TR> <TD align="left">
+	<A HREF="http://www.cs.cf.ac.uk/shaperetrieval/shrec15/index.html"
+	onmouseover="document.images['shrec15x'].src='shrec15b.jpg';"
+	onmouseout="document.images['shrec15x'].src='shrec15a.jpg';"
+	><img src="shrec15a.jpg" name="shrec15x" width="100" alt="" border="0"></A>
+    </TD>
+	 <TD> 
+		<font size="+2">T</font>he data we provided for the SHREC'15 competition
+		<A HREF="http://www.cs.cf.ac.uk/shaperetrieval/shrec15/index.html">
+		Canonical Forms for Non-Rigid 3D Shape Retrieval</A>
+		is available.
+</TD>
+
+<TR> <TD align="left">
+	<A HREF="http://www.cs.cf.ac.uk/shaperetrieval/shrec14/index.html"> <img src="shrec.jpg" alt="SHREC" height="100"> </A>
+	</TD> 
+     <TD> 
+	 <font size="+2">T</font>he data we provided for the SHREC'14 competition
+			<A HREF="http://www.cs.cf.ac.uk/shaperetrieval/shrec14/index.html">
+			Shape Retrieval of Non-Rigid 3D Human Models</A>
+			is available.
+</TD>
+
+</TABLE>
+
+<HR>
+
+<A name="publications"></A>
+<h2>Publications</h2>
+
+<font size="+2">Y</font>ou can see a list of my papers with many PDF
+files available too:
+<UL>
+<LI>
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/papers.html">
+journal papers</A>
+</LI>
+<LI>
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/papers.html#conference">
+conference papers</A>
+</LI>
+<LI>
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/papers.html#reports">
+technical reports</A>
+</LI>
+</UL>
+
+<HR>
+<A name="teaching"></A>
+<h2>Teaching</h2>
+<P>
+<font size="+2">T</font>his year I am teaching
+<!--
+-->
+CMT102 Computational Systems,
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/CM3102/">CM3102 - Graphics, Visualization and Computer Vision</A>
+and
+<A HREF="http://users.cs.cf.ac.uk/Paul.Rosin/CM2303/">CM2303 - Algorithms and Data Structures.</A>
+
+</P>
+
+<HR>
+<A name="contact"></A>
+<h2>Contact Details</h2>
+
+<dl>
+<dt><b>Address:</b></dt>
+<dd>School of Computer Science &amp; Informatics</dd>
+<dd>Cardiff University</dd>
+<dd>Queen's Buildings</dd>
+<dd>5 The Parade, Roath</dd>
+<dd>Cardiff, CF24 3AA</dd>
+<dd>United Kingdom</dd>
+<dd>&nbsp;</dd>
+<dt><b>Telephone Number:</b></dt>
+<dd>+44 (0)29 2087 5585</dd>
+<dd>&nbsp;</dd>
+<dt><b>Fax Number:</b></dt>
+<dd>+44 (0)29 2087 4598</dd>
+<dd>&nbsp;</dd>
+<dt><b>Email:</b></dt>
+<dd><A HREF="mailto:Paul.Rosin@cs.cf.ac.uk">Paul.Rosin@cs.cf.ac.uk</A></dd>
+</dl>
+
+<HR>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-15881617-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body></html>

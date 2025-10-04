@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>ACCV Workshop on Face analysis</TITLE>
+
+<META http-equiv="Content-Type" content="text/html;charset=utf-8">
+<SCRIPT language="JavaScript" type="text/javascript">
+<!--
+// ==============================================
+// Copyright 2003 by jsCode.com
+// Source: jsCode.com
+// Author: etLux
+// Free for all; but please leave in the header.
+// ==============================================
+
+// Set up the image files to be used.
+var theImages = new Array() // do not change this
+// To add more image files, continue with the
+// pattern below, adding to the array. Rememeber
+// to increment the theImages[x] index!
+
+theImages[0] = 'img/visual4.jpg'
+theImages[1] = 'img/visual1.jpg'
+theImages[2] = 'img/visual2.jpg'
+theImages[3] = 'img/visual3.jpg'
+
+// ======================================
+// do not change anything below this line
+// ======================================
+
+var j = 0
+var p = theImages.length;
+
+var preBuffer = new Array()
+for (i = 0; i < p; i++){
+   preBuffer[i] = new Image()
+   preBuffer[i].src = theImages[i]
+}
+
+var whichImage = Math.round(Math.random()*(p-1));
+function showImage(){
+document.write('<p align="center"> <img src="'+theImages[whichImage]+'" width=50% ></p>');
+}
+
+//-->
+</SCRIPT>
+
+</HEAD>
+
+<BODY>
+
+<SCRIPT language="JavaScript" type="text/javascript">
+<!--
+// ==============================================
+// Copyright 2003 by jsCode.com
+// Source: jsCode.com
+// Author: etLux
+// Free for all; but please leave in the header.
+// ==============================================
+showImage();
+//-->
+</SCRIPT>
+      <TABLE cellpadding=3 cellspacing=0 border=0 width="100%">
+        <TR>
+          <TD>
+            <H2 align="center">workshop in conjunction with <A HREF="http://www.accv2012.org/">ACCV 2012</A> on</H2>
+            <H1 align="center">Face analysis: The intersection of computer vision and human perception</H1>
+            <H2 align="center"></H2>
+          </TD>
+        </TR>
+      </TABLE>
+
+      <TABLE cellpadding=3 cellspacing=0 border=0 width="100%">
+        <TR>
+          <TD width="18%" bgcolor="#cccccc" align="center"><A HREF="index.html">Home</A></TD>
+          <TD width="18%" bgcolor="#cccccc" align="center"><A HREF="call.html">Call for papers</A></TD>
+          <TD width="18%" bgcolor="#cccccc" align="center"><A HREF="final.html"><FONT COLOR="#ff0014">Camera Ready Submission</FONT></A></TD>
+          <TD width="18%" bgcolor="#cccccc" align="center"><A HREF="people.html">People</A></TD>
+          <TD width="18%" bgcolor="#cccccc" align="center"><A HREF="invited.html">Invited Speakers</A></TD>
+          <TD width="18%" bgcolor="#cccccc" align="center"><A HREF="program.html">Program</A></TD> 
+        </TR>
+      </TABLE>
+
+<P>
+The analysis of faces is a very active research area within both the computer vision and the human
+perception communities. Although the two communities have traditionally worked separately, the
+synergy created by the meeting of minds from both communities will not only provide for great
+research impetus, but will also allow otherwise intractable problems to be solved. The array of
+potential applications and research topics is impressive. The goal of this workshop is to examine
+existing work that straddles the border of these communities, and to map out future steps for
+integrative research.
+</P>
+
+<P>
+Throughout development, we humans receive extensive training and experience in the processing of
+faces resulting in an incredible degree of expertise. This expertise encompasses processing of face
+identity, age, gender, and non-verbal communication signals such as facial expressions. Thus,
+tapping into existing knowledge from human facial perception research can enable the targeted
+design of computer vision facial analysis and synthesis systems with more realistic behavioural
+facial models and performance. For example, employing knowledge about the perceptual
+importance of different information in the moving face (such as using the Facial Action Coding
+System (FACS) or empirically derived descriptive models) has helped improve the automatic
+recognition and measurement of facial expressions and prosody.
+</P>
+
+<P>
+While perception research has gathered tremendous data on the behavioural consequences of face
+information, it has often had difficulty producing accurate models of how the information is
+processed. Thus, computer vision systems can not only provide many useful tools for research into
+the human perception of faces, they can also be used as models of perceptual processes. Machine
+learning techniques can be applied to learn from input facial images/video and automatically extract
+descriptions of expressions and timings, leading to a better modelling of the dynamics of expression
+and the possibility of recognising emotion, for example. Likewise, machine learning techniques can
+be used to simulate human perceptual learning. Another example is the use of facial image synthesis
+to generate stimuli for perceptual experiments, which enables more subtle manipulation of facial
+appearance and dynamics than would be possible using natural video capture – a good example of
+this is the highly successful application of the face morphable model in perceptual and
+neuroscientific research.
+</P>
+
+<H2>Topics of interest include</H2>
+<UL>
+<LI>recognition of personal characteristics from faces (identity, age, gender)</LI>
+<LI>recognition of communicative intent from faces (e.g., expressions, sincerity)</LI>
+<LI>recognition by synthesis (e.g., facial expressions using motor input, morphable models)</LI>
+<LI>novel databases for the computer vision and/or perceptual community</LI>
+<LI>controlled generation of complex stimuli for perceptual experiments (e.g., parametrizations of complex facial motion)</LI>
+<LI>employing computer vision systems to model or simulate face processing mechanisms</LI>
+<LI>perceptual evaluation of computer vision models</LI>
+<LI>perceptually motivated computer vision approaches to face processing</LI>
+<LI>novel insights from perceptual research relevant for the computer vision community</LI>
+</UL>
+
+
+</BODY>
+</HTML>

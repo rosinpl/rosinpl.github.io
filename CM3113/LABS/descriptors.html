@@ -1,0 +1,49 @@
+<HTML>
+<HEAD><TITLE>CM3113</TITLE></HEAD>
+<BODY>
+
+<H1>CM3113 - Computer Vision</H1>
+
+<H2>Lab Sheet - Week 4</H2>
+<H2>Region Description</H2>
+
+<HR>
+
+<IMG SRC="mars_rover.jpg" WIDTH=400 ALT="mars rover">
+
+<P>
+This lab is about region description, and as an example you are to analyse
+an image of the Martian landscape taken by the Mars Rover.
+The chart below shows some results taken from the paper titled
+<A HREF="mars_rock.pdf">
+Onboard autonomous rock shape analysis for Mars Rovers
+</A>
+from the Jet Propulsion Lab.
+<BR>
+<IMG SRC="mars-results.gif" ALT="mars results">
+
+<P>
+The original image
+<A HREF="rocks1.pgm">of rocks</A>
+has been
+<A HREF="rocks2.pgm">segmented</A>
+(see figure a & b above).
+I have labelled each rock with a different value (200, 201, .., 204).
+For each rock calculate from the segmented image
+(i.e. you can ignore the original grayscale image)
+its compactness and centroid.
+You can count the boundary pixels to estimate the region's perimeter.
+Also, calculate the first two rotation, translation, and scale (RTS) invariant moments.
+
+<P>
+For example, for region ID 200, the centroid is (81.512 21.595),
+the first two invariant moments are: 0.184, 0.008.
+Perimeter can be estimated as 95, which with area = 375, gives compactness = 24.
+
+<HR>
+<I>
+go to <A HREF="../index.html">CM3113 home page</A>
+</I>
+
+</BODY>
+</HTML>

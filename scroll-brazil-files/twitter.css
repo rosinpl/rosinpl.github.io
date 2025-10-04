@@ -1,0 +1,125 @@
+﻿h2.tut{
+	color:white;
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+	font-size:16px;
+	padding:2px 0 0 58px;
+	
+}
+
+a.twitter_link:hover {
+	text-decoration:none;
+	text-shadow:2px 1px 4px #333;
+	}
+
+#twitter-ticker h2  {
+	margin:0px;
+}
+	
+#twitter-ticker{
+	font-size:13px;
+	margin:0px;
+	margin-top: 25px;
+	padding:0px;
+	font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;
+	border:1px solid #DFDFDF;
+	width:300px;
+	background:#fff;
+	color:#666666;
+	display:none;
+	/*-moz-border-radius:10px 10px 6px 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius:6px;*/
+	text-align:left;
+}
+
+#tweet-container{
+	width:auto;
+	overflow:hidden;
+}
+
+#twitIcon{
+	position:absolute;
+	top:-25px;
+	left:-10px;
+	width:64px;
+	height:64px;
+}
+
+#top-bar{
+	height:45px;
+	background: #999; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009FD0', endColorstr='#008EB9'); /* for IE */
+	background: -ms-linear-gradient(top, #009FD0 0%,#008EB9 100%); /* IE10+ */
+	background: -webkit-gradient(linear, left top, left bottom, from(#009FD0), to(#008EB9)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #009FD0,  #008EB9); /* for firefox 3.6+ */ 
+	border-bottom:1px solid white;
+	position:relative;
+	margin-bottom:8px;
+	/*
+	-moz-border-radius:6px 6px 0px 0px;
+	-webkit-border-radius:6px 6px 0px 0px;
+	border-radius:6px 6px 0px 0px;
+	*/
+	
+}
+
+.tweet{
+	padding:5px;
+	margin:0 8px 8px;
+	border:1px solid #E5E5E5;
+	width:auto;
+	overflow:hidden;
+}
+
+.tweet .avatar,
+.tweet .user,
+.tweet .time{
+	float:left;
+}
+
+.tweet .time{
+	padding-left:5px;
+	text-transform:uppercase;
+	font-size:10px;
+	color:#009DCD;
+	white-space:nowrap;
+}
+
+
+.tweet .avatar img{
+	width:36px;
+	height:36px;
+	border:none;
+	margin:0 5px 5px 0;
+}
+
+.tweet .txt{
+	clear:both;
+}
+
+.tweet .user{
+	font-weight:bold;
+}
+
+/*
+a, a:visited {
+	/*color:#014F8D;*/
+	text-decoration:none;
+	outline:none;
+}*/
+
+a:hover{
+	text-decoration:underline;
+}
+
+#loading{
+	margin:100px 95px;
+}
+
+/* The styles below are only necessary for the demo page */
+
+#twitter-ticker{
+	margin-top:20px;
+	margin-left:0px;
+}

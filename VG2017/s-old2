@@ -1,0 +1,47 @@
+<H2>Author Guidelines</H2>
+
+<P>
+All submissions will be handled electronically through the online submission system.
+Each paper will be peer-reviewed.
+Reviews will be double-blind according to PSIVT guidelines.
+In submitting a manuscript to this workshop, the authors
+acknowledge that no paper substantially similar in content has been submitted to another workshop or conference 
+(except for dual submission to the PSIVT2015 main conference which is allowed;
+see
+<A HREF="http://www.psivt.org/psivt2015/instructions-for-authors.php">PSIVT instructions</A>
+for more details)
+during the review period.
+</P>
+
+<P>
+Accepted workshop papers will be published by Springer in the Lecture Notes in Computer Science (LNCS) series.
+
+<H2>Paper Length and Format</H2>
+
+Manuscripts should be submitted as PDF files and should be <B>no more than 12 pages</B> in the PSIVT paper format;
+papers up to 14-pages long will be allowed, but, if accepted, authors will have to cover an extra per-page fee for pages 13 and 14.
+
+<H2>Author Kit</H2>
+
+<P>
+Articles should be prepared in English according to the 
+<A HREF="http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0">Springer Lecture Notes in Computer Science guidelines and templates.</A>
+Use 
+<A HREF="http://www.psivt.org/psivt2015/docs/LNCS_PSIVT2015_submission_format.zip">this LaTeX2e template.</A>
+
+<P>
+For the camera-ready version you will need to remove the line \usepackage{ruler} from the *.tex file. 
+
+
+<H2>Online Submission Site</H2>
+
+Please submit papers (by 31st August 2015) through the 
+<A HREF=https://easychair.org/conferences/?conf=vg2015>online submission site.</a>
+ 
+<H2>Registration</H2>
+
+To have your paper included in the proceedings at least one of the authors must be registered at a full registration rate.
+According to IAPR rules, one registration is fine for having multiple co-authored papers at the conference.
+
+</UL> 
+

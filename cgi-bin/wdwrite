@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+# wdwrite
+# this is the CGI that will take the
+# applet info and append it to a file
+open(OUT, ">> /usr/local/www/user/Paul.Rosin/Wetherill.txt");
+print "Content-type: text/plain\n\n";
+while (<>) {
+    print OUT "$_\n";
+    print $_;
+}
+close (OUT); 
+exit 0;

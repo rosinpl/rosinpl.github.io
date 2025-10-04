@@ -1,0 +1,40 @@
+<H2>Author Guidelines</H2>
+
+<P>
+All submissions will be handled electronically through the online submission system.
+Each paper will be peer-reviewed by at least two reviewers.
+Reviews will be double-blind according to ACCV guidelines.
+In submitting a manuscript to this workshop, the authors
+acknowledge that no paper substantially similar in content has been submitted to another workshop or conference 
+(except for dual submission to the ACCV2012 main conference which is allowed)
+during the review period.
+</P>
+
+<P>
+Accepted workshop papers will be published by Springer in the Lecture Notes in Computer Science (LNCS) series.
+
+<H2>Paper Length and Format</H2>
+
+Manuscripts should be submitted as PDF files and should be no more than 12 pages in the ACCV paper format.
+To prevent problems with fonts, please create portable PDF files.
+Choose an option like Download all fonts, when creating
+the PDF file(s). Please use 'outline' fonts and not 'bitmap' fonts, for the same reason.
+
+<H2>Author Kit</H2>
+
+<P>
+The author kit provides a LaTeX2e template for full paper submissions,
+and sources of an example paper to demonstrate the format.
+</P>
+
+<P>
+LaTeX2e template Submission Author Kit (<A HREF="accv2012submissionkit.zip">zip file,</a>
+<A HREF="accv2012submissionkit.tgz">gzipped tar file)</a>
+
+<H2>Online Submission Site</H2>
+
+Please submit papers (by 11th September 2012) through the 
+<A HREF=https://cmt.research.microsoft.com/FA2012/>online submission site.</a> 
+ 
+</UL> 
+

@@ -1,0 +1,94 @@
+.arrow {width:16px;height:16px;display:block;background:url(http://imgsapp2.correiobraziliense.com.br/imgs/arrows.gif);}
+.redlight .arrow {background-position:bottom;}
+
+.box, .box2 {width:190px;margin:15px 24px 10px 0; _margin:15px 19px 10px 0;float:left;background:#f6f6f6;}
+.box2 {color:#041c50;background:#ccc;}
+.box2 .h3 {color:#fff;}
+.box2 .h3 * {color:#fff;}
+.box2 span {padding:4px;color:#041c50;}
+.box2 span * {color:#041c50;}
+
+.tabbed_area { }
+.tabbed_box {background:#fff; /*border-top: 1px solid #74A8C8;*/}
+	
+.tabbed_area ul {height:20px;margin:0;display:block;list-style:none;text-align:right;cursor:default; }
+	.win .tabbed_area ul {height:22px;}
+.tabbed_area li {padding:2px 6px;margin:0 0 -1px;display:block;float:right;color:#999;background:#f9f9f9; text-transform:uppercase; border-top: 1px solid #74A8C8; border-right:1px solid #74A8C8; border-left:1px solid #74A8C8; cursor:pointer}
+.tabbed_area ul li.selected {color:#74A8C8;}
+	.ie6 .tabbed_area ul li.selected {position:relative;bottom:-0px!important;}
+
+.tabbed_box h1 {font-size:20px;border-bottom:3px solid #041c50;color:#efb31e;}
+.tabbed_link {padding:10px;display:block;border:1px solid #041c50;border-width:1px 1px 3px;}
+.tabbed_link.margins {padding:0;}
+	.ie6 .tabbed_link.margins a,
+	.ie6 .tabbed_link.margins p {padding:5px;margin-left:-4px;margin-right:-4px;}
+.tabbed_link.biglist {padding:0;margin:4px -5px}
+.tabbed_link.margins a,
+.tabbed_link.margins p {padding:5px;}
+.tabbed_link.margins p.zebra.first-child {background:#c0cedb;}
+.tabbed_link.margins p.zebra.first-child input {width:auto;border:1px solid #f90;}
+.tabbed_link.margins p.zebra select {width:80%;border:1px solid #c0cedb;}
+.tabbed_link.margins p.zebra img {vertical-align:middle;}
+.tabbed_filmstrip {background:#b1c2c1;}
+.gallery_list {}
+.gallery_list a {width:47%;margin:0 1% 1% 0;float:left;clear:none;}
+
+.column00 .block img:hover {border:none! important}
+
+.column00 .block .tabbed_area li {float:left; margin:0 5px -1px 0;}
+.column00 .block .tabbed_link {border:0;}
+.column00 .block .tabbed_link a span {padding:4px; color:#143287}
+.column00 .block .tabbed_fields {padding:5px;text-align:right;
+background: rgb(249,249,249); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(249,249,249,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(249,249,249,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(249,249,249,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(249,249,249,1) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(249,249,249,1) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(249,249,249,1) 0%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+ }
+.column00 .block .tabbed_fields input {text-align:center;border:1px solid #93aebf;background:#e7e8ea;}
+.column00 .block .tabbed_fields img {margin-right:8px;vertical-align:middle;}
+/*.column00 .block .tabbed_pagination {text-align:center;}*/
+.column00 .block .tabbed_pagination {text-align:center;clear:both;}
+.column00 .block .tabbed_pagination a {padding:0 6px;*padding:0 6px;margin:0 1px;display:inline;background-color:#e7e8ea;}
+.column00 .block .tabbed_pagination a.current {background-color	:#74A8C8; color:#fff;}
+.column00 .block a {padding:5px;*padding:5px;display:block;}
+.column00 .block .date {
+	padding:2px;
+	margin:4px;
+	display:block;
+	font-weight:bold;
+	color:#fff;
+	background: #74a8c8;
+	}
+
+.column00 .block .tabbed_pagination a.p_left_all {width:19px;height:13px;overflow:hidden;padding-right:10px;background:url(http://imgsapp2.correiobraziliense.com.br/imgs/pagination.gif) -76px 0 no-repeat;}
+.column00 .block .tabbed_pagination a.p_left {width:19px;height:13px;overflow:hidden;padding-right:10px;background:url(http://imgsapp2.correiobraziliense.com.br/imgs/pagination.gif) -95px 0 no-repeat;}
+.column00 .block .tabbed_pagination a.p_right {width:19px;height:13px;overflow:hidden;padding-right:10px;background:url(http://imgsapp2.correiobraziliense.com.br/imgs/pagination.gif) -114px center no-repeat;}
+.column00 .block .tabbed_pagination a.p_right_all {width:19px;height:13px;overflow:hidden;padding-right:10px;background:url(http://imgsapp2.correiobraziliense.com.br/imgs/pagination.gif) -133px center no-repeat;}
+
+.column00 .block .tabbed_pagination a.p_left_all.inactive {background:url(http://imgsapp2.correiobraziliense.com.br/imgs/pagination.gif) 0 center no-repeat;cursor:default;}
+.column00 .block .tabbed_pagination a.p_left.inactive {background:url(http://imgsapp2.correiobraziliense.com.br/imgs/pagination.gif) -19px center no-repeat;cursor:default;}
+.column00 .block .tabbed_pagination a.p_right.inactive {background:url(http://imgsapp2.correiobraziliense.com.br/imgs/pagination.gif) -38px center no-repeat;cursor:default;}
+.column00 .block .tabbed_pagination a.p_right_all.inactive {background:url(http://imgsapp2.correiobraziliense.com.br/imgs/pagination.gif) -57px center no-repeat;cursor:default;}
+
+.column00 .block .tabbed_totalpages {padding:4px;*padding:0px;margin-top:4px;*margin-top:4px;text-align:right;*text-align:right;border-top:none;background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(247,247,247,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(247,247,247,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(247,247,247,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-9 */
+
+}
+.column00 .block .tabbed_totalpages input {text-align:center;border:1px solid #93aebf;background:#fff;}
+.column00 .block .tabbed_totalpages a {background-color:#E7E8EA;display:inline-block;margin:0 1px;*margin:0 1px;padding:0 6px;*padding:0 6px;}
+
+.column00 .block .tabbed_totalpages .leftpg {float:left;margin:2px 10px 2px 235px !important; _margin-left:125px !important}
+.column00 .block .tabbed_totalpages a.p_ok {width:29px;height:13px;overflow:hidden;padding:0 0px 0 0;background:url(http://imgsapp2.correiobraziliense.com.br/imgs/pagination.gif) -152px 0px no-repeat; margin-top:3px; *margin-top:0px}
+.column00 .block .tabbed_totalpages a.p_top {width:47px;height:13px;overflow:hidden;padding:0 0px 0 0;background:url(http://imgsapp2.correiobraziliense.com.br/imgs/pagination.gif) -181px 0px no-repeat; margin-top:3px; *margin-top:0px}
+
+

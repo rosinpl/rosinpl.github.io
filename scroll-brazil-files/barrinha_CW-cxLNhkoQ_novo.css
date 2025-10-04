@@ -1,0 +1,23 @@
+/* *******************************************************
+	Barra do CW - 25/06/2012
+******************************************************* */
+
+body, html{margin:0;padding:0;}
+.barrinha_CW-cxLNhkoQ {width:100%; background: #2e5881;color:#fff; line-height: 27px; height:30px; font-family:"Segoe UI", "Trebuchet MS", Arial;	font-size:13px; padding:0 0 3px 0; z-index:99999; position:relative}
+.barrinha_CW-cxLNhkoQ ul li a{display:block;}
+.barrinha_CW-cxLNhkoQ ul li a{color:#fff;text-decoration:none;font-weight: normal !important; font-family:"Segoe UI", "Trebuchet MS", Arial !important; font-size:13px}
+.barrinha_CW-cxLNhkoQ ul li ul li a{color:#fff;text-decoration:none;font-weight: normal !important; font-family:"Segoe UI", "Trebuchet MS", Arial !important; font-size:13px}
+.barrinha_CW-cxLNhkoQ ul li a:hover, .barrinha_CW-cxLNhkoQ ul li a:hover {color:#FFB51C;}
+.barrinha_CW-cxLNhkoQ .container_CW-cxLNhkoQ{width:990px;margin:0 auto;}
+.barrinha_CW-cxLNhkoQ .logo_correio_web_CW-cxLNhkoQ{float: left; margin:4px 0 0 0;}
+.barrinha_CW-cxLNhkoQ .barrinha_menu_CW-cxLNhkoQ{float:right; width:915px;}
+.barrinha_CW-cxLNhkoQ ul{margin:0px 0 0 0; padding:0; list-style:none;}
+.barrinha_CW-cxLNhkoQ ul li.main{float:left;padding: 0 10px;margin:0;border-top:3px solid #2e5881;}
+.barrinha_CW-cxLNhkoQ ul li.main div.seta{display:block; background:url("imgs/seta_nova.png") no-repeat transparent; background-position: right -11px;padding:0 12px 0 0; color:#fff; font-size:13px;}
+.barrinha_CW-cxLNhkoQ ul li ul{position:absolute;display:none;background: #2e5881; padding:12px 16px;margin:3px 0 0 -16px;box-shadow:3px 3px 3px rgba(0, 0, 0, 0.2);min-width:127px;}
+.barrinha_CW-cxLNhkoQ ul li {cursor:pointer;}
+.barrinha_CW-cxLNhkoQ .busca_CW-cxLNhkoQ{float:right;padding:4px 0;}
+.barrinha_CW-cxLNhkoQ .busca_CW-cxLNhkoQ input[type="text"]{float:right;padding:1px 0 1px 8px;width:150px;height:20px;line-height:20px;border:none;background:#fff;font-family:"Segoe UI", "Trebuchet MS", Arial;font-size:11px;color:#666;}
+.barrinha_CW-cxLNhkoQ .busca_CW-cxLNhkoQ .btn{float:right;background:#fff;}
+.tel_CW-cxLNhkoQ{color:#FFB51C; display: inline; font-size: 13px;}
+.linhas {border-left:1px solid #ccc; border-right:1px solid #ccc; padding:0 10px !important}
