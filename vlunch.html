@@ -3179,12 +3179,22 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 <script>
 function updateRowCount() {
   const table = document.getElementById("myTable");
-  const tbody = table.querySelector("tbody");
-  const rows = tbody.querySelectorAll("tr");
-  document.getElementById("rowCount").textContent = rows.length;
+  const rows = table.querySelectorAll("tbody tr");
+
+  let count = 0;
+
+  rows.forEach(row => {
+    const cells = row.querySelectorAll("td");
+
+    // Ignore rows that have a single cell spanning all columns
+    if (!(cells.length === 1 && cells[0].hasAttribute("colspan"))) {
+      count++;
+    }
+  });
+
+  document.getElementById("rowCount").textContent = count;
 }
 
-// Run on page load
 updateRowCount();
 </script>
 
