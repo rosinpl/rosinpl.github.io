@@ -1,0 +1,2 @@
+ls -al thumbnails*/* IVF2019.jpg cvm2002.gif solder.jpg VisualComputingLogo.gif 3Dcover.gif CADgraphics.gif bmvc2019.gif cae14.jpg CAcover.gif\
+3Dcover.gif 3DORlogo.png accv.jpg bmvc2019.gif CAcover.gif CADgraphics.gif cae14.jpg cae15.jpg NPRcover_small.gif PAESNPR13.jpg remotesensing.png rgbd18.jpg RGBDcover.jpg scroll.jpg shrec.jpg SHREC21.png SHREC21.png vg15.jpg vg17.jpg VisualComputingLogo.gif | sort -n -k 5
